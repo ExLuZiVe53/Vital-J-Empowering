@@ -5,5 +5,6 @@ body {
 @media only screen and (min-width: 390px) {
   .container {
     min-width: 390px;
+    outline: 1px solid red;
   }
 }
