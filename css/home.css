@@ -26,6 +26,24 @@ ul {
   src: url('../fonts/candal-v15-latin-regular.woff') format('woff'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'LiberationSans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/LiberationSans-Regular.woff2') format('woff2');
+  src: url('../fonts/LiberationSans-Regular.woff') format('woff'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'LiberationSans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/LiberationSans-Bold.woff2') format('woff2');
+  src: url('../fonts/LiberationSans-Bold.woff') format('woff'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 @media only screen and (min-width: 390px) {
   .container {
     min-width: 390px;
