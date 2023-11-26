@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="../css/home.css" />
   </head>
   <body>
@@ -76,15 +79,30 @@
 
     <section class="exclusive-deals">
       <div class="container">
-        <h2>Preorder now</h2>
-        <span>to receive exclusive deals & gifts</span>
-        <div class="card">
-          <button>Sale</button>
-          <img src="../img/tube.png" alt="tube" />
-          <p>Lorem ipsum dolor sit amet</p>
-          <span>$50</span>
-          <span>$70</span>
-          <button>Add to cart</button>
+        <h2 class="exclusive-deals-title">Preorder now</h2>
+        <h4 class="exclusive-deals-subtitle">
+          to receive exclusive deals & gifts
+        </h4>
+        <div class="card-container">
+          <div class="card-sale">
+            <span class="card-sale-text">Sale</span>
+          </div>
+
+          <img class="card-img" src="../img/tube.png" alt="tube" />
+          <p class="card-text">Lorem ipsum dolor sit amet</p>
+          <span class="card-price">$50</span>
+          <span class="card-price sale">$70</span>
+          <button>
+            <svg class="heart" width="24" height="24">
+              <use href="../img/sprite.svg#icon-Heart"></use>
+            </svg>
+          </button>
+          <button>
+            <svg class="icon-Solid" width="24" height="24">
+              <use href="../img/sprite.svg#icon-Solid"></use>
+            </svg>
+          </button>
+          <button class="card-add">Add to cart</button>
         </div>
 
         <ul class="list">
