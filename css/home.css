@@ -247,6 +247,11 @@ html {
   width: 261px;
   height: 428px;
 
+  flex-shrink: 2;
+  object-fit: cover;
+  object-position: 0 0;
+  overflow: hidden;
+
   margin-top: 56px;
 
   border-radius: 8px;
@@ -256,6 +261,15 @@ html {
       rgba(125, 129, 137, 0.12),
     -2.7361674308776855px -2.7361674308776855px 4.560279369354248px 0px
       rgba(125, 129, 137, 0.12);
+}
+
+.card-container.active {
+  flex-shrink: 0;
+}
+
+.card-wraper {
+  display: flex;
+  gap: 30px;
 }
 
 .card-sale {
@@ -318,6 +332,15 @@ html {
   font-weight: 400;
 
   text-decoration-line: line-through;
+}
+
+.card-img {
+  width: auto;
+}
+
+.card-add {
+  display: block;
+  margin: 0 auto;
 }
 
 .heart {
