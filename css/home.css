@@ -338,12 +338,21 @@ html {
   width: auto;
 }
 
-.card-add {
+.btn-card-add.btn {
   display: block;
-  margin: 0 auto;
+  margin: 19px auto 0;
+
+  width: 213px;
+  height: 34px;
+
+  background: rgba(94, 146, 182, 1);
 }
 
-.heart {
+.btn-hiden {
+  display: none;
+}
+
+.hide .heart {
   stroke: rgba(39, 39, 39, 1);
 }
 
