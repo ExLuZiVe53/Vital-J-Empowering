@@ -428,6 +428,7 @@ html {
   line-height: 1.7;
 
   text-transform: uppercase;
+  margin-bottom: 48px;
 
   color: rgba(120, 118, 149, 1);
 }
