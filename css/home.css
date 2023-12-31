@@ -123,6 +123,21 @@ html {
   min-width: 390px;
 }
 
+.navigation-top__list {
+  display: flex;
+}
+
+.navigation-top__list::before {
+  content: '';
+
+  width: 153.43px;
+  height: 32px;
+  background-color: black;
+  border-radius: 0 0 10px 10px;
+
+  display: inline-block;
+}
+
 .navigaton-list {
   display: flex;
   gap: 16px;
