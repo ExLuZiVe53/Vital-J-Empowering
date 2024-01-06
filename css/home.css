@@ -1,5 +1,5 @@
 body {
-  font-family: 'Candal', sans-serif;
+  margin: 0;
 }
 
 h1,
@@ -76,29 +76,53 @@ html {
 /* candal-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Candal';
+  font-family: Candal;
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/candal-v15-latin-regular.woff2') format('woff2');
-  src: url('../fonts/candal-v15-latin-regular.woff') format('woff'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url(../fonts/candal-v15-latin-regular.ttf) format('truetype'),
+    url(../fonts/candal-v15-latin-regular.woff) format('woff'),
+    url(../fonts/candal-v15-latin-regular.woff2) format('woff2');
+  /* src: url('../fonts/candal-v15-latin-regular.woff2') format('woff2');
+  src: url('../fonts/candal-v15-latin-regular.woff') format('woff'); Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'LiberationSans';
+  font-family: LiberationSans;
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/LiberationSans-Regular.woff2') format('woff2');
-  src: url('../fonts/LiberationSans-Regular.woff') format('woff'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url(../fonts/LiberationSans-Regular.ttf) format('truetype'),
+    url(../fonts/LiberationSans-Regular.woff) format('woff'),
+    url(../fonts/LiberationSans-Regular.woff2) format('woff2');
+  /* src: url('../fonts/LiberationSans-Regular.woff2') format('woff2');
+  src: url('../fonts/LiberationSans-Regular.woff') format('woff');  */
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'LiberationSans';
+  font-family: LiberationSans;
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/LiberationSans-Bold.woff2') format('woff2');
-  src: url('../fonts/LiberationSans-Bold.woff') format('woff'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url(../fonts/LiberationSans-Regular.ttf) format('truetype'),
+    url(../fonts/LiberationSans-Regular.woff) format('woff'),
+    url(../fonts/LiberationSans-Regular.woff2) format('woff2');
+  /* src: url('../fonts/LiberationSans-Bold.woff2') format('woff2');
+  src: url('../fonts/LiberationSans-Bold.woff') format('woff');  */
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: SF Pro Text;
+  font-style: normal;
+  font-weight: 600;
+  src: url(../fonts/SF-Pro-Text-Bold.ttf) format('truetype'),
+    url(../fonts/SF-Pro-Text-Bold.woff) format('woff'),
+    url(../fonts/SF-Pro-Text-Bold.woff2) format('woff2');
+  /* src: url('../fonts/SF-Pro-Text-Bold.woff2') format('woff2');
+  src: url('../fonts/SF-Pro-Text-Bold.woff') format('woff');  */
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 @media only screen and (min-width: 390px) {
@@ -129,10 +153,6 @@ html {
   gap: 7.4px;
 }
 
-.navigation-top__time {
-  display: inline;
-}
-
 .navigation-top__time::after {
   content: '';
 
@@ -149,6 +169,7 @@ html {
 }
 
 .navigation-top__time {
+  display: inline;
   /* //styleName: Default/Body/Bold; */
   font-family: SF Pro Text;
   font-size: 17px;
