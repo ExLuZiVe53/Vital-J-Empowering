@@ -23,6 +23,7 @@ img {
 
 * {
   box-sizing: border-box;
+  /* outline: 1px solid lightseagreen; */
 }
 
 .list {
@@ -47,11 +48,7 @@ html {
   scroll-behavior: auto;
 }
 
-/* * {
-  outline: 1px solid black;
-} */
-
-/* Deafut style */
+/* Default style */
 
 .btn {
   display: block;
@@ -73,6 +70,18 @@ html {
 }
 
 /* Font-face */
+
+/* inter-regular */
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Inter-Regular.ttf) format('truetype'),
+    url(../fonts/Inter-Regular.woff) format('woff'),
+    url(../fonts/Inter-Regular.woff2) format('woff2');
+}
 
 /* candal-regular - latin */
 @font-face {
@@ -126,15 +135,19 @@ html {
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-@media only screen and (min-width: 390px) {
-  .container {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 16px;
-    padding-right: 16px;
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
 
-    min-width: 358px;
-    outline: 1px solid red;
+  min-width: 390px;
+  outline: 1px solid red;
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
   }
 }
 
@@ -206,10 +219,13 @@ html {
   right: -12px;
   border-radius: 50px;
   background: rgba(222, 75, 83, 1);
+
   font-size: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  font-family: Inter;
   font-weight: 400;
   line-height: 100%;
 
@@ -241,8 +257,8 @@ html {
   color: #fcfcfc;
 
   padding-top: 112px;
-  padding-left: 16px;
-  padding-right: 16px;
+  /* padding-left: 16px;
+  padding-right: 16px; */
 }
 
 .hero-text {
