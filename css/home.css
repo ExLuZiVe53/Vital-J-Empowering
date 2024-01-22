@@ -23,7 +23,7 @@ img {
 
 * {
   box-sizing: border-box;
-  outline: 1px solid lightseagreen;
+  /* outline: 1px solid lightseagreen; */
 }
 
 .list {
@@ -161,7 +161,7 @@ html {
   padding: 0 26px;
 }
 
-.navigaton {
+.navigation {
   background-color: #16344c;
   min-width: 390px;
 }
@@ -386,7 +386,7 @@ html {
   flex-shrink: 0;
 }
 
-.card-wraper {
+.card-wrapper {
   display: flex;
   gap: 30px;
 }
