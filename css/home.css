@@ -29,7 +29,7 @@ img {
 
 * {
   box-sizing: border-box;
-  outline: 1px solid lightseagreen;
+  /* outline: 1px solid lightseagreen; */
 }
 
 .list {
@@ -148,7 +148,7 @@ html {
   padding-right: 16px;
 
   min-width: 358px;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1925px) {
@@ -188,6 +188,10 @@ html {
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1925px) {
+  .navigation-search-container {
+    position: relative;
+  }
+
   .navigation-search {
     display: block;
     width: 325px;
@@ -199,6 +203,7 @@ html {
     font-weight: 400;
     line-height: 1.17;
 
+    padding-left: 34px;
     border-radius: 8px;
     background: rgb(252, 252, 252);
   }
@@ -212,6 +217,15 @@ html {
     font-size: 18px;
     font-weight: 400;
     line-height: 1.17;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1925px) {
+  .search-icon {
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    transform: translate(-50%);
   }
 }
 
