@@ -390,6 +390,21 @@ html {
   color: #787695;
 }
 
+@media only screen and (min-width: 1024px) and (max-width: 1925px) {
+  .colection-text-btn {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 52px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1925px) {
+  .wrapper-text {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .collection-text {
   font-family: Liberation Sans;
   font-size: 16px;
@@ -398,6 +413,12 @@ html {
 
   margin-top: 32px;
   margin-bottom: 32px;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1925px) {
+  .collection-text {
+    width: 295px;
+  }
 }
 
 .collection-btn {
