@@ -393,7 +393,9 @@ html {
 
 @media only screen and (min-width: 1024px) and (max-width: 1925px) {
   .colection-text-btn {
-    display: flex;
+    position: relative;
+
+    display: inline-flex;
     flex-direction: row-reverse;
     gap: 52px;
   }
@@ -417,7 +419,7 @@ html {
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1925px) {
-  .collection-text {
+  .collection-text.wrapper {
     width: 295px;
   }
 }
@@ -431,8 +433,24 @@ html {
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1925px) {
+  .collection-btn {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1925px) {
   .collection-img {
     width: auto;
+    position: absolute;
+    top: 0em;
+    right: -20em;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1925px) {
+  .collection-picture {
+    width: 366px;
+    height: 236px;
   }
 }
 
