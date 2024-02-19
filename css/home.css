@@ -375,6 +375,12 @@ html {
   padding-top: 80px;
 }
 
+@media only screen and (min-width: 1024px) and (max-width: 1925px) {
+  .collection {
+    padding-bottom: 162px;
+  }
+}
+
 .collection-title {
   font-family: Candal;
   font-size: 30px;
@@ -395,6 +401,12 @@ html {
   text-align: center;
 
   color: #787695;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1925px) {
+  .collection-short {
+    margin-bottom: 103px;
+  }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1925px) {
@@ -427,6 +439,7 @@ html {
 @media only screen and (min-width: 1024px) and (max-width: 1925px) {
   .collection-text.wrapper {
     width: 295px;
+    font-size: 18px;
   }
 }
 
@@ -453,8 +466,8 @@ html {
     display: block;
     width: auto;
     position: absolute;
-    top: 0em;
-    right: -20em;
+    top: 5em;
+    right: -24em;
   }
 }
 
@@ -469,6 +482,27 @@ html {
 
 .exclusive-deals {
   margin-top: 80px;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1925px) {
+  .exclusive-deals {
+    position: relative;
+  }
+}
+
+.exclusive-deals-picture {
+  display: none;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1925px) {
+  .exclusive-deals-picture {
+    display: block;
+    width: auto;
+
+    position: absolute;
+    top: -15em;
+    left: -7em;
+  }
 }
 
 .exclusive-deals-title {
@@ -512,6 +546,12 @@ html {
       rgba(125, 129, 137, 0.12),
     -2.7361674308776855px -2.7361674308776855px 4.560279369354248px 0px
       rgba(125, 129, 137, 0.12);
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1925px) {
+  .card-container {
+    margin-top: 112px;
+  }
 }
 
 .button-heart,
