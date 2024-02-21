@@ -576,6 +576,7 @@ html {
 @media only screen and (min-width: 1024px) and (max-width: 1925px) {
   .card-wrapper {
     justify-content: center;
+    gap: 74px;
   }
 }
 
@@ -669,8 +670,16 @@ html {
   background: rgba(94, 146, 182, 1);
 }
 
-.btn-hiden {
+.btn-card.hidden {
   display: none;
+  border: none;
+  background-color: transparent;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1925px) {
+  .btn-card.hidden {
+    display: block;
+  }
 }
 
 .list-title {
