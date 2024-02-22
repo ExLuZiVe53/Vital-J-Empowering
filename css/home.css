@@ -580,6 +580,12 @@ html {
   }
 }
 
+@media only screen and (min-width: 1024px) and (max-width: 1925px) {
+  .card {
+    display: flex;
+  }
+}
+
 .card-sale {
   display: flex;
 
