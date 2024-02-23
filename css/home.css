@@ -578,11 +578,21 @@ html {
     justify-content: center;
     gap: 74px;
   }
+  .card-wrapper-item {
+    max-width: 457px;
+  }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1925px) {
   .card {
     display: flex;
+  }
+  .card.reverse {
+    flex-direction: row-reverse;
+  }
+  .list-card-img {
+    min-width: 408px;
+    min-height: 225px;
   }
 }
 
