@@ -433,7 +433,6 @@ html {
   line-height: 1.6;
 
   margin-top: 32px;
-  margin-bottom: 32px;
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1925px) {
@@ -586,13 +585,14 @@ html {
 @media only screen and (min-width: 1024px) and (max-width: 1925px) {
   .card {
     display: flex;
+    justify-content: space-between;
   }
   .card.reverse {
     flex-direction: row-reverse;
   }
   .list-card-img {
-    min-width: 408px;
-    min-height: 225px;
+    width: 405px;
+    height: 225px;
   }
 }
 
@@ -708,7 +708,12 @@ html {
 
   text-align: center;
   margin-top: 56px;
-  margin-bottom: 32px;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1925px) {
+  .list-title {
+    margin-top: 0;
+  }
 }
 
 .hide .heart {
