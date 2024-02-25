@@ -279,7 +279,7 @@ html {
   color: rgba(252, 252, 252, 1);
 }
 
-.navigaton-list {
+.navigation-list {
   display: flex;
   gap: 16px;
   padding-top: 16px;
