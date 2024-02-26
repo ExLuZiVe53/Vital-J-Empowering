@@ -289,14 +289,14 @@ html {
   margin-left: auto;
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1925px) {
+/* @media only screen and (min-width: 1024px) and (max-width: 1925px) {
   li.list-item {
     margin-top: 66px;
   }
   li.list-item:first-child {
     margin-top: 0;
   }
-}
+} */
 
 @media only screen and (min-width: 1024px) and (max-width: 1925px) {
   .list-item.last {
