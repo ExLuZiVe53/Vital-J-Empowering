@@ -596,9 +596,20 @@ html {
     display: flex;
     justify-content: space-between;
   }
+  .card .card-wrapper-item h2,
+  .card .card-wrapper-item p {
+    text-align: right;
+  }
+
   .card.reverse {
     flex-direction: row-reverse;
   }
+
+  .card.reverse .card-wrapper-item h2,
+  .card.reverse .card-wrapper-item p {
+    text-align: left;
+  }
+
   .list-card-img {
     width: 405px;
     height: 225px;
