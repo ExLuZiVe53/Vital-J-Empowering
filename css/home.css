@@ -462,6 +462,7 @@ html {
 @media only screen and (min-width: 1024px) and (max-width: 1925px) {
   .collection-btn {
     margin: 0;
+    margin-top: 56px;
   }
 }
 
@@ -603,6 +604,7 @@ html {
   .card {
     display: flex;
     justify-content: space-between;
+    margin-top: 56px;
   }
   .card .card-wrapper-item h2,
   .card .card-wrapper-item p {
@@ -639,6 +641,12 @@ html {
   position: absolute;
   top: 0;
   left: 30px;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1925px) {
+  .card-sale.hidden {
+    display: none;
+  }
 }
 
 .card-sale-text {
