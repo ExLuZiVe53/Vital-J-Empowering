@@ -591,6 +591,14 @@ html {
   }
 }
 
+/* Section galery */
+
+@media only screen and (min-width: 1024px) and (max-width: 1925px) {
+  .galery {
+    margin-top: 66px;
+  }
+}
+
 @media only screen and (min-width: 1024px) and (max-width: 1925px) {
   .card {
     display: flex;
