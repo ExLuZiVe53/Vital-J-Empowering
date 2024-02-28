@@ -592,7 +592,7 @@ html {
   }
 }
 
-/* Section galery */
+/* Section gallery */
 
 @media only screen and (min-width: 1024px) and (max-width: 1925px) {
   .galery {
@@ -771,6 +771,17 @@ html {
   margin-bottom: 32px;
 }
 
+@media only screen and (min-width: 1024px) and (max-width: 1925px) {
+  .our-blog-list {
+    display: flex;
+    padding: 0;
+    gap: 88px;
+  }
+  .list-item.hidden {
+    display: none;
+  }
+}
+
 .our-blog-subtitle {
   font-family: Liberation Sans;
   font-size: 20px;
@@ -804,6 +815,13 @@ html {
   text-transform: uppercase;
 
   color: rgba(39, 39, 39, 1);
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1925px) {
+  .item {
+    width: 428px;
+    height: 235px;
+  }
 }
 
 /* FOOTER */
