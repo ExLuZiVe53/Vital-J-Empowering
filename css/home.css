@@ -775,11 +775,15 @@ html {
   .our-blog-list {
     display: flex;
     padding: 0;
-    flex-direction: row-reverse;
+    justify-content: space-around;
+
     /* gap: 88px; */
   }
   .list-item.hidden {
     display: none;
+  }
+  .list-item.active {
+    width: 428px;
   }
 }
 
