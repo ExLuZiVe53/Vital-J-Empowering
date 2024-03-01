@@ -775,6 +775,7 @@ html {
   .our-blog-list {
     display: flex;
     padding: 0;
+    flex-direction: row-reverse;
     /* gap: 88px; */
   }
   .list-item.hidden {
