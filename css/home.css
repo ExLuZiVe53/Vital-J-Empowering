@@ -843,6 +843,14 @@ html {
   margin-top: 32px;
 }
 
+@media only screen and (min-width: 1024px) and (max-width: 1925px) {
+  .footer-list {
+    flex-direction: row;
+    gap: 32px;
+    margin-top: 0;
+  }
+}
+
 .footer-link {
   color: rgba(252, 252, 252, 1);
   text-decoration: none;
@@ -856,6 +864,23 @@ html {
 .social-networks {
   margin-left: auto;
   margin-top: -30px;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1925px) {
+  .social-networks {
+    margin-top: 0;
+  }
+  /* .icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+  }
+  .icon-footer-logo {
+    width: 1.6337890625em;
+  } */
 }
 
 .footer-list-networks {
