@@ -868,7 +868,7 @@ html {
 
 @media only screen and (min-width: 1024px) and (max-width: 1925px) {
   .social-networks {
-    margin-top: 0;
+    margin-left: 84px;
   }
   /* .icon {
     display: inline-block;
@@ -883,6 +883,12 @@ html {
   } */
 }
 
+@media only screen and (min-width: 1024px) and (max-width: 1925px) {
+  .logo.footer {
+    margin-top: 32px;
+  }
+}
+
 .footer-list-networks {
   display: flex;
   gap: 16px;
@@ -892,7 +898,14 @@ html {
   display: flex;
 }
 
-.footter-text {
+@media only screen and (min-width: 1024px) and (max-width: 1925px) {
+  .footer-wrapper {
+    display: inline-flex;
+    justify-content: center;
+  }
+}
+
+.footer-text {
   font-family: Liberation Sans;
   font-size: 15px;
   font-weight: 400;
