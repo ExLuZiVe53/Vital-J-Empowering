@@ -8,6 +8,12 @@ body {
   }
 }
 
+@media only screen and (min-width: 1025px) and (max-width: 1925px) {
+  body {
+    max-width: 1770px;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -16,6 +22,10 @@ h5,
 h6,
 p {
   margin: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 ul {
@@ -153,10 +163,18 @@ html {
   /* outline: 1px solid red; */
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1925px) {
+@media only screen and (min-width: 391px) and (max-width: 1024px) {
   .container {
-    min-width: 942px;
+    min-width: 391px;
     margin-left: 0;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1924px) {
+  .container {
+    min-width: 1025px;
+    padding-left: 80px;
+    padding-right: 80px;
   }
 }
 
@@ -229,6 +247,16 @@ html {
   }
 }
 
+.navigation-main-list {
+  display: none;
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1925px) {
+  .navigation-main-list {
+    display: flex;
+  }
+}
+
 .search-icon {
   display: none;
 }
@@ -243,7 +271,7 @@ html {
   }
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1925px) {
+@media only screen and (min-width: 391px) and (max-width: 1925px) {
   .navigation-top {
     display: none;
     overflow: hidden;
@@ -291,6 +319,12 @@ html {
   padding-left: 0;
   padding-right: 0;
   margin-left: auto;
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1925px) {
+  .navigation-list {
+    margin-left: 0;
+  }
 }
 
 /* @media only screen and (min-width: 1024px) and (max-width: 1925px) {
@@ -346,9 +380,15 @@ html {
   min-height: 719px;
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1925px) {
+@media only screen and (min-width: 391px) and (max-width: 1024px) {
   .hero {
     background-image: url('../img/background/bird-md.jpeg');
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1925px) {
+  .hero {
+    background-image: url('../img/background/bird-lg.jpeg');
   }
 }
 
