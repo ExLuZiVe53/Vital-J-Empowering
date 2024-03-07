@@ -2,7 +2,7 @@ body {
   font-family: 'Candal', sans-serif;
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1925px) {
+@media only screen and (min-width: 391px) and (max-width: 1024px) {
   body {
     max-width: 1024px;
   }
@@ -244,6 +244,12 @@ html {
     font-size: 18px;
     font-weight: 400;
     line-height: 1.17;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1925px) {
+  .navigation-search-container {
+    right: 0;
   }
 }
 
