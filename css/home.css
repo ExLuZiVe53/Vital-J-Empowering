@@ -184,6 +184,12 @@ html {
   justify-content: space-between;
 }
 
+@media only screen and (min-width: 1025px) and (max-width: 1924px) {
+  .container-flex {
+    justify-content: flex-start;
+  }
+}
+
 .container-flex.top {
   padding: 0 26px;
   position: relative;
@@ -218,7 +224,6 @@ html {
     top: -8px;
     right: -77px;
   }
-
   .navigation-search {
     display: block;
     width: 325px;
@@ -250,6 +255,8 @@ html {
 @media only screen and (min-width: 1025px) and (max-width: 1925px) {
   .navigation-search-container {
     right: 0;
+    margin-left: 89px;
+    margin-right: 200px;
   }
 }
 
@@ -342,11 +349,17 @@ html {
   }
 } */
 
-@media only screen and (min-width: 1024px) and (max-width: 1925px) {
+@media only screen and (min-width: 1024px) and (max-width: 1770px) {
   .list-item.last {
     margin-right: 128px;
   }
 }
+
+/* @media only screen and (min-width: 1025px) and (max-width: 1925px) {
+  .list-item.last {
+    margin-right: 0;
+  }
+} */
 
 .list-item__link {
   position: relative;
@@ -372,6 +385,12 @@ html {
   height: 14px;
   color: #ffffff;
   margin: 0 auto;
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1924px) {
+  .burger-btn {
+    display: none;
+  }
 }
 
 /*SECTION HERO */
