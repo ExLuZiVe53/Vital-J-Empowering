@@ -256,7 +256,6 @@ html {
   .navigation-search-container {
     right: 0;
     margin-left: 89px;
-    margin-right: 200px;
   }
 }
 
@@ -267,6 +266,14 @@ html {
 @media only screen and (min-width: 1025px) and (max-width: 1925px) {
   .navigation-main-list {
     display: flex;
+    margin-right: auto;
+  }
+  .navigation-main-list__item-link {
+    color: rgb(252, 252, 252);
+    font-family: Liberation Sans;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.1;
   }
 }
 
@@ -355,11 +362,11 @@ html {
   }
 }
 
-/* @media only screen and (min-width: 1025px) and (max-width: 1925px) {
+@media only screen and (min-width: 1025px) and (max-width: 1925px) {
   .list-item.last {
     margin-right: 0;
   }
-} */
+}
 
 .list-item__link {
   position: relative;
