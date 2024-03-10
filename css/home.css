@@ -196,7 +196,7 @@ html {
 }
 
 .navigation-logo {
-  margin-top: 16px;
+  padding-top: 16px;
 }
 
 /* @media only screen and (min-width: 1024px) and (max-width: 1925px) {
@@ -267,6 +267,7 @@ html {
   .navigation-main-list {
     display: flex;
     margin-right: auto;
+    gap: 72px;
   }
   .navigation-main-list__item-link {
     color: rgb(252, 252, 252);
@@ -274,6 +275,8 @@ html {
     font-size: 24px;
     font-weight: 700;
     line-height: 1.1;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 
