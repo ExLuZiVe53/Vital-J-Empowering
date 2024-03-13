@@ -268,7 +268,7 @@ html {
     display: flex;
     margin-right: auto;
     gap: 72px;
-    margin-left: 200px;
+    margin-left: 6em;
   }
   .navigation-main-list__item-link {
     color: rgb(252, 252, 252);
