@@ -528,6 +528,12 @@ html {
   margin-top: 32px;
 }
 
+@media only screen and (min-width: 1025px) and (max-width: 1925px) {
+  .collection-text {
+    font-size: 18px;
+  }
+}
+
 @media only screen and (min-width: 1024px) and (max-width: 1925px) {
   .collection-text.wrapper {
     width: 295px;
@@ -747,6 +753,13 @@ html {
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1925px) {
+  .card,
+  .card-reverse {
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1925px) {
   .list-card-img {
     width: 826px;
     height: 459px;
@@ -915,6 +928,12 @@ html {
 @media only screen and (min-width: 1024px) and (max-width: 1925px) {
   .list-title {
     margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1925px) {
+  .list-title {
+    font-size: 32px;
   }
 }
 
