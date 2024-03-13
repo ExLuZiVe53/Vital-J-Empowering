@@ -85,6 +85,8 @@ html {
   border-radius: 8px;
   background: transparent;
   color: #fcfcfc;
+
+  cursor: pointer;
 }
 
 /* Font-face */
@@ -461,6 +463,12 @@ html {
 
 .hero-btn {
   margin-top: 56px;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background: #fcfcfc;
+  color: #272727;
 }
 
 /* SECTION COLLECTION */
@@ -892,6 +900,13 @@ html {
   height: 34px;
 
   background: rgba(94, 146, 182, 1);
+}
+.collection-btn:hover,
+.collection-btn:focus,
+.btn-card-add:hover,
+.btn-card-add:focus {
+  background: #b5e5f3;
+  color: #272727;
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1925px) {
