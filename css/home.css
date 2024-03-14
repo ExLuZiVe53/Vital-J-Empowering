@@ -987,6 +987,12 @@ html {
   }
 }
 
+@media only screen and (min-width: 1025px) and (max-width: 1925px) {
+  .list-item.hidden {
+    display: block;
+  }
+}
+
 .our-blog-subtitle {
   font-family: Liberation Sans;
   font-size: 20px;
