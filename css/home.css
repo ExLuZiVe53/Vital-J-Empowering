@@ -1067,6 +1067,11 @@ html {
   line-height: 1.5;
 }
 
+.footer-link:hover,
+.footer-link:focus {
+  color: #b5e5f3;
+}
+
 .social-networks {
   margin-left: auto;
   margin-top: -30px;
@@ -1169,4 +1174,14 @@ html {
   gap: 16px;
 
   margin-top: 40px;
+}
+.social-icon {
+  fill: #fcfcfc;
+  stroke: #16344c;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  fill: #b5e5f3;
+  stroke: #fcfcfc;
 }
