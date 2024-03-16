@@ -8,10 +8,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="../css/sign-in.css" />
   </head>
   <body>
-    <section class="navigation">
+    <header class="navigation">
       <div class="navigation-top">
         <div class="container container-flex top">
           <span class="navigation-top__time"><time>9:41</time></span>
@@ -113,25 +113,31 @@
           </a>
         </ul>
       </div>
-    </section>
+    </header>
 
     <main>
       <div class="container">
         <div class="bradcrumbs">
-          <p>Vital-J Empowering</p>
-          <p>Sign in</p>
+          <p class="bradcrumbs__text">Vital-J Empowering</p>
+          <button>&#10095;</button>
+          <p class="bradcrumbs__text">Sign in</p>
         </div>
-        <h1>Sign in</h1>
+        <h1 class="sign-in__title">Sign in</h1>
         <form action="#">
-          <label for="email"> Username or e-mail* </label>
-          <input type="text" id="email" />
-          <label for="password"> Password* </label>
-          <input type="password" id="password" />
+          <label for="email" class="sign-in__subtext"
+            >Username or e-mail*</label
+          >
+          <input type="text" id="email" placeholder="Alex2617@gmail.com" />
+          <br />
+          <label for="password" class="sign-in__subtext">Password*</label>
+          <br />
+          <input type="password" id="password" placeholder="**********" />
+          <br />
           <input type="checkbox" />
           <span>Remember password</span>
           <span>Lost your password?</span>
-          <button type="submit">Login</button>
-          <span>Don't have an account? Sign up!</span>
+          <button class="btn collection-btn" type="submit">Login</button>
+          <a>Don't have an account? Sign up!</a>
         </form>
       </div>
     </main>
