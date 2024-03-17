@@ -425,6 +425,7 @@ input {
   border-radius: 10px;
 }
 
+input,
 input::placeholder {
   color: rgb(39, 39, 39);
   font-family: Liberation Sans;
