@@ -435,6 +435,18 @@ input::placeholder {
   text-align: left;
 }
 
+.sign-in__link {
+  color: rgb(39, 39, 39);
+  font-family: Liberation Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.17;
+}
+
+.sign-in__link.underlink {
+  text-decoration: underline;
+}
+
 /*!======================================================*/
 /* FOOTER */
 
