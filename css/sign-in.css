@@ -448,6 +448,11 @@ input::placeholder {
   text-decoration: underline;
 }
 
+.sign-in.btn {
+  width: 100%;
+  background: #5e92b6;
+}
+
 /*!======================================================*/
 /* FOOTER */
 
