@@ -133,18 +133,21 @@
           <br />
           <input type="password" id="password" placeholder="**********" />
           <br />
-          <label for="#">
-            <input type="checkbox" />
+          <div class="label-container">
+            <label class="sign-in__label">
+              Remember password
+              <input type="checkbox" />
+            </label>
             <span class="sign-in__subtitle">
-              <a class="sign-in__link" href="#">Remember password</a>
+              <a class="sign-in__link underlink" href="#"
+                >Lost your password?</a
+              >
             </span>
-          </label>
-          <span class="sign-in__subtitle">
-            <a class="sign-in__link underlink" href="#">Lost your password?</a>
-          </span>
+          </div>
           <button class="sign-in btn" type="submit">Login</button>
           <a class="sign-in__link underlink">Don't have an account? Sign up!</a>
         </form>
+        <span class="sign-in__under-form">Or</span>
       </div>
     </main>
 

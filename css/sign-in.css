@@ -436,7 +436,8 @@ input::placeholder {
   text-align: left;
 }
 
-.sign-in__link {
+.sign-in__link,
+.sign-in__label {
   color: rgb(39, 39, 39);
   font-family: Liberation Sans;
   font-size: 12px;
@@ -451,6 +452,36 @@ input::placeholder {
 .sign-in.btn {
   width: 100%;
   background: #5e92b6;
+}
+
+.label-container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.sign-in__under-form {
+  display: inline-flex;
+  justify-content: center;
+  align-items: baseline;
+  padding-bottom: 50px;
+
+  width: 100%;
+
+  color: rgb(39, 39, 39);
+  font-family: Liberation Sans;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.18;
+}
+
+.sign-in__under-form::before,
+.sign-in__under-form::after {
+  content: '';
+  display: block;
+  width: 61px;
+  height: 0.5px;
+  background-color: rgba(94, 146, 182, 0.55);
 }
 
 /*!======================================================*/
