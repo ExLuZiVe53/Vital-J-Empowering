@@ -484,6 +484,11 @@ input::placeholder {
   background-color: rgba(94, 146, 182, 0.55);
 }
 
+.sign-in__label {
+  display: flex;
+  /* flex-direction: row-reverse; */
+}
+
 /*!======================================================*/
 /* FOOTER */
 
