@@ -489,6 +489,13 @@ input::placeholder {
   /* flex-direction: row-reverse; */
 }
 
+.checkbox-icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
 /*!======================================================*/
 /* FOOTER */
 
