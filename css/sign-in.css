@@ -490,10 +490,16 @@ input::placeholder {
 }
 
 .checkbox-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   flex-shrink: 0;
   width: 24px;
   height: 24px;
   margin-right: 8px;
+  border: 1px solid #16344c;
+  border-radius: 5px;
 }
 
 /*!======================================================*/
