@@ -447,6 +447,8 @@ input::placeholder {
 
 .sign-in__link.underlink {
   text-decoration: underline;
+  display: flex;
+  justify-content: center;
 }
 
 .sign-in.btn {
@@ -506,7 +508,7 @@ input::placeholder {
   background-image: url(../img/icons/Icon-checked.svg);
   background-repeat: no-repeat;
 
-  background-size: contain;
+  background-position: center;
 
   border: none;
   border-radius: 5px;
