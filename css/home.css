@@ -284,6 +284,10 @@ html {
   }
 }
 
+.navigation-top {
+  padding-top: 14px;
+}
+
 @media only screen and (min-width: 391px) and (max-width: 1925px) {
   .navigation-top {
     display: none;
@@ -300,7 +304,7 @@ html {
   content: '';
 
   position: absolute;
-  top: 0;
+  top: -14px;
   left: 115px;
 
   width: 153.43px;

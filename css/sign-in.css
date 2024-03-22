@@ -286,6 +286,10 @@ html {
   }
 }
 
+.navigation-top {
+  padding-top: 14px;
+}
+
 @media only screen and (min-width: 391px) and (max-width: 1925px) {
   .navigation-top {
     display: none;
@@ -302,7 +306,7 @@ html {
   content: '';
 
   position: absolute;
-  top: 0;
+  top: -14px;
   left: 115px;
 
   width: 153.43px;
@@ -389,6 +393,7 @@ html {
 /*MAIN*/
 .bradcrumbs {
   display: flex;
+  margin-top: 24px;
 }
 
 .bradcrumbs__text {
@@ -398,6 +403,11 @@ html {
   line-height: 1.17;
 }
 
+.bradcrumbs span {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
 .sign-in__title {
   color: rgb(59, 97, 154);
   font-family: Candal;
@@ -405,6 +415,9 @@ html {
   font-weight: 400;
   line-height: 1.3;
   text-align: center;
+
+  margin-top: 37px;
+  margin-bottom: 48px;
 }
 
 .sign-in__subtext {
@@ -451,21 +464,37 @@ input::placeholder {
   justify-content: center;
 }
 
+.sign-in__link.underlink:hover,
+.sign-in__link.underlink:focus {
+  color: #5e92b6;
+}
+
 .sign-in.btn {
   width: 100%;
   background: #5e92b6;
+
+  margin-top: 53px;
+  margin-bottom: 8px;
+}
+
+.sign-in.btn:hover,
+.sign-in.btn:focus {
+  background: #b5e5f3;
+  color: #272727;
 }
 
 .label-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  margin-top: 16px;
 }
 
 .sign-in__under-form {
   display: inline-flex;
   justify-content: center;
-  align-items: baseline;
+  align-items: center;
   margin-top: 32px;
 
   width: 100%;
@@ -481,6 +510,8 @@ input::placeholder {
 .sign-in__under-form::after {
   content: '';
   display: block;
+  margin-left: 17px;
+  margin-right: 17px;
   width: 61px;
   height: 0.5px;
   background-color: rgba(94, 146, 182, 0.55);
@@ -492,10 +523,6 @@ input::placeholder {
 }
 
 .checkbox-icon {
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-
   flex-shrink: 0;
   width: 24px;
   height: 24px;
@@ -525,10 +552,16 @@ input::placeholder {
   gap: 21px;
 
   margin-top: 32px;
+  margin-bottom: 96px;
 }
 
 .sign-in-networks__icon {
   fill: #16344c;
+}
+
+.sign-in-networks__icon:hover,
+.sign-in-networks__icon:focus {
+  fill: #5e92b6;
 }
 
 /*!======================================================*/
