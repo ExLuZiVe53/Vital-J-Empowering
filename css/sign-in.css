@@ -466,7 +466,7 @@ input::placeholder {
   display: inline-flex;
   justify-content: center;
   align-items: baseline;
-  padding-bottom: 50px;
+  margin-top: 32px;
 
   width: 100%;
 
@@ -517,6 +517,18 @@ input::placeholder {
 .checkbox:focus ~ .checkbox-icon {
   outline: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 5px;
+}
+
+.sign-in-networks__list {
+  display: flex;
+  justify-content: center;
+  gap: 21px;
+
+  margin-top: 32px;
+}
+
+.sign-in-networks__icon {
+  fill: #16344c;
 }
 
 /*!======================================================*/
