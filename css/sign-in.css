@@ -420,6 +420,15 @@ html {
   margin-bottom: 48px;
 }
 
+@media only screen and (min-width: 358px) and (max-width: 1924px) {
+  .form-container {
+    max-width: 418px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin: 0 auto;
+  }
+}
+
 .sign-in__subtext {
   color: rgb(39, 39, 39);
   font-family: Liberation Sans;
