@@ -253,11 +253,14 @@ html {
 @media only screen and (min-width: 1025px) and (max-width: 1925px) {
   .navigation-main-list {
     display: flex;
+    align-items: baseline;
     margin-right: auto;
     gap: 72px;
     margin-left: 6em;
   }
   .navigation-main-list__item-link {
+    position: relative;
+
     color: rgb(252, 252, 252);
     font-family: Liberation Sans;
     font-size: 24px;
@@ -270,6 +273,12 @@ html {
   .navigation-main-list__item-link:focus {
     color: #b5e5f3;
   }
+
+  .navigation-main-list__item.summary {
+    display: flex;
+    align-items: baseline;
+    gap: 7px;
+  }
 }
 
 .search-icon {
@@ -280,7 +289,7 @@ html {
   .search-icon {
     display: block;
     position: absolute;
-    top: 12px;
+    top: 20px;
     left: 20px;
     transform: translate(-50%);
   }
@@ -396,11 +405,21 @@ html {
   margin-top: 24px;
 }
 
-.bradcrumbs__text {
+.bradcrumbs__link {
   font-family: Liberation Sans;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.17;
+}
+
+.bradcrumbs__link:visited {
+  color: #000000;
+}
+
+.bradcrumbs__link:hover,
+.bradcrumbs__link:focus {
+  text-decoration: underline;
+  text-decoration-color: #000000;
 }
 
 .bradcrumbs span {
@@ -546,7 +565,6 @@ input::placeholder {
 
   background-position: center;
 
-  border: none;
   border-radius: 5px;
 }
 
