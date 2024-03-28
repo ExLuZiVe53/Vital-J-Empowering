@@ -122,20 +122,38 @@
           <span>&#10095;</span>
           <a href="./sign-in.html" class="bradcrumbs__link">My account</a>
         </div>
-        <h1 class="sign-in__title">My data</h1>
-        <form>
-          <form class="form-container" action="#">
-          <label for="email" class="sign-in__subtext"
-            >Name</label>
-          <input type="text" id="email" placeholder="Put your name"/>
+        <div class="sign-in__item-container">
+          <h1 class="sign-in__title">My data</h1>
+          <svg class="icon-pencil" width="24px" height="24px">
+            <use href="../img/sprite.svg#icon-Pencil"></use>
+          </svg>
+        </div>
+        <h2 class="sign-in__subtitle">My personal data</h2>
+
+        <form class="form-data" action="#">
+          <label for="email" class="sign-in__subtext">Name</label>
+          <input
+            class="input-form"
+            type="text"
+            id="email"
+            placeholder="Put your name"
+          />
 
           <label for="password" class="sign-in__subtext">Last name</label>
-          <input type="password" id="password" placeholder="Put your last name"/>
-          
-          <label for="email" class="sign-in__subtext"
-            >Username</label
-          >
-          <input type="text" id="email" placeholder="Put your username"/>
+          <input
+            class="input-form"
+            type="password"
+            id="password"
+            placeholder="Put your last name"
+          />
+
+          <label for="email" class="sign-in__subtext">Username</label>
+          <input
+            class="input-form last"
+            type="text"
+            id="email"
+            placeholder="Put your username"
+          />
         </form>
       </div>
     </main>

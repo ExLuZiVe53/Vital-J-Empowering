@@ -440,21 +440,39 @@ html {
   margin-bottom: 48px;
 }
 
-@media only screen and (min-width: 358px) and (max-width: 1924px) {
-  .form-container {
-    max-width: 418px;
-    padding-left: 24px;
-    padding-right: 24px;
-    margin: 0 auto;
-  }
+.sign-in__item-container {
+  display: flex;
+  align-items: center;
+}
+
+.icon-pencil {
+  fill: #3b619a;
+  margin-left: 16px;
+}
+
+.sign-in__subtitle {
+  color: #3b619a;
+
+  font-family: Liberation Sans;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 32px;
+}
+
+.form-data {
+  margin-bottom: 39.5px;
 }
 
 .sign-in__subtext {
+  display: block;
   color: rgb(39, 39, 39);
   font-family: Liberation Sans;
   font-size: 12px;
   font-weight: 400;
   line-height: 1.17;
+
+  margin-top: 24px;
 }
 
 input {
@@ -477,6 +495,28 @@ input::placeholder {
 
   text-align: left;
 }
+
+.input-form::placeholder {
+  color: rgb(160, 160, 160);
+}
+
+.input-form.last {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.input-form.last::after {
+  position: absolute;
+  content: '';
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 1px;
+  color: #5e92b68c;
+}
+
 /*!======================================================*/
 /* FOOTER */
 
