@@ -131,28 +131,67 @@
         <h2 class="sign-in__subtitle">My personal data</h2>
 
         <form class="form-data" action="#">
-          <label for="email" class="sign-in__subtext">Name</label>
+          <label for="name" class="sign-in__subtext">Name</label>
           <input
             class="input-form"
             type="text"
-            id="email"
+            id="name"
             placeholder="Put your name"
           />
 
-          <label for="password" class="sign-in__subtext">Last name</label>
+          <label for="lastName" class="sign-in__subtext">Last name</label>
           <input
             class="input-form"
-            type="password"
-            id="password"
+            type="text"
+            id="lastName"
             placeholder="Put your last name"
           />
 
-          <label for="email" class="sign-in__subtext">Username</label>
+          <label for="userName" class="sign-in__subtext">Username</label>
           <input
-            class="input-form last"
+            class="input-form"
+            type="text"
+            id="userName"
+            placeholder="Put your username"
+          />
+        </form>
+        <h2 class="sign-in__subtitle two">My contacts</h2>
+        <form class="form-data">
+          <label for="email" class="sign-in__subtext">E-mail</label>
+          <input
+            class="input-form"
             type="text"
             id="email"
-            placeholder="Put your username"
+            placeholder="Alex2617@gmail.com"
+          />
+
+          <label for="phoneNumber" class="sign-in__subtext">Phone number</label>
+          <input
+            class="input-form"
+            type="password"
+            id="phoneNumber"
+            placeholder="+ _ (___) ___ __ __"
+          />
+        </form>
+
+        <h2 class="sign-in__subtitle two">Change password</h2>
+        <form class="form-data">
+          <label for="newPassword" class="sign-in__subtext">New password</label>
+          <input
+            class="input-form"
+            type="password"
+            id="newPassword"
+            placeholder="Put new password"
+          />
+
+          <label for="confirmNewPassword" class="sign-in__subtext"
+            >Confirm new password</label
+          >
+          <input
+            class="input-form"
+            type="password"
+            id="confirmNewPassword"
+            placeholder="Confirm new password"
           />
         </form>
       </div>
