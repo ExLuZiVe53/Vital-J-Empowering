@@ -122,79 +122,116 @@
           <span>&#10095;</span>
           <a href="./sign-in.html" class="bradcrumbs__link">My account</a>
         </div>
-        <div class="sign-in__item-container">
-          <h1 class="sign-in__title">My data</h1>
-          <svg class="icon-pencil" width="24px" height="24px">
-            <use href="../img/sprite.svg#icon-Pencil"></use>
-          </svg>
-        </div>
-        <h2 class="sign-in__subtitle">My personal data</h2>
+        <ul class="interface-list">
+          <li>
+            <span class="interface-list__item"
+              >My data
+              <button>
+                <svg class="no-rotate" width="24px" height="24px">
+                  <use href="../img/sprite.svg#icon-arrow-up"></use>
+                </svg>
+              </button>
+            </span>
+            <div class="sign-in__item-container">
+              <h1 class="sign-in__title">My data</h1>
+              <svg class="icon-pencil" width="24px" height="24px">
+                <use href="../img/sprite.svg#icon-Pencil"></use>
+              </svg>
+            </div>
+            <h2 class="sign-in__subtitle">My personal data</h2>
 
-        <form class="form-data" action="#">
-          <label for="name" class="sign-in__subtext">Name</label>
-          <input
-            class="input-form"
-            type="text"
-            id="name"
-            placeholder="Put your name"
-          />
+            <form class="form-data" action="#">
+              <label for="name" class="sign-in__subtext">Name</label>
+              <input
+                class="input-form"
+                type="text"
+                id="name"
+                placeholder="Put your name"
+              />
 
-          <label for="lastName" class="sign-in__subtext">Last name</label>
-          <input
-            class="input-form"
-            type="text"
-            id="lastName"
-            placeholder="Put your last name"
-          />
+              <label for="lastName" class="sign-in__subtext">Last name</label>
+              <input
+                class="input-form"
+                type="text"
+                id="lastName"
+                placeholder="Put your last name"
+              />
 
-          <label for="userName" class="sign-in__subtext">Username</label>
-          <input
-            class="input-form"
-            type="text"
-            id="userName"
-            placeholder="Put your username"
-          />
-        </form>
-        <h2 class="sign-in__subtitle two">My contacts</h2>
-        <form class="form-data">
-          <label for="email" class="sign-in__subtext">E-mail</label>
-          <input
-            class="input-form"
-            type="text"
-            id="email"
-            placeholder="Alex2617@gmail.com"
-          />
+              <label for="userName" class="sign-in__subtext">Username</label>
+              <input
+                class="input-form"
+                type="text"
+                id="userName"
+                placeholder="Put your username"
+              />
+            </form>
+            <h2 class="sign-in__subtitle two">My contacts</h2>
+            <form class="form-data">
+              <label for="email" class="sign-in__subtext">E-mail</label>
+              <input
+                class="input-form"
+                type="text"
+                id="email"
+                placeholder="Alex2617@gmail.com"
+              />
 
-          <label for="phoneNumber" class="sign-in__subtext">Phone number</label>
-          <input
-            class="input-form"
-            type="password"
-            id="phoneNumber"
-            placeholder="+ _ (___) ___ __ __"
-          />
-        </form>
+              <label for="phoneNumber" class="sign-in__subtext"
+                >Phone number</label
+              >
+              <input
+                class="input-form"
+                type="password"
+                id="phoneNumber"
+                placeholder="+ _ (___) ___ __ __"
+              />
+            </form>
 
-        <h2 class="sign-in__subtitle two">Change password</h2>
-        <form class="form-data">
-          <label for="newPassword" class="sign-in__subtext">New password</label>
-          <input
-            class="input-form"
-            type="password"
-            id="newPassword"
-            placeholder="Put new password"
-          />
+            <h2 class="sign-in__subtitle two">Change password</h2>
+            <form class="form-data">
+              <label for="newPassword" class="sign-in__subtext"
+                >New password</label
+              >
+              <input
+                class="input-form"
+                type="password"
+                id="newPassword"
+                placeholder="Put new password"
+              />
 
-          <label for="confirmNewPassword" class="sign-in__subtext"
-            >Confirm new password</label
-          >
-          <input
-            class="input-form"
-            type="password"
-            id="confirmNewPassword"
-            placeholder="Confirm new password"
-          />
-        </form>
-        <h2 class="sign-in__subtitle two"></h2>
+              <label for="confirmNewPassword" class="sign-in__subtext"
+                >Confirm new password</label
+              >
+              <input
+                class="input-form"
+                type="password"
+                id="confirmNewPassword"
+                placeholder="Confirm new password"
+              />
+            </form>
+            <h2 class="sign-in__subtitle two"></h2>
+          </li>
+          <li>
+            <span class="interface-list__item"
+              >History of orders
+              <button>
+                <svg class="rotate-svg" width="24px" height="24px">
+                  <use href="../img/sprite.svg#icon-arrow-up"></use>
+                </svg>
+              </button>
+            </span>
+          </li>
+          <li>
+            <span class="interface-list__item"
+              >Payment cards
+              <button>
+                <svg class="rotate-svg" width="24px" height="24px">
+                  <use href="../img/sprite.svg#icon-arrow-up"></use>
+                </svg>
+              </button>
+            </span>
+          </li>
+        </ul>
+        <h3 class="log-out">Log out</h3>
       </div>
     </main>
 
