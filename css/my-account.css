@@ -149,7 +149,6 @@ html {
   margin-right: auto;
   padding-left: 16px;
   padding-right: 16px;
-  padding-bottom: 96px;
 
   min-width: 358px;
 
@@ -560,6 +559,8 @@ input::placeholder {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.17;
+
+  padding-bottom: 96px;
 }
 
 /*!======================================================*/
