@@ -462,7 +462,10 @@ html {
 }
 
 .form-data {
+  margin: 0;
+  padding: 0;
   margin-bottom: 39.5px;
+  border: none;
 }
 
 .sign-in__subtext {
@@ -504,7 +507,7 @@ input::placeholder {
 .sign-in__subtext.two {
 }
 
-.sign-in__subtitle.two::before {
+.form-data.two::before {
   content: '';
   margin-bottom: 40px;
 
