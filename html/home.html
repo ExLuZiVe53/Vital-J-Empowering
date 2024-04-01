@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../css/home.css" />
   </head>
   <body>
-    <section class="navigation">
+    <header class="navigation">
       <div class="navigation-top">
         <div class="container container-flex top">
           <span class="navigation-top__time"><time>9:41</time></span>
@@ -35,6 +35,7 @@
           </ul>
         </div>
       </div>
+
       <div class="container container-flex">
         <a class="navigation-logo" href="./home.html">
           <svg class="logo" width="66" height="41">
@@ -112,275 +113,304 @@
             </svg>
           </a>
         </ul>
+        <div class="menu-container">
+          <div class="menu-mobile-wrapper">
+            <button class="btn-close">
+              <svg class="" width="12px" height="12px">
+                <use href="../img/sprite.svg#icon-btn-close"></use>
+              </svg>
+            </button>
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">About us</a></li>
+              <li><a href="">Shop</a></li>
+              <li><a href="">Contact us</a></li>
+              <li><a href="">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </section>
+    </header>
 
-    <section class="hero">
-      <div class="container">
-        <h1 class="hero-title">Vital-J Empowering</h1>
-        <p class="hero-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit
-        </p>
-        <button class="hero-btn btn">Buy natural</button>
-      </div>
-    </section>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero-title">Vital-J Empowering</h1>
+          <p class="hero-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          </p>
+          <button class="hero-btn btn">Buy natural</button>
+        </div>
+      </section>
 
-    <section class="collection">
-      <div class="container">
-        <div class="colection-wrapper">
-          <h2 class="collection-title">Vital-J Empowering:</h2>
-          <h4 class="collection-short">Collection, inspired by nature</h4>
-          <div class="colection-text-btn">
-            <img
-              class="collection-img"
-              src="../img/background/fruts.png"
-              alt="fruits"
-            />
-            <div class="wrapper-text">
-              <p class="collection-text wrapper">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                quis fermentum velit. Phasellus tempor lorem eget dui commodo
-                laoreet. Duis vitae malesuada felis, eu gravida felis. Integer
-                et eleifend mi. Vestibulum posuere libero ac ante cursus.
+      <section class="collection">
+        <div class="container">
+          <div class="colection-wrapper">
+            <h2 class="collection-title">Vital-J Empowering:</h2>
+            <h4 class="collection-short">Collection, inspired by nature</h4>
+            <div class="colection-text-btn">
+              <img
+                class="collection-img"
+                src="../img/background/fruts.png"
+                alt="fruits"
+              />
+              <div class="wrapper-text">
+                <p class="collection-text wrapper">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  quis fermentum velit. Phasellus tempor lorem eget dui commodo
+                  laoreet. Duis vitae malesuada felis, eu gravida felis. Integer
+                  et eleifend mi. Vestibulum posuere libero ac ante cursus.
+                </p>
+                <button class="collection-btn btn" type="button">
+                  Buy now
+                </button>
+              </div>
+              <img
+                class="collection-picture"
+                src="../img/mountains.jpg"
+                alt="mountains"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="exclusive-deals">
+        <div class="container">
+          <img
+            class="exclusive-deals-picture"
+            src="../img/background/straberys.png"
+            alt="straberys"
+          />
+          <h2 class="exclusive-deals-title">Preorder now</h2>
+          <h4 class="exclusive-deals-subtitle">
+            to receive exclusive deals & gifts
+          </h4>
+          <div class="card-wrapper">
+            <div class="card-container active">
+              <div class="card-sale">
+                <span class="card-sale-text">Sale</span>
+              </div>
+
+              <img class="card-img" src="../img/tube.png" alt="tube" />
+              <p class="card-text">Lorem ipsum dolor sit amet</p>
+
+              <div class="card-price-container">
+                <div class="price-container">
+                  <span class="card-price">$50</span>
+                  <span class="card-price sale">$70</span>
+                </div>
+
+                <div class="button-container">
+                  <button type="button" class="button-heart">
+                    <svg class="heart" width="24" height="24">
+                      <use href="../img/sprite.svg#icon-Heart"></use>
+                    </svg>
+                  </button>
+                  <button type="button" class="button-solid">
+                    <svg class="icon-Solid" width="24" height="24">
+                      <use href="../img/sprite.svg#icon-Solid"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <button class="btn-card-add btn" type="button">
+                Add to cart
+              </button>
+            </div>
+
+            <div class="card-container">
+              <div class="card-sale hidden">
+                <span class="card-sale-text">Sale</span>
+              </div>
+
+              <img class="card-img" src="../img/tube.png" alt="tube" />
+              <p class="card-text">Lorem ipsum dolor sit amet</p>
+
+              <div class="card-price-container">
+                <span class="card-price">$80</span>
+
+                <div class="button-container">
+                  <button class="btn-card hidden" type="button">
+                    <svg class="heart" width="24" height="24">
+                      <use href="../img/sprite.svg#icon-Heart"></use>
+                    </svg>
+                  </button>
+                  <button class="btn-card hidden" type="button">
+                    <svg class="icon-Solid" width="24" height="24">
+                      <use href="../img/sprite.svg#icon-Solid"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <button class="btn-card-add btn" type="button">
+                Add to cart
+              </button>
+            </div>
+
+            <div class="card-container active last">
+              <div class="card-sale">
+                <span class="card-sale-text">Sale</span>
+              </div>
+
+              <img class="card-img" src="../img/tube.png" alt="tube" />
+              <p class="card-text">Lorem ipsum dolor sit amet</p>
+
+              <div class="card-price-container">
+                <div class="price-container">
+                  <span class="card-price">$50</span>
+                  <span class="card-price sale">$70</span>
+                </div>
+
+                <div class="button-container">
+                  <button type="button" class="button-heart">
+                    <svg class="heart" width="24" height="24">
+                      <use href="../img/sprite.svg#icon-Heart"></use>
+                    </svg>
+                  </button>
+                  <button type="button" class="button-solid">
+                    <svg class="icon-Solid" width="24" height="24">
+                      <use href="../img/sprite.svg#icon-Solid"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <button class="btn-card-add btn" type="button">
+                Add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="galery">
+        <div class="container">
+          <ul class="list list-wrapper">
+            <li class="list-item">
+              <div class="card reverse">
+                <div class="card-wrapper-item">
+                  <h2 class="list-title">Health essentials</h2>
+                  <p class="collection-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    quis fermentum velit. Phasellus tempor lorem eget dui
+                    commodo laoreet. Duis vitae malesuada felis, eu gravida
+                    felis. Vestibulum posuere libero ac ante cursus, ac ornare
+                    est pretium. Aenean non accumsan sem, nec dapibus odio
+                  </p>
+                </div>
+                <img
+                  class="list-card-img"
+                  src="../img/jason-briscoe.jpg"
+                  alt="ason-briscoe"
+                />
+              </div>
+            </li>
+
+            <li class="list-item">
+              <div class="card">
+                <div class="card-wrapper-item">
+                  <h2 class="list-title">Dietary supplement</h2>
+                  <p class="collection-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    quis fermentum velit. Phasellus tempor lorem eget dui
+                    commodo laoreet. Duis vitae malesuada felis, eu gravida
+                    felis. Vestibulum posuere libero ac ante cursus, ac ornare
+                    est pretium. Aenean non accumsan sem, nec dapibus odio
+                  </p>
+                </div>
+                <img
+                  class="list-card-img"
+                  src="../img/pexels-etatics-inc.jpg"
+                  alt="pexels-etatics"
+                />
+              </div>
+            </li>
+
+            <li class="list-item">
+              <div class="card reverse">
+                <div class="card-wrapper-item">
+                  <h2 class="list-title">Super Cool</h2>
+                  <p class="collection-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    quis fermentum velit. Phasellus tempor lorem eget dui
+                    commodo laoreet. Duis vitae malesuada felis, eu gravida
+                    felis. Vestibulum posuere libero ac ante cursus, ac ornare
+                    est pretium. Aenean non accumsan sem, nec dapibus odio.
+                  </p>
+                </div>
+                <img
+                  class="list-card-img"
+                  src="../img/pexels-jéshoots.jpg"
+                  alt="pexels-jéshoots"
+                />
+              </div>
+            </li>
+
+            <li class="list-item">
+              <div class="card">
+                <div class="card-wrapper-item">
+                  <h2 class="list-title">Healthy eating</h2>
+                  <p class="collection-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    quis fermentum velit. Phasellus tempor lorem eget dui
+                    commodo laoreet. Duis vitae malesuada felis, eu gravida
+                    felis. Vestibulum posuere libero ac ante cursus, ac ornare
+                    est pretium. Aenean non accumsan sem, nec dapibus odio
+                  </p>
+                </div>
+                <img
+                  class="list-card-img"
+                  src="../img/jannis-brandt.jpg"
+                  alt="jannis-brandt"
+                />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="our-blog">
+        <div class="container">
+          <h2 class="our-blog-title">Our blog</h2>
+          <ul class="our-blog-list">
+            <li class="list-item">
+              <img class="item spoons" src="../img/spoons.jpg" alt="spoons" />
+              <h4 class="our-blog-subtitle">
+                Herbal ingredients and their great role in our life
+              </h4>
+              <p class="our-blog-text">
+                Admin &#8211;
+                <span class="our-blog-subtext">July 19, 2023</span>
               </p>
-              <button class="collection-btn btn" type="button">Buy now</button>
-            </div>
-            <img
-              class="collection-picture"
-              src="../img/mountains.jpg"
-              alt="mountains"
-            />
-          </div>
+            </li>
+            <li class="list-item active">
+              <img class="item bad" src="../img/bad.jpg" alt="bad" />
+              <h4 class="our-blog-subtitle">
+                The opinion of doctors on the effect of herbal ingredients on
+                health
+              </h4>
+              <p class="our-blog-text">
+                Admin &#8211;
+                <span class="our-blog-subtext">June 15, 2023</span>
+              </p>
+            </li>
+            <li class="list-item hidden">
+              <img class="item" src="../img/atleth.jpg" alt="atleth" />
+              <h4 class="our-blog-subtitle">
+                Aminoacids and their role in muscle health
+              </h4>
+              <p class="our-blog-text">
+                Admin &#8211;
+                <span class="our-blog-subtext">June 10, 2023</span>
+              </p>
+            </li>
+          </ul>
         </div>
-      </div>
-    </section>
-
-    <section class="exclusive-deals">
-      <div class="container">
-        <img
-          class="exclusive-deals-picture"
-          src="../img/background/straberys.png"
-          alt="straberys"
-        />
-        <h2 class="exclusive-deals-title">Preorder now</h2>
-        <h4 class="exclusive-deals-subtitle">
-          to receive exclusive deals & gifts
-        </h4>
-        <div class="card-wrapper">
-          <div class="card-container active">
-            <div class="card-sale">
-              <span class="card-sale-text">Sale</span>
-            </div>
-
-            <img class="card-img" src="../img/tube.png" alt="tube" />
-            <p class="card-text">Lorem ipsum dolor sit amet</p>
-
-            <div class="card-price-container">
-              <div class="price-container">
-                <span class="card-price">$50</span>
-                <span class="card-price sale">$70</span>
-              </div>
-
-              <div class="button-container">
-                <button type="button" class="button-heart">
-                  <svg class="heart" width="24" height="24">
-                    <use href="../img/sprite.svg#icon-Heart"></use>
-                  </svg>
-                </button>
-                <button type="button" class="button-solid">
-                  <svg class="icon-Solid" width="24" height="24">
-                    <use href="../img/sprite.svg#icon-Solid"></use>
-                  </svg>
-                </button>
-              </div>
-            </div>
-
-            <button class="btn-card-add btn" type="button">Add to cart</button>
-          </div>
-
-          <div class="card-container">
-            <div class="card-sale hidden">
-              <span class="card-sale-text">Sale</span>
-            </div>
-
-            <img class="card-img" src="../img/tube.png" alt="tube" />
-            <p class="card-text">Lorem ipsum dolor sit amet</p>
-
-            <div class="card-price-container">
-              <span class="card-price">$80</span>
-
-              <div class="button-container">
-                <button class="btn-card hidden" type="button">
-                  <svg class="heart" width="24" height="24">
-                    <use href="../img/sprite.svg#icon-Heart"></use>
-                  </svg>
-                </button>
-                <button class="btn-card hidden" type="button">
-                  <svg class="icon-Solid" width="24" height="24">
-                    <use href="../img/sprite.svg#icon-Solid"></use>
-                  </svg>
-                </button>
-              </div>
-            </div>
-
-            <button class="btn-card-add btn" type="button">Add to cart</button>
-          </div>
-
-          <div class="card-container active last">
-            <div class="card-sale">
-              <span class="card-sale-text">Sale</span>
-            </div>
-
-            <img class="card-img" src="../img/tube.png" alt="tube" />
-            <p class="card-text">Lorem ipsum dolor sit amet</p>
-
-            <div class="card-price-container">
-              <div class="price-container">
-                <span class="card-price">$50</span>
-                <span class="card-price sale">$70</span>
-              </div>
-
-              <div class="button-container">
-                <button type="button" class="button-heart">
-                  <svg class="heart" width="24" height="24">
-                    <use href="../img/sprite.svg#icon-Heart"></use>
-                  </svg>
-                </button>
-                <button type="button" class="button-solid">
-                  <svg class="icon-Solid" width="24" height="24">
-                    <use href="../img/sprite.svg#icon-Solid"></use>
-                  </svg>
-                </button>
-              </div>
-            </div>
-
-            <button class="btn-card-add btn" type="button">Add to cart</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="galery">
-      <div class="container">
-        <ul class="list list-wrapper">
-          <li class="list-item">
-            <div class="card reverse">
-              <div class="card-wrapper-item">
-                <h2 class="list-title">Health essentials</h2>
-                <p class="collection-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  quis fermentum velit. Phasellus tempor lorem eget dui commodo
-                  laoreet. Duis vitae malesuada felis, eu gravida felis.
-                  Vestibulum posuere libero ac ante cursus, ac ornare est
-                  pretium. Aenean non accumsan sem, nec dapibus odio
-                </p>
-              </div>
-              <img
-                class="list-card-img"
-                src="../img/jason-briscoe.jpg"
-                alt="ason-briscoe"
-              />
-            </div>
-          </li>
-
-          <li class="list-item">
-            <div class="card">
-              <div class="card-wrapper-item">
-                <h2 class="list-title">Dietary supplement</h2>
-                <p class="collection-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  quis fermentum velit. Phasellus tempor lorem eget dui commodo
-                  laoreet. Duis vitae malesuada felis, eu gravida felis.
-                  Vestibulum posuere libero ac ante cursus, ac ornare est
-                  pretium. Aenean non accumsan sem, nec dapibus odio
-                </p>
-              </div>
-              <img
-                class="list-card-img"
-                src="../img/pexels-etatics-inc.jpg"
-                alt="pexels-etatics"
-              />
-            </div>
-          </li>
-
-          <li class="list-item">
-            <div class="card reverse">
-              <div class="card-wrapper-item">
-                <h2 class="list-title">Super Cool</h2>
-                <p class="collection-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  quis fermentum velit. Phasellus tempor lorem eget dui commodo
-                  laoreet. Duis vitae malesuada felis, eu gravida felis.
-                  Vestibulum posuere libero ac ante cursus, ac ornare est
-                  pretium. Aenean non accumsan sem, nec dapibus odio.
-                </p>
-              </div>
-              <img
-                class="list-card-img"
-                src="../img/pexels-jéshoots.jpg"
-                alt="pexels-jéshoots"
-              />
-            </div>
-          </li>
-
-          <li class="list-item">
-            <div class="card">
-              <div class="card-wrapper-item">
-                <h2 class="list-title">Healthy eating</h2>
-                <p class="collection-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  quis fermentum velit. Phasellus tempor lorem eget dui commodo
-                  laoreet. Duis vitae malesuada felis, eu gravida felis.
-                  Vestibulum posuere libero ac ante cursus, ac ornare est
-                  pretium. Aenean non accumsan sem, nec dapibus odio
-                </p>
-              </div>
-              <img
-                class="list-card-img"
-                src="../img/jannis-brandt.jpg"
-                alt="jannis-brandt"
-              />
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="our-blog">
-      <div class="container">
-        <h2 class="our-blog-title">Our blog</h2>
-        <ul class="our-blog-list">
-          <li class="list-item">
-            <img class="item spoons" src="../img/spoons.jpg" alt="spoons" />
-            <h4 class="our-blog-subtitle">
-              Herbal ingredients and their great role in our life
-            </h4>
-            <p class="our-blog-text">
-              Admin &#8211; <span class="our-blog-subtext">July 19, 2023</span>
-            </p>
-          </li>
-          <li class="list-item active">
-            <img class="item bad" src="../img/bad.jpg" alt="bad" />
-            <h4 class="our-blog-subtitle">
-              The opinion of doctors on the effect of herbal ingredients on
-              health
-            </h4>
-            <p class="our-blog-text">
-              Admin &#8211; <span class="our-blog-subtext">June 15, 2023</span>
-            </p>
-          </li>
-          <li class="list-item hidden">
-            <img class="item" src="../img/atleth.jpg" alt="atleth" />
-            <h4 class="our-blog-subtitle">
-              Aminoacids and their role in muscle health
-            </h4>
-            <p class="our-blog-text">
-              Admin &#8211; <span class="our-blog-subtext">June 10, 2023</span>
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <footer class="footer">
       <div class="container">
