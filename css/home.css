@@ -382,6 +382,12 @@ html {
   margin: 0 auto;
 }
 
+.burger-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 @media only screen and (min-width: 1025px) and (max-width: 1924px) {
   .burger-btn {
     display: none;
@@ -397,6 +403,10 @@ html {
   left: 0;
   width: 100vw;
   height: 100vh;
+}
+
+.menu-container.js-open-menu {
+  display: block;
 }
 
 .menu-mobile-wrapper {
@@ -438,8 +448,8 @@ html {
   cursor: pointer;
 
   position: absolute;
-  top: 24px;
-  right: 24px;
+  top: 30px;
+  right: 20px;
 }
 
 /*SECTION HERO */
