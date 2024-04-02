@@ -1,9 +1,6 @@
 const searchItem = document.querySelector('.navigation-search-link');
+const searchContainer = document.querySelector('.navigation-search-container');
 
-const onOpenSearch = () => {
-  console.log(onOpenSearch);
-};
+const onOpenSearch = () => {};
 searchItem.addEventListener('click', onOpenSearch);
 // navigation-search-container;
-
-console.log(2);
