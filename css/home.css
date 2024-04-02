@@ -199,6 +199,13 @@ html {
   display: none;
 }
 
+.navigation-search-link {
+  margin-left: 16px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 .Search {
   fill: white;
 }
