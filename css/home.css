@@ -405,8 +405,15 @@ html {
   height: 100vh;
 }
 
+.menu-mobile-wrapper > .navigation-logo {
+  position: absolute;
+  top: -17px;
+  left: 16px;
+}
+
 .menu-container.js-open-menu {
   display: block;
+  padding-top: 60px;
 }
 
 .menu-mobile-wrapper {
@@ -418,7 +425,7 @@ html {
   height: 100%;
   padding-top: 144px;
   padding-bottom: 452px;
-  background-color: #3b619a;
+  background-color: #16344c;
 }
 
 .menu-mobile-wrapper > ul {
@@ -440,7 +447,7 @@ html {
 }
 
 .btn-close {
-  background-color: #3b619a;
+  background-color: transparent;
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -448,8 +455,8 @@ html {
   cursor: pointer;
 
   position: absolute;
-  top: 30px;
-  right: 20px;
+  top: 13px;
+  right: 18px;
 }
 
 /*SECTION HERO */
