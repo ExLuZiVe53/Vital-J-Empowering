@@ -418,6 +418,12 @@ html {
   left: 16px;
 }
 
+@media only screen and (min-width: 1024px) and (max-width: 1924px) {
+  .menu-mobile-wrapper > .navigation-logo {
+    top: 0;
+  }
+}
+
 .menu-container.js-open-menu {
   display: block;
   padding-top: 60px;
@@ -459,6 +465,11 @@ html {
   line-height: 1.16;
 }
 
+.menu-mobile-wrapper > ul > li > a:hover,
+.menu-mobile-wrapper > ul > li > a:focus {
+  color: #b5e5f3;
+}
+
 .btn-close {
   background-color: transparent;
   width: 32px;
@@ -468,8 +479,24 @@ html {
   cursor: pointer;
 
   position: absolute;
-  top: 13px;
+  top: 12px;
   right: 18px;
+}
+
+.btn-close__icon {
+  fill: #fcfcfc;
+}
+
+.btn-close__icon:hover,
+.btn-close__icon:focus {
+  fill: #b5e5f3;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1925px) {
+  .btn-close {
+    top: 30px;
+    right: 17px;
+  }
 }
 
 /*SECTION HERO */
