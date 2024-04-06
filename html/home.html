@@ -42,18 +42,20 @@
             <use href="../img/sprite.svg#icon-logo"></use>
           </svg>
         </a>
-        <span class="navigation-search-container">
-          <input
-            class="navigation-search"
-            name="search"
-            type="search"
-            placeholder="I search..."
-            minlength="2"
-          />
-          <svg class="search-icon" width="17.4" height="17.4">
-            <use href="../img/sprite.svg#icon-Search"></use>
-          </svg>
-        </span>
+        <form>
+          <span class="navigation-search-container">
+            <input
+              class="navigation-search"
+              name="search"
+              type="search"
+              placeholder="I search..."
+              minlength="2"
+            />
+            <svg class="search-icon" width="17.4" height="17.4">
+              <use href="../img/sprite.svg#icon-Search"></use>
+            </svg>
+          </span>
+        </form>
         <nav>
           <ul class="navigation-main-list">
             <li class="navigation-main-list__item">
@@ -136,19 +138,23 @@
       </div>
       <div class="modal-search-wrapper">
         <div class="modal">
-          <span class="modal-search">
-            <input
-              class="modal-search-text"
-              name="search"
-              type="search"
-              pattern="^[a-zA-Za-яА-Я]+$"
-              placeholder="I search..."
-              minlength="2"
-            />
-            <svg class="search-icon" width="17.4" height="17.4">
-              <use href="../img/sprite.svg#icon-Search"></use>
-            </svg>
-          </span>
+          <form>
+            <span class="modal-search">
+              <button class="btn-search form" type="submit">
+                <svg class="search-icon-modal" width="24" height="24">
+                  <use href="../img/sprite.svg#icon-Search"></use>
+                </svg>
+              </button>
+              <input
+                class="modal-search-text"
+                name="search"
+                type="search"
+                pattern="^[a-zA-Za-яА-Я]+$"
+                placeholder="I search..."
+                minlength="2"
+              />
+            </span>
+          </form>
         </div>
       </div>
     </header>
