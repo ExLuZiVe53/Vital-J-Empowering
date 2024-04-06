@@ -7,9 +7,13 @@ const onOpenBtn = () => {
   searchContainer.classList.add('no-hidden');
 };
 const onHideSearch = event => {
-  //   console.log('code:', event.code);
   if (event.code === 'Escape') {
     event.preventDefault();
+    searchContainer.classList.remove('no-hidden');
+  }
+};
+const onBackdropClick = event => {
+  if (event.currentTarget === event.target) {
     searchContainer.classList.remove('no-hidden');
   }
 };
@@ -19,4 +23,5 @@ const onInput = event => {
 
 searchBtn.addEventListener('click', onOpenBtn);
 searchContainer.addEventListener('keyup', onHideSearch);
+searchContainer.addEventListener('click', onBackdropClick);
 inputSearch.addEventListener('input', onInput);
