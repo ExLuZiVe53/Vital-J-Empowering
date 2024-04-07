@@ -186,12 +186,6 @@ html {
   justify-content: space-between;
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1924px) {
-  .container-flex {
-    justify-content: flex-start;
-  }
-}
-
 .container-flex.top {
   padding: 0 26px;
   position: relative;
