@@ -858,6 +858,12 @@ html {
 
 .heart {
   stroke: black;
+  fill: white;
+}
+
+.heart:hover,
+.heart:focus {
+  stroke: #3b619a;
 }
 
 .card-container.active {
@@ -1156,6 +1162,11 @@ html {
 
   color: rgba(59, 97, 154, 1);
   text-align: left;
+}
+
+.our-blog-subtitle:hover,
+.our-blog-subtitle:focus {
+  color: #b5e5f3;
 }
 
 .our-blog-text {
