@@ -5,11 +5,12 @@
   --accent-color: #5e92b6;
   --red-color: #de4b53;
 
-  --main-font: ;
+  --main-font-family: 'Candal';
+  --accent-font-family: 'Liberation Sans';
 }
 
 body {
-  font-family: 'Candal', sans-serif;
+  font-family: var(--main-font-family), sans-serif;
 }
 
 @media only screen and (min-width: 391px) and (max-width: 1024px) {
@@ -85,7 +86,7 @@ html {
   width: 224px;
   height: 40px;
 
-  font-family: Liberation Sans;
+  font-family: var(--accent-font-family);
   font-size: 16px;
   font-weight: 700;
 
@@ -232,7 +233,7 @@ html {
     height: 40px;
 
     color: rgb(160, 160, 160);
-    font-family: Liberation Sans;
+    font-family: var(--accent-font-family);
     font-size: 18px;
     font-weight: 400;
     line-height: 1.17;
@@ -247,7 +248,7 @@ html {
 
   .navigation-search::placeholder {
     color: #a0a0a0;
-    font-family: Liberation Sans;
+    font-family: var(--accent-font-family);
     font-size: 18px;
     font-weight: 400;
     line-height: 1.17;
@@ -274,7 +275,7 @@ html {
   }
   .navigation-main-list__item-link {
     color: rgb(252, 252, 252);
-    font-family: Liberation Sans;
+    font-family: var(--accent-font-family);
     font-size: 24px;
     font-weight: 700;
     line-height: 1.1;
@@ -469,7 +470,7 @@ html {
 
 .menu-mobile-wrapper > ul > li > a {
   color: var(--main-color);
-  font-family: Liberation Sans;
+  font-family: var(--accent-font-family);
   font-size: 32px;
   font-weight: 700;
   line-height: 1.16;
@@ -543,7 +544,7 @@ html {
   background: rgb(252, 252, 252);
 
   color: rgb(160, 160, 160);
-  font-family: Liberation Sans;
+  font-family: var(--accent-font-family);
   font-size: 18px;
   font-weight: 400;
   line-height: 1.17;
@@ -567,7 +568,7 @@ html {
 
 .modal-search-text::placeholder {
   color: rgb(160, 160, 160);
-  font-family: Liberation Sans;
+  font-family: var(--accent-font-family);
   font-size: 18px;
   font-weight: 400;
   line-height: 1.17;
@@ -612,7 +613,7 @@ html {
 }
 
 .hero-text {
-  font-family: Liberation Sans;
+  font-family: var(--accent-font-family);
   font-size: 20px;
   font-weight: 700;
   line-height: 1.5;
@@ -656,7 +657,7 @@ html {
 }
 
 .collection-short {
-  font-family: Liberation Sans;
+  font-family: var(--accent-font-family);
   font-size: 20px;
   font-weight: 700;
   line-height: 1.15;
@@ -691,7 +692,7 @@ html {
 }
 
 .collection-text {
-  font-family: Liberation Sans;
+  font-family: var(--accent-font-family);
   font-size: 16px;
   font-weight: 400;
   line-height: 1.6;
@@ -803,7 +804,7 @@ html {
 }
 
 .exclusive-deals-subtitle {
-  font-family: Liberation Sans;
+  font-family: var(--accent-font-family);
   font-size: 20px;
   font-weight: 700;
   line-height: 1.15;
@@ -967,7 +968,7 @@ html {
 }
 
 .card-sale-text {
-  font-family: Liberation Sans;
+  font-family: var(--accent-font-family);
   font-size: 16px;
   font-weight: 700;
   font-style: normal;
@@ -983,7 +984,7 @@ html {
   margin: 16px auto 0;
 
   color: #272727;
-  font-family: Liberation Sans;
+  font-family: var(--accent-font-family);
   font-size: 15px;
   font-style: normal;
   font-weight: 700;
@@ -1014,7 +1015,7 @@ html {
 
 .card-price {
   color: var(--red-color);
-  font-family: Liberation Sans;
+  font-family: var(--accent-font-family);
   font-size: 15px;
   font-style: normal;
   font-weight: 700;
@@ -1163,7 +1164,7 @@ html {
 }
 
 .our-blog-subtitle {
-  font-family: Liberation Sans;
+  font-family: var(--accent-font-family);
   font-size: 20px;
   font-weight: 700;
   line-height: 1.5;
@@ -1180,7 +1181,7 @@ html {
 }
 
 .our-blog-text {
-  font-family: Liberation Sans;
+  font-family: var(--accent-font-family);
   font-size: 16px;
   font-weight: 700;
   line-height: 1.7;
@@ -1192,7 +1193,7 @@ html {
 }
 
 .our-blog-subtext {
-  font-family: Liberation Sans;
+  font-family: var(--accent-font-family);
   font-size: 16px;
   font-weight: 400;
   line-height: 1.7;
@@ -1235,7 +1236,7 @@ html {
   color: rgba(252, 252, 252, 1);
   text-decoration: none;
 
-  font-family: Liberation Sans;
+  font-family: var(--accent-font-family);
   font-size: 18px;
   font-weight: 700;
   line-height: 1.5;
@@ -1282,7 +1283,7 @@ html {
 }
 
 .footer-text {
-  font-family: Liberation Sans;
+  font-family: var(--accent-font-family);
   font-size: 15px;
   font-weight: 400;
   line-height: 1.13;
