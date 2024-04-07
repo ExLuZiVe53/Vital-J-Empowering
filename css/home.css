@@ -1,3 +1,13 @@
+:root {
+  --main-color: #fcfcfc;
+  --title-color: #3b619a;
+  --subtitle-color: #787695;
+  --accent-color: #5e92b6;
+  --red-color: #de4b53;
+
+  --main-font: ;
+}
+
 body {
   font-family: 'Candal', sans-serif;
 }
@@ -81,10 +91,10 @@ html {
 
   padding: 8px 65px;
 
-  border: 1px solid #fcfcfc;
+  border: 1px solid var(--main-color);
   border-radius: 8px;
   background: transparent;
-  color: #fcfcfc;
+  color: var(--main-color);
 
   cursor: pointer;
 }
@@ -458,7 +468,7 @@ html {
 }
 
 .menu-mobile-wrapper > ul > li > a {
-  color: #fcfcfc;
+  color: var(--main-color);
   font-family: Liberation Sans;
   font-size: 32px;
   font-weight: 700;
@@ -484,7 +494,7 @@ html {
 }
 
 .btn-close__icon {
-  fill: #fcfcfc;
+  fill: var(--main-color);
 }
 
 .btn-close__icon:hover,
@@ -594,7 +604,7 @@ html {
   line-height: 0.77;
   text-align: center;
 
-  color: #fcfcfc;
+  color: var(--main-color);
 
   padding-top: 112px;
   /* padding-left: 16px;
@@ -608,7 +618,7 @@ html {
   line-height: 1.5;
   text-align: center;
 
-  color: #fcfcfc;
+  color: var(--main-color);
 
   padding-top: 16px;
   padding-right: 14px;
@@ -620,7 +630,7 @@ html {
 
 .hero-btn:hover,
 .hero-btn:focus {
-  background: #fcfcfc;
+  background: var(--main-color);
   color: #272727;
 }
 
@@ -642,7 +652,7 @@ html {
   line-height: 1.6;
   text-align: center;
 
-  color: #3b619a;
+  color: var(--title-color);
 }
 
 .collection-short {
@@ -654,7 +664,7 @@ html {
   margin-top: 8px;
   text-align: center;
 
-  color: #787695;
+  color: var(--subtitle-color);
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1925px) {
@@ -703,8 +713,8 @@ html {
 }
 
 .collection-btn {
-  background: #5e92b6;
-  color: #fcfcfc;
+  background: var(--accent-color);
+  color: var(--main-color);
 
   margin-top: 56px;
   margin-bottom: 54px;
@@ -789,7 +799,7 @@ html {
   line-height: 1.3;
   text-align: center;
 
-  color: #3b619a;
+  color: var(--title-color);
 }
 
 .exclusive-deals-subtitle {
@@ -802,7 +812,7 @@ html {
 
   text-align: center;
 
-  color: #787695;
+  color: var(--subtitle-color);
 }
 
 .card-container {
@@ -863,7 +873,7 @@ html {
 
 .heart:hover,
 .heart:focus {
-  stroke: #3b619a;
+  stroke: var(--title-color);
 }
 
 .card-container.active {
@@ -941,7 +951,7 @@ html {
 
   border-radius: 5px;
 
-  background: rgba(222, 75, 83, 1);
+  background: var(--red-color);
 
   align-items: center;
   justify-content: center;
@@ -1003,7 +1013,7 @@ html {
 }
 
 .card-price {
-  color: #de4b53;
+  color: var(--red-color);
   font-family: Liberation Sans;
   font-size: 15px;
   font-style: normal;
@@ -1058,7 +1068,7 @@ html {
   width: 100%;
   height: 34px;
 
-  background: rgba(94, 146, 182, 1);
+  background: var(--accent-color);
 }
 .collection-btn:hover,
 .collection-btn:focus,
@@ -1093,7 +1103,7 @@ html {
   font-size: 24px;
   line-height: 1.3;
 
-  color: rgba(120, 118, 149, 1);
+  color: var(--subtitle-color);
 
   text-align: center;
   margin-top: 56px;
@@ -1319,12 +1329,12 @@ html {
   margin-top: 40px;
 }
 .social-icon {
-  fill: #fcfcfc;
+  fill: var(--main-color);
   stroke: #16344c;
 }
 
 .social-icon:hover,
 .social-icon:focus {
   fill: #b5e5f3;
-  stroke: #fcfcfc;
+  stroke: var(--main-color);
 }
