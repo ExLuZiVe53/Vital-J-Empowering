@@ -875,6 +875,12 @@ html {
   flex-shrink: 0;
 }
 
+@media only screen and (min-width: 1024px) and (max-width: 1925px) {
+  .card-container.active {
+    flex-shrink: 1;
+  }
+}
+
 .card-wrapper {
   display: flex;
   gap: 30px;
