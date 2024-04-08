@@ -4,6 +4,7 @@
   --subtitle-color: #787695;
   --accent-color: #5e92b6;
   --red-color: #de4b53;
+  --bg-color: #16344c;
 
   --main-font-family: 'Candal';
   --accent-font-family: 'Liberation Sans';
@@ -196,7 +197,7 @@ html {
 }
 
 .navigation {
-  background-color: #16344c;
+  background-color: var(--bg-color);
   min-width: 390px;
 }
 
@@ -252,7 +253,7 @@ html {
 @media only screen and (min-width: 1025px) and (max-width: 1925px) {
   .navigation-search-container {
     right: 0;
-    margin-left: 89px;
+    /* margin-left: 89px; */
   }
 }
 
@@ -1213,7 +1214,7 @@ html {
 /* FOOTER */
 
 .footer {
-  background-color: #16344c;
+  background-color: var(--bg-color);
 }
 
 .footer-list {
