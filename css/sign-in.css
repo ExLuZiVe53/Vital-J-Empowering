@@ -375,10 +375,14 @@ html {
   margin-left: auto;
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1925px) {
+/* @media only screen and (min-width: 1025px) and (max-width: 1925px) {
   .navigation-list {
     margin-left: 0;
   }
+} */
+
+.list-item.heart {
+  display: none;
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1770px) {
