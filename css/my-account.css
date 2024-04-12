@@ -752,7 +752,7 @@ input::placeholder {
   fill: #5e92b6;
 }
 
-.rotate-svg {
+.no-rotate.rotate {
   transform: rotate(180deg);
 }
 
