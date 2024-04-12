@@ -1,9 +1,9 @@
-const activeBtn = document.querySelector('.btn-arrow');
-const rotateArrow = document.querySelector('.no-rotate');
+const activeBtn = document.querySelector('.btnArrow');
 
 const onActiveClick = event => {
-  activeBtn.classList.toggle('.active');
-  rotateArrow.classList.toggle('.rotate');
+  activeBtn.classList.toggle('btnRotate');
+
+  //   rotateArrow.classList.toggle('.rotate');
 };
 
 activeBtn.addEventListener('click', onActiveClick);

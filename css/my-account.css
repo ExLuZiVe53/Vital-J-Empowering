@@ -752,10 +752,6 @@ input::placeholder {
   fill: #5e92b6;
 }
 
-.no-rotate.rotate {
-  transform: rotate(180deg);
-}
-
 .log-out {
   color: rgb(39, 39, 39);
   font-family: Liberation Sans;
@@ -764,6 +760,10 @@ input::placeholder {
   line-height: 1.17;
 
   padding-bottom: 96px;
+}
+
+.btnRotate {
+  transform: rotate(180deg);
 }
 
 /*!======================================================*/
