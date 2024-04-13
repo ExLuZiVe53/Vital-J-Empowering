@@ -8,10 +8,8 @@ const onActiveClick = event => {
 };
 
 const onFormChange = event => {
-  console.log(event.target.name);
+  console.dir(event.target.checked);
   console.log(event.target.value);
-
-  [event.target.name] = event.target.value;
 };
 
 activeBtn.addEventListener('click', onActiveClick);
