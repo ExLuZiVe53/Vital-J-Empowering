@@ -8,6 +8,7 @@
   --grey-color: #a0a0a0;
   --hover-color: #b5e5f3;
   --black-color: #000000;
+  --border-color: #272727;
 
   --main-font-family: 'Candal';
   --accent-font-family: 'Liberation Sans';
@@ -704,9 +705,6 @@ input::placeholder {
   color: rgb(160, 160, 160);
 }
 
-.sign-in__subtext.two {
-}
-
 .form-data.two::before {
   content: '';
   margin-bottom: 40px;
@@ -722,7 +720,7 @@ input::placeholder {
   align-items: center;
   justify-content: space-between;
 
-  color: #272727;
+  color: var(--border-color);
   font-family: Liberation Sans;
   font-size: 18px;
   font-weight: 400;
@@ -764,6 +762,19 @@ input::placeholder {
 
 .btnRotate {
   transform: rotate(180deg);
+}
+
+.credit-card {
+  border: 1px dashed var(--border-color);
+}
+
+.credit-card-container {
+  padding: 60px 90px;
+  color: var(--black-color);
+}
+
+.icon-plus {
+  stroke: var(--black-color);
 }
 
 /*!======================================================*/
