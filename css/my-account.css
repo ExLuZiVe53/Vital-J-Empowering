@@ -777,6 +777,26 @@ input::placeholder {
   stroke: var(--black-color);
 }
 
+.modal-credit-card {
+  position: fixed;
+  background-color: rgba(39, 39, 39, 0.49);
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-backdrop {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+
+  background-color: var(--main-color);
+  min-height: 391px;
+}
+
 /*!======================================================*/
 /* FOOTER */
 
