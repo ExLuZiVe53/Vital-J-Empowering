@@ -316,15 +316,43 @@
               </div>
               <div class="modal-credit-card">
                 <div class="modal-backdrop">
+                  <button class="btn-close">
+                    <svg class="btn-close__icon" width="12px" height="12px">
+                      <use href="../img/sprite.svg#icon-btn-close"></use>
+                    </svg>
+                  </button>
+
                   <form action="#">
-                    <h2>Put yout card information</h2>
-                    <label for="#">Card number</label>
-                    <input type="text" />
-                    <label for="#">Expiration date</label>
-                    <input type="text" />
-                    <label for="">Security code</label>
-                    <input type="password" />
-                    <button>Save changes</button>
+                    <fieldset class="form-data">
+                      <legend class="sign-in__subtitle">
+                        Put your card information
+                      </legend>
+                      <label for="#" class="sign-in__subtext"
+                        >Card number</label
+                      >
+                      <input
+                        class="input-form"
+                        type="text"
+                        placeholder="&#95; &#95; &#95; &#95;    &#95; &#95; &#95; &#95;   &#95; &#95; &#95; &#95;    &#95; &#95; &#95; &#95;"
+                      />
+                      <label for="#" class="sign-in__subtext"
+                        >Expiration date</label
+                      >
+                      <input
+                        class="input-form"
+                        type="text"
+                        placeholder="MM / YY"
+                      />
+                      <label for="" class="sign-in__subtext"
+                        >Security code</label
+                      >
+                      <input
+                        class="input-form"
+                        type="password"
+                        placeholder="123"
+                      />
+                    </fieldset>
+                    <button class="sign-in btn">Save changes</button>
                   </form>
                 </div>
               </div>
@@ -790,5 +818,6 @@
     <script src="../js/burger.js"></script>
     <script src="../js/search.js"></script>
     <script src="../js/tabs.js"></script>
+    <script src="../js/modal-credit-card.js"></script>
   </body>
 </html>
