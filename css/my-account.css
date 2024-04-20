@@ -812,6 +812,13 @@ input::placeholder {
   fill: var(--accent-color);
 }
 
+.add-Credit-Card {
+  display: flex;
+
+  border: 1px solid var(--accent-color);
+  border-radius: 10px;
+}
+
 /*!======================================================*/
 /* FOOTER */
 
