@@ -814,9 +814,23 @@ input::placeholder {
 
 .add-Credit-Card {
   display: flex;
+  padding: 16px 32px 16px 16px;
 
   border: 1px solid var(--accent-color);
   border-radius: 10px;
+}
+
+.add-Credit-Card > .interface-list__item:last-child {
+  margin-left: auto;
+}
+
+.credit-card-link {
+  margin-right: 16px;
+}
+
+.interface-list__item.bold {
+  font-weight: 700;
+  margin-bottom: 32px;
 }
 
 /*!======================================================*/
