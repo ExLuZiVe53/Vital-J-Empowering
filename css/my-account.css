@@ -833,6 +833,10 @@ input::placeholder {
   margin-bottom: 32px;
 }
 
+.btn-cross__icon {
+  fill: #000000;
+}
+
 /*!======================================================*/
 /* FOOTER */
 

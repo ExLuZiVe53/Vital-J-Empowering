@@ -1,6 +1,5 @@
 const modalCreditCard = document.querySelector('.modal-credit-card');
 const openModal = document.querySelector('.btn-icon');
-const btnClose = document.querySelector('.btn-close');
 
 const onModalBackdrop = () => {
   modalCreditCard.classList.add('js-modal');
@@ -12,9 +11,9 @@ const onOpenModal = () => {
 };
 
 const onCloseModal = event => {
-  console.log('Click for btn-close', event.code);
+  console.log(event.currentTarget);
 };
 
 modalCreditCard.addEventListener('click', onModalBackdrop);
 openModal.addEventListener('click', onOpenModal);
-document.addEventListener('keyup', onCloseModal);
+burgerBtnClose.addEventListener('click', onCloseModal);
