@@ -834,8 +834,15 @@ input::placeholder {
 }
 
 .btn-cross {
-  border: none;
+  background-color: transparent;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid transparent;
   cursor: pointer;
+  position: absolute;
+  top: 12px;
+  right: 18px;
 }
 
 .btn-cross__icon {
