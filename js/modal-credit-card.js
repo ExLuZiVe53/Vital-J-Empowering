@@ -12,5 +12,13 @@ const onCloseModal = () => {
   openModal.classList.remove('js-open-modal');
 };
 
+const onClickEsc = event => {
+  if (event.code === 'Escape') {
+    modalCreditCard.classList.remove('js-modal');
+    openModal.classList.remove('js-open-modal');
+  }
+};
+
 openModal.addEventListener('click', onOpenModal);
 btnCross.addEventListener('click', onCloseModal);
+document.addEventListener('keydown', onClickEsc);
