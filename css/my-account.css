@@ -812,6 +812,10 @@ input::placeholder {
   fill: var(--accent-color);
 }
 
+.interface-list__container {
+  display: flex;
+}
+
 .add-Credit-Card {
   display: flex;
   padding: 16px 32px 16px 16px;
@@ -831,6 +835,7 @@ input::placeholder {
 .interface-list__item.bold {
   font-weight: 700;
   margin-bottom: 32px;
+  margin-right: auto;
 }
 
 .btn-cross {
