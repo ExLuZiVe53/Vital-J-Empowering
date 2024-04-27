@@ -8,7 +8,6 @@ const onOpenModal = () => {
 };
 
 const onCloseModal = () => {
-  console.log('click cross');
   modalCreditCard.classList.remove('js-modal');
   openModal.classList.remove('js-open-modal');
 };
