@@ -316,9 +316,6 @@
               </div>
               <div class="interface-list__container">
                 <h2 class="interface-list__item bold">Card &#9839;1</h2>
-                <svg class="icon-pencil" width="24px" height="24px">
-                  <use href="../img/sprite.svg#icon-Pencil"></use>
-                </svg>
                 <svg
                   width="24.000000"
                   height="24.000000"
@@ -337,7 +334,41 @@
                     fill-rule="evenodd"
                   />
                 </svg>
+                <svg class="icon-pencil" width="24px" height="24px">
+                  <use href="../img/sprite.svg#icon-Pencil"></use>
+                </svg>
               </div>
+              <form action="#">
+                <fieldset class="form-data">
+                  <label for="#" class="sign-in__subtext">Card number</label>
+                  <input
+                    class="input-form"
+                    type="text"
+                    placeholder="4149 5342 9436 1011"
+                    name="cardNumber"
+                    inputmode="numeric"
+                    autocomplete="cc-number"
+                    maxlength="19"
+                    pattern="[0-9\s]{13,19}"
+                  />
+                </fieldset>
+                <fieldset class="date-pass">
+                  <label for="#" class="sign-in__subtext"
+                    >Expiration date
+                    <input
+                      class="input-form"
+                      type="text"
+                      placeholder="10 / 25"
+                    />
+                  </label>
+                  <label for="" class="sign-in__subtext"
+                    >Security code
+                    <input class="input-form" type="text" placeholder="123" />
+                  </label>
+                </fieldset>
+
+                <button class="sign-in btn">Save changes</button>
+              </form>
               <div class="add-Credit-Card">
                 <a href="#" class="credit-card-link">
                   <img
@@ -418,23 +449,28 @@
                         maxlength="19"
                         pattern="[0-9\s]{13,19}"
                       />
-                      <label for="#" class="sign-in__subtext"
-                        >Expiration date</label
-                      >
-                      <input
-                        class="input-form"
-                        type="text"
-                        placeholder="MM / YY"
-                      />
-                      <label for="" class="sign-in__subtext"
-                        >Security code</label
-                      >
-                      <input
-                        class="input-form"
-                        type="password"
-                        placeholder="123"
-                      />
                     </fieldset>
+                    <fieldset class="date-pass">
+                      <label for="#" class="sign-in__subtext"
+                        >Expiration date
+
+                        <input
+                          class="input-form"
+                          type="text"
+                          placeholder="MM / YY"
+                        />
+                      </label>
+                      <label for="" class="sign-in__subtext"
+                        >Security code
+
+                        <input
+                          class="input-form"
+                          type="password"
+                          placeholder="123"
+                        />
+                      </label>
+                    </fieldset>
+
                     <button class="sign-in btn">Save changes</button>
                   </form>
                 </div>
