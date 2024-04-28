@@ -705,7 +705,7 @@ input::placeholder {
   color: rgb(160, 160, 160);
 }
 
-.date-pass > .input-form::placeholder {
+fieldset > .input-form::placeholder {
   color: var(--border-color);
 }
 
