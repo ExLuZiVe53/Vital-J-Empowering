@@ -658,7 +658,7 @@ html {
 .form-data {
   margin: 0;
   padding: 0;
-  margin-bottom: 39.5px;
+
   border: none;
 }
 
@@ -703,6 +703,10 @@ input::placeholder {
 
 .input-form::placeholder {
   color: rgb(160, 160, 160);
+}
+
+.date-pass > .input-form::placeholder {
+  color: var(--border-color);
 }
 
 .form-data.two::before {
@@ -852,6 +856,15 @@ input::placeholder {
 
 .btn-cross__icon {
   fill: #000000;
+}
+
+.date-pass {
+  display: flex;
+  gap: 30px;
+
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 /*!======================================================*/
