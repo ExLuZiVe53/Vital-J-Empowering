@@ -818,6 +818,7 @@ fieldset > .input-form::placeholder {
 
 .interface-list__container {
   display: flex;
+  align-items: baseline;
 }
 
 .add-Credit-Card {
@@ -838,7 +839,7 @@ fieldset > .input-form::placeholder {
 
 .interface-list__item.bold {
   font-weight: 700;
-  margin-bottom: 32px;
+
   margin-right: auto;
 }
 
@@ -865,6 +866,17 @@ fieldset > .input-form::placeholder {
   margin: 0;
   padding: 0;
   border: none;
+}
+
+button.icons {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.modal-credit-card.del {
+  display: block;
+  top: 0;
 }
 
 /*!======================================================*/
