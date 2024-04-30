@@ -894,6 +894,12 @@ button.icons {
   padding: 24px;
 }
 
+.icon-basket-card {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
 /*!======================================================*/
 /* FOOTER */
 
