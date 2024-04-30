@@ -875,8 +875,23 @@ button.icons {
 }
 
 .modal-credit-card.del {
+  display: none;
+}
+
+.modal-credit-card.del.js-open {
   display: block;
-  top: 0;
+}
+
+.modal-credit-card.del > .modal-backdrop {
+  width: 275px;
+  min-height: 156px;
+
+  top: 50%;
+  left: 50%;
+  bottom: auto;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+  padding: 24px;
 }
 
 /*!======================================================*/
