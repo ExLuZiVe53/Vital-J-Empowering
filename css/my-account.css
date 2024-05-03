@@ -9,6 +9,8 @@
   --hover-color: #b5e5f3;
   --black-color: #000000;
   --border-color: #272727;
+  --orange-color: #c06714;
+  --green-color: #25a332;
 
   --main-font-family: 'Candal';
   --accent-font-family: 'Liberation Sans';
@@ -922,6 +924,55 @@ button.icons {
 .btn-filter:focus {
   background-color: var(--accent-color);
   color: var(--main-color);
+}
+
+.card-images {
+  display: flex;
+}
+
+.card-small-tube {
+  width: auto;
+}
+
+.cards-history {
+  font-family: var(--accent-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 2;
+
+  border-radius: 10px;
+  border: 1px solid var(--accent-color);
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.cards-history-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards-history__subtext {
+  color: var(--grey-color);
+}
+
+.cards-history__text {
+  color: var(--title-color);
+}
+
+.cards-history__text.customer {
+  color: var(--orange-color);
+}
+
+.cards-history__text.delivered {
+  color: var(--green-color);
+}
+
+.cards-history__text.canceled {
+  color: var(--red-color);
+}
+
+.cards-history__price {
+  color: var(--border-color);
 }
 
 /*!======================================================*/
