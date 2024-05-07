@@ -931,6 +931,26 @@ button.icons {
   margin-top: 16px;
 }
 
+.card-history__wrapper::before {
+  content: '';
+
+  margin-top: 23.5px;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--accent-color);
+  height: 1px;
+}
+
+.card-history__wrapper-image {
+  width: auto;
+}
+
+.card-history__wrapper-image-container.card-images__item {
+  display: inline-block;
+}
+
 .card-small-tube {
   width: auto;
 }
