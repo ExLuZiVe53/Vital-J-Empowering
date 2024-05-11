@@ -931,8 +931,12 @@ button.icons {
   margin-top: 16px;
 }
 
+.card-history__wrapper {
+  display: flex;
+}
+
 .card-history__wrapper::before {
-  content: '';
+  /* content: ''; */
 
   margin-top: 23.5px;
   display: block;
@@ -1000,6 +1004,9 @@ button.icons {
   transform: rotate(90deg);
   border: none;
   background-color: transparent;
+}
+
+.cards-history__info {
 }
 
 .card-images__item {
