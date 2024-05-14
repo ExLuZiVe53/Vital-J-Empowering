@@ -949,11 +949,12 @@ button.icons {
 
 .card-history__wrapper-image {
   width: auto;
-}
-
-.card-history__wrapper-image-container.card-images__item {
   display: inline-block;
 }
+
+/* .card-history__wrapper-image-container.card-images__item {
+  
+} */
 
 .card-small-tube {
   width: auto;
