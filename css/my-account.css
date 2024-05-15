@@ -932,7 +932,7 @@ button.icons {
 }
 
 .card-history__wrapper {
-  /* display: flex; */
+  display: flex;
 }
 
 .card-history__wrapper::before {
