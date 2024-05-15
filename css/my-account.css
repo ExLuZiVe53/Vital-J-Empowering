@@ -952,9 +952,9 @@ button.icons {
   display: inline-block;
 }
 
-/* .card-history__wrapper-image-container.card-images__item {
-  
-} */
+.card-history-numbers {
+  display: none;
+}
 
 .card-small-tube {
   width: auto;
