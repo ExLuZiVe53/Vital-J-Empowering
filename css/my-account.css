@@ -932,11 +932,11 @@ button.icons {
 }
 
 .card-history__wrapper {
-  display: flex;
+  /* display: flex; */
 }
 
 .card-history__wrapper::before {
-  /* content: ''; */
+  content: '';
 
   margin-top: 23.5px;
   display: block;
@@ -953,7 +953,8 @@ button.icons {
 }
 
 .card-history-numbers {
-  display: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 .card-small-tube {
@@ -1007,7 +1008,12 @@ button.icons {
   background-color: transparent;
 }
 
-.cards-history__info {
+.card-history__title {
+  color: var(--border-color);
+  font-family: var(--accent-font-family);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.6;
 }
 
 .card-images__item {
