@@ -952,6 +952,10 @@ button.icons {
   display: inline-block;
 }
 
+.card-history__wrapper-image-container.card-images__item {
+  display: inline-block;
+}
+
 .card-history-numbers {
   display: flex;
   justify-content: space-between;
@@ -971,6 +975,10 @@ button.icons {
   border: 1px solid var(--accent-color);
   padding: 16px;
   margin-bottom: 24px;
+}
+
+.card-history__info {
+  display: inline-block;
 }
 
 .cards-history-container {
