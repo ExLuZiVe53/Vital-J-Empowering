@@ -977,6 +977,11 @@ button.icons {
   margin-bottom: 24px;
 }
 
+.card-history__total-text {
+  display: flex;
+  justify-content: space-between;
+}
+
 .card-history__info {
   display: inline-block;
 }
