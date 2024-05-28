@@ -978,6 +978,14 @@ button.icons {
   margin-bottom: 24px;
 }
 
+.card-history__box {
+  display: none;
+}
+
+.card-history__box.open {
+  display: block;
+}
+
 .card-history__total::before {
   content: '';
 
