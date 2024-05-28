@@ -1,18 +1,19 @@
 const cardHistoryBox = document.querySelector('.card-history__box');
-const cardHistoryBtn = document.querySelector('.cards-history');
+// const cardHistoryBtn = document.querySelector('.cards-history');
 const cardHistoryBtnIcon = document.querySelector('.cards-history__btn-icon');
 
 const onCardHistoryClick = () => {
-  //   cardHistoryBox.classList.toggle('open');
+  cardHistoryBtnIcon.classList.toggle('openClick');
+  cardHistoryBox.classList.toggle('open');
 };
 
-const onCardHistoryBtn = event => {
-  if (event.target.nodeName === 'BUTTON') {
-    cardHistoryBox.style.display = 'block';
-  } else if (event.target.nodeName === 'BUTTON') {
-    cardHistoryBox.style.display = 'none';
-  }
+const onCardHistoryBox = event => {
+  //   if (event.target.nodeName === 'BUTTON') {
+  //     cardHistoryBox.classList.add('open');
+  //   } else {
+  //     cardHistoryBox.classList.remove('open');
+  //   }
 };
 
-cardHistoryBox.addEventListener('click', onCardHistoryClick);
-cardHistoryBtn.addEventListener('click', onCardHistoryBtn);
+cardHistoryBox.addEventListener('click', onCardHistoryBox);
+cardHistoryBtnIcon.addEventListener('click', onCardHistoryClick);
