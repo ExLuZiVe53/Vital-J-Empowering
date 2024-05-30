@@ -1,19 +1,22 @@
 const cardHistoryBox = document.querySelector('.card-history__box');
-// const cardHistoryBtn = document.querySelector('.cards-history');
 const cardHistoryBtnIcon = document.querySelector('.cards-history__btn-icon');
+const interfaceList = document.querySelector('.interface-list');
 
 const onCardHistoryClick = () => {
   cardHistoryBtnIcon.classList.toggle('openClick');
   cardHistoryBox.classList.toggle('open');
 };
 
-const onCardHistoryBox = event => {
-  //   if (event.target.nodeName === 'BUTTON') {
-  //     cardHistoryBox.classList.add('open');
-  //   } else {
-  //     cardHistoryBox.classList.remove('open');
-  //   }
+const onInterfaceListClick = event => {
+  // if (event.target.nodeName !== 'BUTTON') {
+  //   return;
+  // }
+  // cardHistoryBtnIcon.classList.toggle('openClick');
+  // cardHistoryBox.classList.toggle('open');
+  // console.log(event.target);
+  // console.log(event.currentTarget);
 };
 
-cardHistoryBox.addEventListener('click', onCardHistoryBox);
+interfaceList.addEventListener('click', onInterfaceListClick);
+cardHistoryBox.addEventListener('click', () => {});
 cardHistoryBtnIcon.addEventListener('click', onCardHistoryClick);
