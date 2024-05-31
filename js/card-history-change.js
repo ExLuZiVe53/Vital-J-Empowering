@@ -18,5 +18,7 @@ const onInterfaceListClick = event => {
 };
 
 interfaceList.addEventListener('click', onInterfaceListClick);
-cardHistoryBox.addEventListener('click', () => {});
+cardHistoryBox.addEventListener('click', () => {
+  console.log('click history box');
+});
 cardHistoryBtnIcon.addEventListener('click', onCardHistoryClick);
