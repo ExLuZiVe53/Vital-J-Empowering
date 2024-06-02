@@ -8,7 +8,7 @@ const onCardHistoryClick = () => {
 };
 
 const onInterfaceListClick = event => {
-  console.dir(event.target);
+  // console.dir(event.target);
   console.log(event.currentTarget);
   // if (event.target.nodeName !== 'BUTTON') {
   //   return;
