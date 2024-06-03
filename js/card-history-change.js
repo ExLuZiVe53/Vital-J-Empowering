@@ -8,11 +8,13 @@ const onCardHistoryClick = () => {
 };
 
 const onInterfaceListClick = event => {
-  // console.dir(event.target);
+  if (event.target.nodeName !== 'BUTTON') {
+    return;
+  }
+
+  console.dir(event.target);
   console.log(event.currentTarget);
-  // if (event.target.nodeName !== 'BUTTON') {
-  //   return;
-  // }
+
   // cardHistoryBtnIcon.classList.toggle('openClick');
   // cardHistoryBox.classList.toggle('open');
   // console.log(event.target);
