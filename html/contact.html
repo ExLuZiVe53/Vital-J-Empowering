@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My account</title>
+    <title>Contact us</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="../css/my-account.css" />
+    <link rel="stylesheet" href="../css/sign-in.css" />
   </head>
   <body>
     <header class="navigation">
@@ -172,7 +173,7 @@
         </div>
         <section class="contact-us">
           <h1 class="sign-in__title">Contact us</h1>
-          <a class="div">
+          <a class="map-box">
             <img
               src="../img/icons/contact-us/map.jpg"
               alt="map"
@@ -180,6 +181,55 @@
               height="288px"
             />
           </a>
+          <p>Information</p>
+          <address>
+            <p>Address:<span>Hallandale Beach Florida, 33009</span></p>
+            <p>E-mail:<span>info@funisoxshop.com</span></p>
+          </address>
+          <form class="js-myFormData" action="#">
+            <fieldset class="form-data two">
+              <legend class="sign-in__subtitle">Do you have any questions? Write to us!</legend>
+
+                  <label for="yourName" class="sign-in__subtext">Your name</label>
+                  <input
+                    class="input-form"
+                    type="text"
+                    id="yourName"
+                    placeholder="Put your name"
+                  />
+
+                  <label for="email" class="sign-in__subtext">Your e-mail</label>
+                  <input
+                    class="input-form"
+                    type="text"
+                    id="email"
+                    placeholder="Put your e-mail"
+                  />
+
+                  <label for="yourMessage" class="sign-in__subtext"
+                    >Your message</label
+                  >
+                  <textarea
+                    class="input-form"
+                    type="text"
+                    id="yourMessage"
+                    placeholder="Write your message"
+                    rows="5" cols="33"
+                  >
+                  </textarea>
+                
+                  </fieldset>
+                  </form>
+                    <div class="label-container">
+                      <label class="sign-in__label">
+                        <input type="checkbox" class="checkbox" name="remember" />
+                        <span class="checkbox-icon"></span>
+                        Sign me up for the newsletter!
+                      </label>
+                       
+                    </div>
+                        <button class="sign-in btn" type="submit">Send message</button>
+          
         </section>
       </div>
     </main>
