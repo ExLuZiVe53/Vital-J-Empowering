@@ -602,6 +602,12 @@ html {
   text-decoration-color: #000000;
 }
 
+.bradcrumbs__link.bold {
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--black-color);
+}
+
 .bradcrumbs span {
   margin-left: 24px;
   margin-right: 24px;
@@ -770,6 +776,21 @@ input::placeholder {
 .sign-in-networks__icon:focus {
   fill: #5e92b6;
 }
+
+.sign-in__subtitle {
+  color: #3b619a;
+
+  font-family: Liberation Sans;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 32px;
+}
+
+fieldset.form-data.two {
+    border: none;
+    margin: 0;
+    padding: 0;
 
 /* FOOTER */
 
