@@ -603,6 +603,10 @@ html {
 }
 
 .bradcrumbs__link.bold {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
   font-weight: 700;
   line-height: 1.5;
   color: var(--black-color);
@@ -787,10 +791,11 @@ input::placeholder {
   margin-bottom: 32px;
 }
 
-fieldset.form-data.two {
-    border: none;
-    margin: 0;
-    padding: 0;
+.form-data.two {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
 
 /* FOOTER */
 
