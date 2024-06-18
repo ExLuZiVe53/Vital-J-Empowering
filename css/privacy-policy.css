@@ -612,6 +612,10 @@ html {
   color: var(--black-color);
 }
 
+.bradcrumbs__link.privacy {
+  line-height: 1.5;
+}
+
 .bradcrumbs span {
   margin-left: 24px;
   margin-right: 24px;
@@ -627,6 +631,10 @@ html {
 
   margin-top: 37px;
   margin-bottom: 48px;
+}
+
+.sign-in__title.privacy {
+  font-size: 32px;
 }
 
 @media only screen and (min-width: 358px) and (max-width: 1924px) {
@@ -795,6 +803,22 @@ input::placeholder {
   border: none;
   margin: 0;
   padding: 0;
+}
+
+.privacy__text {
+  font-family: var(--accent-font-family);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.privacy__subtitle {
+  font-family: var(--accent-font-family);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: left;
 }
 
 /* FOOTER */
