@@ -301,7 +301,7 @@ html {
   .search-icon {
     display: block;
     position: absolute;
-    top: 12px;
+    top: 18px;
     left: 20px;
     transform: translate(-50%);
   }
@@ -819,6 +819,8 @@ input::placeholder {
   font-weight: 700;
   line-height: 1.5;
   text-align: left;
+
+  margin: 32px 0;
 }
 
 /* FOOTER */
