@@ -679,10 +679,10 @@ html {
   object-fit: cover;
   object-position: 0 0;
   overflow: hidden;
+  */
 
-  padding-left: 24px;
-  padding-right: 24px;
-  margin-top: 56px; */
+  padding-left: 8px;
+  padding-right: 8px;
 
   border-radius: 8px;
   position: relative;
@@ -763,8 +763,7 @@ html {
 .card-sale {
   display: flex;
 
-  width: 75px;
-  height: 34px;
+  padding: 4px 6px;
 
   border-radius: 5px;
 
@@ -774,7 +773,7 @@ html {
   justify-content: center;
   position: absolute;
   top: 0;
-  left: 30px;
+  left: 8px;
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1925px) {
@@ -785,7 +784,7 @@ html {
 
 .card-sale-text {
   font-family: var(--accent-font-family);
-  font-size: 16px;
+  font-size: 10px;
   font-weight: 700;
   font-style: normal;
   line-height: 1.1;
@@ -801,13 +800,10 @@ html {
 
   color: #272727;
   font-family: var(--accent-font-family);
-  font-size: 15px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: 1.15;
-
-  text-align: center;
-  white-space: nowrap;
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1925px) {
@@ -819,7 +815,7 @@ html {
 
 .card-price-container {
   display: flex;
-  padding: 0 24px 0 24px;
+
   align-items: baseline;
 }
 
@@ -882,6 +878,7 @@ html {
   display: block;
   margin: 19px auto 0;
 
+  padding: 7px 31px;
   width: 100%;
   height: 34px;
 
