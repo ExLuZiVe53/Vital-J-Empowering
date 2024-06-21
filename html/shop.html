@@ -8,7 +8,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="../css/privacy-policy.css" />
+   
     <link rel="stylesheet" href="../css/shop.css">
   </head>
   <body>
@@ -163,9 +163,17 @@
     <main>
         <section class="exclusive-deals">
         <div class="container">
+
+          <div class="bradcrumbs">
+          <a href="./home.html" class="bradcrumbs__link">Vital-J Empowering</a>
+          <span>&#10095;</span>
+          <a href="./shop.html" class="bradcrumbs__link">Shop</a>
+          <span>&#10095;</span>
+          <a href="#" class="bradcrumbs__link">Category</a>
+        </div>
           
           <div class="card-wrapper">
-            <div class="card-container active">
+            <div class="card-container">
               <div class="card-sale">
                 <span class="card-sale-text">Sale</span>
               </div>
@@ -207,15 +215,17 @@
               <p class="card-text">Lorem ipsum dolor sit amet</p>
 
               <div class="card-price-container">
-                <span class="card-price">$80</span>
-
+                <div class="price-container">
+                  <span class="card-price">$80</span>
+                  <span class="card-price sale">$70</span>
+                </div>
                 <div class="button-container">
-                  <button class="btn-card hidden" type="button">
+                  <button class="button-heart" type="button">
                     <svg class="heart" width="24" height="24">
                       <use href="../img/sprite.svg#icon-Heart"></use>
                     </svg>
                   </button>
-                  <button class="btn-card hidden" type="button">
+                  <button class="button-solid" type="button">
                     <svg class="icon-Solid" width="24" height="24">
                       <use href="../img/sprite.svg#icon-Solid"></use>
                     </svg>
@@ -228,7 +238,7 @@
               </button>
             </div>
 
-            <div class="card-container active last">
+            <div class="card-container">
               <div class="card-sale">
                 <span class="card-sale-text">Sale</span>
               </div>
