@@ -621,11 +621,7 @@ html {
   margin-right: 24px;
 }
 
-/* SECTION EXLUZIVE-DEALS */
-
-.exclusive-deals {
-  margin-top: 80px;
-}
+/* SECTION EXCLUSIVE-DEALS */
 
 @media only screen and (min-width: 1024px) and (max-width: 1925px) {
   .exclusive-deals {
