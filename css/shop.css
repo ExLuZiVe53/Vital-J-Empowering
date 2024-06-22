@@ -426,6 +426,7 @@ html {
   left: 0;
   width: 100vw;
   height: 100vh;
+  z-index: 1;
 }
 
 .menu-mobile-wrapper > .navigation-logo {
@@ -679,6 +680,7 @@ html {
 
   padding-left: 8px;
   padding-right: 8px;
+  padding-bottom: 16px;
 
   border-radius: 8px;
   position: relative;
@@ -813,6 +815,7 @@ html {
 .card-price-container {
   display: flex;
   align-items: center;
+  margin: 13px 0 16px 0;
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1925px) {
