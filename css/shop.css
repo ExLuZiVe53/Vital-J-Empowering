@@ -742,6 +742,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  padding: 40px 0 94px 0;
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1925px) {
