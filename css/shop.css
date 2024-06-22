@@ -815,8 +815,7 @@ html {
 
 .card-price-container {
   display: flex;
-
-  align-items: baseline;
+  align-items: center;
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1925px) {
@@ -833,8 +832,6 @@ html {
   font-weight: 700;
   line-height: 1.15;
   display: inline-block;
-
-  margin-top: 24px;
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1925px) {
