@@ -705,12 +705,16 @@ html {
   }
 }
 
-.card-container__title {
+.card-container__link {
   font-family: var(--accent-font-family);
   font-size: 24px;
   font-weight: 700;
   line-height: 1.15em;
   text-align: center;
+}
+
+.card-container__link:visited {
+  color: #000000;
 }
 
 .card-container.last {
@@ -871,8 +875,8 @@ html {
 
 @media only screen and (min-width: 1025px) and (max-width: 1925px) {
   .card-img {
-    width: 351px;
-    height: 408px;
+    /* width: 351px;
+    height: 408px; */
   }
 }
 
