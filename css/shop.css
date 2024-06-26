@@ -670,7 +670,7 @@ html {
   color: var(--subtitle-color);
 }
 
-.card-container {
+.card-container__box {
   max-width: 233px;
   max-height: 333px;
 
