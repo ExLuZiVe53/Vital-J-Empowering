@@ -443,6 +443,7 @@ html {
 .menu-container.js-open-menu {
   display: block;
   padding-top: 60px;
+  z-index: 1;
 }
 
 @media only screen and (min-width: 391px) and (max-width: 1770px) {
@@ -584,7 +585,7 @@ html {
 .hero {
   background-image: url('../img/background/bird.jpg');
   background-size: cover;
-  background-position: center;
+  /* background-position: center; */
   background-repeat: no-repeat;
 
   min-width: 390px;
