@@ -756,7 +756,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  padding: 40px 0 94px 0;
+  padding: 40px 0 56px 0;
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1925px) {
@@ -893,11 +893,26 @@ html {
 
   background: var(--accent-color);
 }
+
+.btn-card-add.submit {
+  margin: 0 auto;
+  background-color: transparent;
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
+.btn-card-add.submit:hover,
+.btn-card-add.submit:focus {
+  border-color: #787695;
+  background-color: transparent;
+  color: #787695;
+}
+
 .collection-btn:hover,
 .collection-btn:focus,
 .btn-card-add:hover,
 .btn-card-add:focus {
-  background: #b5e5f3;
+  background-color: #b5e5f3;
   color: #272727;
 }
 
