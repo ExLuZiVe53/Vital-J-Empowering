@@ -673,6 +673,13 @@ html {
   gap: 30px;
 }
 
+.container-filter.btn:hover,
+.container-filter.btn:focus {
+  color: var(--accent-color);
+  background-color: white;
+  border: 1px solid var(--accent-color);
+}
+
 .card-container {
   max-width: 164px;
   /* height: 428px;
