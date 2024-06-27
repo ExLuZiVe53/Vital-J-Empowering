@@ -668,6 +668,11 @@ html {
   color: var(--subtitle-color);
 }
 
+.container-filter {
+  display: flex;
+  gap: 30px;
+}
+
 .card-container {
   max-width: 164px;
   /* height: 428px;
