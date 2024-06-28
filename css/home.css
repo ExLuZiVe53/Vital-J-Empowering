@@ -266,6 +266,10 @@ html {
   display: none;
 }
 
+.navigation-main-list__item.curret {
+  color: white;
+}
+
 @media only screen and (min-width: 1025px) and (max-width: 1924px) {
   .navigation-main-list {
     display: flex;
@@ -285,11 +289,6 @@ html {
   .navigation-main-list__item-link:hover,
   .navigation-main-list__item-link:focus {
     color: var(--hover-color);
-  }
-  .navigation-main-list__item.summary {
-    display: flex;
-    align-items: baseline;
-    gap: 7px;
   }
 }
 
