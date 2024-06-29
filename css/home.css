@@ -175,6 +175,7 @@ html {
   .container {
     min-width: 391px;
     margin-left: 0;
+    padding: 16px 40px;
   }
 }
 
@@ -482,7 +483,8 @@ html {
 
 @media only screen and (min-width: 1024px) and (max-width: 1924px) {
   .menu-mobile-wrapper > .navigation-logo {
-    top: 0;
+    top: 15px;
+    left: 40px;
   }
 }
 
@@ -557,8 +559,8 @@ html {
 
 @media only screen and (min-width: 1024px) and (max-width: 1925px) {
   .btn-close {
-    top: 30px;
-    right: 17px;
+    top: 35px;
+    right: 40px;
   }
 }
 
