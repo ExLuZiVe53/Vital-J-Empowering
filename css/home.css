@@ -441,12 +441,6 @@ html {
   }
 
   .click-category__item {
-    font-family: var(--accent-font-family);
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.5em;
-    color: #272727;
-
     margin-bottom: 16px;
   }
 
@@ -457,6 +451,14 @@ html {
   .click-category__item:hover,
   .click-category__item:focus {
     color: var(--accent-color);
+  }
+
+  .click-category__link {
+    font-family: var(--accent-font-family);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.5em;
+    color: #272727;
   }
 }
 
