@@ -544,7 +544,7 @@ html {
   cursor: pointer;
 
   position: absolute;
-  top: 12px;
+  top: 4px;
   right: 18px;
 }
 
@@ -1277,6 +1277,11 @@ html {
   background-color: var(--bg-color);
 }
 
+.container-footer {
+  padding-top: 24px;
+  padding-bottom: 32px;
+}
+
 .footer-list {
   display: flex;
   flex-direction: column;
@@ -1362,7 +1367,6 @@ html {
 
   text-align: center;
   margin-top: 40px;
-  padding-bottom: 32px;
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1925px) {
