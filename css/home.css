@@ -945,6 +945,7 @@ html {
 .card-wrapper {
   display: flex;
   gap: 30px;
+  align-items: baseline;
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1925px) {
@@ -954,6 +955,23 @@ html {
   }
   .card-wrapper-item {
     max-width: 457px;
+  }
+}
+
+.card-wrapper__button-arrow {
+  display: none;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1925px) {
+  .card-wrapper__button-arrow {
+    display: flex;
+    width: 72px;
+    height: 72px;
+
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
   }
 }
 
