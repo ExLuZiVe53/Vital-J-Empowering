@@ -633,6 +633,22 @@ html {
   justify-content: space-around;
 }
 
+.paginations-buttons__btn {
+  color: var(--black-color);
+  background-color: transparent;
+  font-family: var(--accent-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5em;
+  border: none;
+  cursor: pointer;
+}
+
+.paginations-buttons__btn:hover {
+  color: var(--main-color);
+  background-color: var(--accent-color);
+}
+
 @media only screen and (min-width: 1024px) and (max-width: 1925px) {
   .exclusive-deals {
     position: relative;
