@@ -160,44 +160,43 @@
       </div>
     </header>
 
-    <main>
-      <div class="bradcrumbs">
-          <a href="./home.html" class="bradcrumbs__link">Vital-J Empowering</a>
-          <span>&#10095;</span>
-          <a href="./shop.html" class="bradcrumbs__link">Shop</a>
-          <span>&#10095;</span>
-          <a href="#" class="bradcrumbs__link">Category</a>
-        </div>
-        <aside class="sidebar">
+
+    <main class="main">
+      <aside class="sidebar">
           <div class="container">
-            
+            <form>
+              <h2>Filters</h2>
+              <label for="fitler-checkbox">Show products in stock only </label>
+              <input type="checkbox" id="fitler-checkbox">
+              <label for="checkPrice">Price</label>
+              <input type="range" min="0" max="80000" id="checkPrice">
+              <label for="">From</label>
+              <input type="number" placeholder="0">
+              <label for="">to</label>
+              <input type="number" placeholder="80000">
+              <h3>Release form</h3>
+              <input type="checkbox" id="checkCapsules">
+              <label for="checkCapsules">Capsules</label>
+              <input type="checkbox" id="checkLiquid">
+              <label for="checkLiquid">Liquid</label>
+              <input type="checkbox" id="checkPowder">
+              <label for="checkPowder">Powder</label>
+              <input type="checkbox" id="checkPills">
+              <label for="checkPills">Pills</label>
+             
+            </form>
           </div>
-          <form>
-            <h2>Filters</h2>
-            <label for="fitler-checkbox">Show products in stock only </label>
-            <input type="checkbox" id="fitler-checkbox">
-            <label for="checkPrice">Price</label>
-            <input type="range" min="0" max="80000" id="checkPrice">
-            <label for="">From</label>
-            <input type="number" placeholder="0">
-            <label for="">to</label>
-            <input type="number" placeholder="80000">
-            <h3>Release form</h3>
-            <input type="checkbox" id="checkCapsules">
-            <label for="checkCapsules">Capsules</label>
-            <input type="checkbox" id="checkLiquid">
-            <label for="checkLiquid">Liquid</label>
-            <input type="checkbox" id="checkPowder">
-            <label for="checkPowder">Powder</label>
-            <input type="checkbox" id="checkPills">
-            <label for="checkPills">Pills</label>
-           
-          </form>
-        </aside>
+      </aside>
 
-        <section class="exclusive-deals">
+      <section class="exclusive-deals">
         <div class="container">
-
+          <div class="bradcrumbs">
+            <a href="./home.html" class="bradcrumbs__link">Vital-J Empowering</a>
+            <span>&#10095;</span>
+            <a href="./shop.html" class="bradcrumbs__link">Shop</a>
+            <span>&#10095;</span>
+            <a href="#" class="bradcrumbs__link">Category</a>
+          </div>
           
 
         <h1 class="exclusive-deals-title">Category 1</h1>
@@ -406,10 +405,6 @@
             </li>
           </ul>
           <button type="submit" class="btn-card-add submit btn">See more</button>
-        </div>
-      </section>
-      <section class="paginations">
-        <div class="container">
           <div class="paginations-buttons">
             <button class="paginations-buttons__btn">
               <svg width="9.166992" height="15.835938" viewBox="0 0 9.16699 15.8359" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -438,6 +433,7 @@
           </div>
         </div>
       </section>
+      
     </main>
 
     <footer class="footer">

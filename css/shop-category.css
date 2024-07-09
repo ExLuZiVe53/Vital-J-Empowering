@@ -581,6 +581,20 @@ html {
 }
 
 /*MAIN*/
+.main {
+  display: flex;
+}
+
+.sidebar {
+  display: none;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1924px) {
+  .sidebar {
+    display: block;
+  }
+}
+
 .bradcrumbs {
   display: flex;
   margin-top: 24px;
@@ -728,16 +742,22 @@ html {
       rgba(125, 129, 137, 0.12);
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1770px) {
-  .card-container {
-    margin-top: 112px;
-  }
-}
-
 @media only screen and (min-width: 1025px) and (max-width: 1925px) {
   .card-container {
     width: 418px;
     height: 687px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1925px) {
+  .card-container {
+    max-width: 261px;
+    width: 260px;
+    height: 428px;
+
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 24px;
   }
 }
 
@@ -786,8 +806,7 @@ html {
 
 @media only screen and (min-width: 1024px) and (max-width: 1925px) {
   .card-wrapper {
-    justify-content: center;
-    gap: 74px;
+    justify-content: space-between;
   }
   .card-wrapper-item {
     max-width: 457px;
@@ -901,6 +920,12 @@ html {
   .card-img {
     width: 351px;
     height: 408px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1925px) {
+  .card-img {
+    width: 100%;
   }
 }
 
