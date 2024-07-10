@@ -164,26 +164,43 @@
     <main class="main">
       <aside class="sidebar">
           <div class="container">
-            <form>
-              <h2>Filters</h2>
-              <label for="fitler-checkbox">Show products in stock only </label>
-              <input type="checkbox" id="fitler-checkbox">
-              <label for="checkPrice">Price</label>
-              <input type="range" min="0" max="80000" id="checkPrice">
-              <label for="">From</label>
-              <input type="number" placeholder="0">
-              <label for="">to</label>
-              <input type="number" placeholder="80000">
-              <h3>Release form</h3>
-              <input type="checkbox" id="checkCapsules">
-              <label for="checkCapsules">Capsules</label>
-              <input type="checkbox" id="checkLiquid">
-              <label for="checkLiquid">Liquid</label>
-              <input type="checkbox" id="checkPowder">
-              <label for="checkPowder">Powder</label>
-              <input type="checkbox" id="checkPills">
-              <label for="checkPills">Pills</label>
+            <form class="form-filters">
+              <fieldset>
+                <legend class="form-filters__title">Filters</legend>
+                <input class="form-filters__check" type="checkbox" id="fitler-checkbox">
+                <label class="form-filters__subtitle" for="fitler-checkbox">Show products in stock only</label>
+              </fieldset>
+
+              <fieldset>
+                <label for="checkPrice">Price</label>
+                <input type="range" min="0" max="80000" id="checkPrice">
+                <label for="">From</label>
+                <input type="number" placeholder="0">
+                <label for="">to</label>
+                <input type="number" placeholder="80000">
+              </fieldset>
+
+              <fieldset>
+                <legend class="form-filters__title">Release form</legend>
+                <input class="form-filters__check" type="checkbox" id="checkCapsules">
+                <label for="checkCapsules">Capsules</label>
+                <input class="form-filters__check" type="checkbox" id="checkLiquid">
+                <label for="checkLiquid">Liquid</label>
+                <input class="form-filters__check" type="checkbox" id="checkPowder">
+                <label for="checkPowder">Powder</label>
+                <input class="form-filters__check" type="checkbox" id="checkPills">
+                <label for="checkPills">Pills</label>
+              </fieldset>
+
+              <fieldset>
+                <legend>Gender</legend>
+                <input class="form-filters__check" type="checkbox" id="checkMale">
+                <label for="checkMale">Male</label>
+                <input class="form-filters__check" type="checkbox" id="checkFemale">
+                <label for="checkFemale">Female</label>
+              </fieldset>
              
+              <button type="button">Reset filters</button>
             </form>
           </div>
       </aside>
@@ -198,13 +215,19 @@
             <a href="#" class="bradcrumbs__link">Category</a>
           </div>
           
-
         <h1 class="exclusive-deals-title">Category 1</h1>
 
         <div class="container-filter">
           <button type="button" class="btn-card-add container-filter btn">Filters</button>
           <button type="button" class="btn-card-add container-filter btn">Sort by</button>
         </div>
+
+        <label for="price-select">Sort by:</label>
+        <select name="price" id="price-select">
+          <option value="cheap-first">Price (cheap first)</option>
+          <option value="expensive-first">Price (expensive first)</option>
+          <option value="popular">Popular</option>
+        </select>
           
           <ul class="card-wrapper">
             <li class="card-container">
