@@ -712,6 +712,12 @@ html {
   gap: 30px;
 }
 
+@media only screen and (min-width: 1024px) and (max-width: 1925px) {
+  .container-filter {
+    display: none;
+  }
+}
+
 .container-filter.btn:hover,
 .container-filter.btn:focus {
   color: var(--accent-color);
