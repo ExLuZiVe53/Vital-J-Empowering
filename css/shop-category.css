@@ -725,6 +725,46 @@ html {
   border: 1px solid var(--accent-color);
 }
 
+.container-filter-price {
+  display: none;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1925px) {
+  .container-filter-price {
+    display: block;
+  }
+  .container-filter-price label {
+    font-family: var(--accent-font-family);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5em;
+
+    color: var(--title-color);
+  }
+
+  .container-filter-price select {
+    border: 1px solid var(--accent-color);
+    border-radius: 10px;
+    padding: 6px 16px;
+    color: #272727;
+
+    font-family: var(--accent-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.69em;
+    text-align: left;
+  }
+
+  .container-filter-price option {
+    color: #272727;
+    font-family: var(--accent-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.69em;
+    text-align: left;
+  }
+}
+
 .card-container {
   max-width: 164px;
   /* height: 428px;
