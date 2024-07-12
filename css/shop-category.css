@@ -171,7 +171,7 @@ html {
 
 /*!=================================================*/
 
-@media only screen and (min-width: 391px) and (max-width: 1024px) {
+@media only screen and (min-width: 391px) and (max-width: 1023px) {
   .container {
     min-width: 391px;
     margin-left: 0;
@@ -583,6 +583,7 @@ html {
 /*MAIN*/
 .main {
   display: flex;
+  gap: 60px;
 }
 
 .sidebar {
@@ -636,6 +637,33 @@ html {
   margin-right: 24px;
 }
 
+/* !=============CHECKBOX============== */
+.sign-in__label {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  border: 1px solid var(--bg-color);
+  border-radius: 5px;
+}
+
+.checkbox:checked ~ .checkbox-icon {
+  background-image: url(../img/icons/Icon-checked.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 5px;
+}
+
+.checkbox:focus ~ .checkbox-icon {
+  outline: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 5px;
+}
+
 /* SECTION EXCLUSIVE-DEALS */
 
 .paginations {
@@ -645,6 +673,16 @@ html {
 .paginations-buttons {
   display: flex;
   justify-content: space-around;
+
+  margin-top: 54px;
+  margin-bottom: 96px;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1925px) {
+  .paginations-buttons {
+    gap: 26px;
+    justify-content: center;
+  }
 }
 
 .paginations-buttons__btn {
@@ -692,6 +730,13 @@ html {
   text-align: center;
 
   color: var(--title-color);
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1925px) {
+  .exclusive-deals-title {
+    margin: 15px 0 43px 0;
+    text-align: start;
+  }
 }
 
 .exclusive-deals-subtitle {
@@ -852,7 +897,8 @@ html {
 
 @media only screen and (min-width: 1024px) and (max-width: 1925px) {
   .card-wrapper {
-    justify-content: space-between;
+    justify-content: start;
+    gap: 48px 34px;
   }
   .card-wrapper-item {
     max-width: 457px;
@@ -995,6 +1041,13 @@ html {
   background-color: transparent;
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1925px) {
+  .btn-card-add.submit {
+    margin: 0;
+    width: auto;
+  }
 }
 
 .btn-card-add.submit:hover,
