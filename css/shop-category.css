@@ -583,7 +583,7 @@ html {
 /*MAIN*/
 .main {
   display: flex;
-  gap: 60px;
+  /* gap: 60px; */
 }
 
 .sidebar {
@@ -637,10 +637,20 @@ html {
   margin-right: 24px;
 }
 
+fieldset {
+  border: none;
+  border-bottom: 1px solid #5e92b67d;
+}
+
 /* !=============CHECKBOX============== */
 .sign-in__label {
   display: flex;
   align-items: center;
+
+  font-family: var(--accent-font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 .checkbox-icon {
@@ -662,6 +672,14 @@ html {
 .checkbox:focus ~ .checkbox-icon {
   outline: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 5px;
+}
+
+.label-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 16px;
 }
 
 /* SECTION EXCLUSIVE-DEALS */
