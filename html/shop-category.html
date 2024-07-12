@@ -162,305 +162,339 @@
 
 
     <main class="main">
-      <aside class="sidebar">
+        <aside class="sidebar">
+            <div class="container">
+              <form class="form-filters">
+                <fieldset>
+                  <legend class="form-filters__title">Filters</legend>
+                  <div class="label-container">
+                    <label class="sign-in__label">
+                      <input type="checkbox" class="checkbox" name="remember" />
+                      <span class="checkbox-icon"></span>
+                      Show products in stock only
+                    </label>
+                  </div>
+                </fieldset>
+  
+                <fieldset>
+                  <legend>Price</legend>
+                  <input type="range" min="0" max="80000" id="checkPrice">
+                  <label for="">From</label>
+                  <input type="number" placeholder="0">
+                  <label for="">to</label>
+                  <input type="number" placeholder="80000">
+                </fieldset>
+  
+                <fieldset>
+                  <legend class="form-filters__title">Release form</legend>
+                  <div class="label-container">
+                    <label class="sign-in__label">
+                      <input type="checkbox" class="checkbox" name="remember" />
+                      <span class="checkbox-icon"></span>
+                      Capsules
+                    </label>
+                  </div>
+                  <div class="label-container">
+                    <label class="sign-in__label">
+                      <input type="checkbox" class="checkbox" name="remember" />
+                      <span class="checkbox-icon"></span>
+                      Liquid
+                    </label>
+                  </div>
+                  <div class="label-container">
+                    <label class="sign-in__label">
+                      <input type="checkbox" class="checkbox" name="remember" />
+                      <span class="checkbox-icon"></span>
+                      Powder
+                    </label>
+                  </div>
+                  <div class="label-container">
+                    <label class="sign-in__label">
+                      <input type="checkbox" class="checkbox" name="remember" />
+                      <span class="checkbox-icon"></span>
+                      Pills
+                    </label>
+                  </div>
+                </fieldset>
+  
+                <fieldset>
+                  <legend class="form-filters__title">Gender</legend>
+                  <div class="label-container">
+                    <label class="sign-in__label">
+                      <input type="checkbox" class="checkbox" name="remember" />
+                      <span class="checkbox-icon"></span>
+                      Male
+                    </label>
+                  </div>
+                  <div class="label-container">
+                    <label class="sign-in__label">
+                      <input type="checkbox" class="checkbox" name="remember" />
+                      <span class="checkbox-icon"></span>
+                      Female
+                    </label>
+                  </div>
+                </fieldset>
+               
+                <button type="button">Reset filters</button>
+              </form>
+            </div>
+        </aside>
+  
+        <section class="exclusive-deals">
           <div class="container">
-            <form class="form-filters">
-              <fieldset>
-                <legend class="form-filters__title">Filters</legend>
-                <input class="form-filters__check" type="checkbox" id="fitler-checkbox">
-                <label class="form-filters__subtitle" for="fitler-checkbox">Show products in stock only</label>
-              </fieldset>
-
-              <fieldset>
-                <legend>Price</legend>
-                <input type="range" min="0" max="80000" id="checkPrice">
-                <label for="">From</label>
-                <input type="number" placeholder="0">
-                <label for="">to</label>
-                <input type="number" placeholder="80000">
-              </fieldset>
-
-              <fieldset>
-                <legend class="form-filters__title">Release form</legend>
-                <input class="form-filters__check" type="checkbox" id="checkCapsules">
-                <label for="checkCapsules">Capsules</label>
-                <input class="form-filters__check" type="checkbox" id="checkLiquid">
-                <label for="checkLiquid">Liquid</label>
-                <input class="form-filters__check" type="checkbox" id="checkPowder">
-                <label for="checkPowder">Powder</label>
-                <input class="form-filters__check" type="checkbox" id="checkPills">
-                <label for="checkPills">Pills</label>
-              </fieldset>
-
-              <fieldset>
-                <legend class="form-filters__title">Gender</legend>
-                <input class="form-filters__check" type="checkbox" id="checkMale">
-                <label for="checkMale">Male</label>
-                <input class="form-filters__check" type="checkbox" id="checkFemale">
-                <label for="checkFemale">Female</label>
-              </fieldset>
-             
-              <button type="button">Reset filters</button>
-            </form>
+            <div class="bradcrumbs">
+              <a href="./home.html" class="bradcrumbs__link">Vital-J Empowering</a>
+              <span>&#10095;</span>
+              <a href="./shop.html" class="bradcrumbs__link">Shop</a>
+              <span>&#10095;</span>
+              <a href="#" class="bradcrumbs__link">Category</a>
+            </div>
+            
+            <h1 class="exclusive-deals-title">Category 1</h1>
+  
+            <div class="container-filter">
+              <button type="button" class="btn-card-add container-filter btn">Filters</button>
+              <button type="button" class="btn-card-add container-filter btn">Sort by</button>
+            </div>
+  
+            <div class="container-filter-price">
+              <label for="price-select">Sort by:</label>
+              <select name="price" id="price-select">
+                <option value="cheap-first">Price (cheap first)</option>
+                <hr>
+                <option value="expensive-first">Price (expensive first)</option>
+                <hr>
+                <option value="popular">Popular</option>
+              </select>
+            </div>
+            
+            <ul class="card-wrapper">
+              <li class="card-container">
+                <div class="card-sale">
+                  <span class="card-sale-text">Sale</span>
+                </div>
+  
+                <img class="card-img" src="../img/icons/shop/tube-small.png" alt="tube" />
+                <p class="card-text">Lorem ipsum dolor sit amet</p>
+  
+                <div class="card-price-container">
+                  <div class="price-container">
+                    <span class="card-price">$50</span>
+                    <span class="card-price sale">$70</span>
+                  </div>
+  
+                  <div class="button-container">
+                    <button type="button" class="button-heart">
+                      <svg class="heart" width="24" height="24">
+                        <use href="../img/sprite.svg#icon-Heart"></use>
+                      </svg>
+                    </button>
+                    <button type="button" class="button-solid">
+                      <svg class="icon-Solid" width="24" height="24">
+                        <use href="../img/sprite.svg#icon-Solid"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+  
+                <button class="btn-card-add btn" type="button">
+                  Add to cart
+                </button>
+              </li>
+  
+              <li class="card-container">
+                <div class="card-sale">
+                  <span class="card-sale-text">Sale</span>
+                </div>
+  
+                <img class="card-img" src="../img/icons/shop/tube-small.png" alt="tube" />
+                <p class="card-text">Lorem ipsum dolor sit amet</p>
+  
+                <div class="card-price-container">
+                  <div class="price-container">
+                    <span class="card-price">$80</span>
+                    <span class="card-price sale">$70</span>
+                  </div>
+                  <div class="button-container">
+                    <button class="button-heart" type="button">
+                      <svg class="heart" width="24" height="24">
+                        <use href="../img/sprite.svg#icon-Heart"></use>
+                      </svg>
+                    </button>
+                    <button class="button-solid" type="button">
+                      <svg class="icon-Solid" width="24" height="24">
+                        <use href="../img/sprite.svg#icon-Solid"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+  
+                <button class="btn-card-add btn" type="button">
+                  Add to cart
+                </button>
+              </li>
+  
+              <li class="card-container">
+                <div class="card-sale">
+                  <span class="card-sale-text">Sale</span>
+                </div>
+  
+                <img class="card-img" src="../img/icons/shop/tube-small.png" alt="tube" />
+                <p class="card-text">Lorem ipsum dolor sit amet</p>
+  
+                <div class="card-price-container">
+                  <div class="price-container">
+                    <span class="card-price">$50</span>
+                    <span class="card-price sale">$70</span>
+                  </div>
+  
+                  <div class="button-container">
+                    <button type="button" class="button-heart">
+                      <svg class="heart" width="24" height="24">
+                        <use href="../img/sprite.svg#icon-Heart"></use>
+                      </svg>
+                    </button>
+                    <button type="button" class="button-solid">
+                      <svg class="icon-Solid" width="24" height="24">
+                        <use href="../img/sprite.svg#icon-Solid"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+  
+                <button class="btn-card-add btn" type="button">
+                  Add to cart
+                </button>
+              </li>
+  
+              <li class="card-container">
+                <div class="card-sale">
+                  <span class="card-sale-text">Sale</span>
+                </div>
+  
+                <img class="card-img" src="../img/icons/shop/tube-small.png" alt="tube" />
+                <p class="card-text">Lorem ipsum dolor sit amet</p>
+  
+                <div class="card-price-container">
+                  <div class="price-container">
+                    <span class="card-price">$50</span>
+                    <span class="card-price sale">$70</span>
+                  </div>
+  
+                  <div class="button-container">
+                    <button type="button" class="button-heart">
+                      <svg class="heart" width="24" height="24">
+                        <use href="../img/sprite.svg#icon-Heart"></use>
+                      </svg>
+                    </button>
+                    <button type="button" class="button-solid">
+                      <svg class="icon-Solid" width="24" height="24">
+                        <use href="../img/sprite.svg#icon-Solid"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+  
+                <button class="btn-card-add btn" type="button">
+                  Add to cart
+                </button>
+              </li>
+  
+              <li class="card-container">
+                <div class="card-sale">
+                  <span class="card-sale-text">Sale</span>
+                </div>
+  
+                <img class="card-img" src="../img/icons/shop/tube-small.png" alt="tube" />
+                <p class="card-text">Lorem ipsum dolor sit amet</p>
+  
+                <div class="card-price-container">
+                  <div class="price-container">
+                    <span class="card-price">$50</span>
+                    <span class="card-price sale">$70</span>
+                  </div>
+  
+                  <div class="button-container">
+                    <button type="button" class="button-heart">
+                      <svg class="heart" width="24" height="24">
+                        <use href="../img/sprite.svg#icon-Heart"></use>
+                      </svg>
+                    </button>
+                    <button type="button" class="button-solid">
+                      <svg class="icon-Solid" width="24" height="24">
+                        <use href="../img/sprite.svg#icon-Solid"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+  
+                <button class="btn-card-add btn" type="button">
+                  Add to cart
+                </button>
+              </li>
+  
+              <li class="card-container">
+                <div class="card-sale">
+                  <span class="card-sale-text">Sale</span>
+                </div>
+  
+                <img class="card-img" src="../img/icons/shop/tube-small.png" alt="tube" />
+                <p class="card-text">Lorem ipsum dolor sit amet</p>
+  
+                <div class="card-price-container">
+                  <div class="price-container">
+                    <span class="card-price">$50</span>
+                    <span class="card-price sale">$70</span>
+                  </div>
+  
+                  <div class="button-container">
+                    <button type="button" class="button-heart">
+                      <svg class="heart" width="24" height="24">
+                        <use href="../img/sprite.svg#icon-Heart"></use>
+                      </svg>
+                    </button>
+                    <button type="button" class="button-solid">
+                      <svg class="icon-Solid" width="24" height="24">
+                        <use href="../img/sprite.svg#icon-Solid"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+  
+                <button class="btn-card-add btn" type="button">
+                  Add to cart
+                </button>
+              </li>
+            </ul>
+            <button type="submit" class="btn-card-add submit btn">See more</button>
+            <div class="paginations-buttons">
+              <button class="paginations-buttons__btn">
+                <svg width="9.166992" height="15.835938" viewBox="0 0 9.16699 15.8359" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <desc>
+                    Created with Pixso.
+                </desc>
+                <defs/>
+                <path id="Icon" d="M8.8 0.36C9.28 0.85 9.28 1.64 8.8 2.13L3.01 7.91L8.8 13.69C9.28 14.18 9.28 14.98 8.8 15.46C8.31 15.95 7.52 15.95 7.03 15.46L0.36 8.8C-0.13 8.31 -0.13 7.51 0.36 7.03L7.03 0.36C7.52 -0.13 8.31 -0.13 8.8 0.36Z" fill="#272727" fill-opacity="1.000000" fill-rule="evenodd"/>
+                </svg>
+              </button>
+              <button class="paginations-buttons__btn">1</button>
+              <button class="paginations-buttons__btn">2</button>
+              <button class="paginations-buttons__btn">3</button>
+              <button class="paginations-buttons__btn">4</button>
+              <button class="paginations-buttons__btn">...</button>
+              <button class="paginations-buttons__btn">7</button>
+              <button class="paginations-buttons__btn">
+                <svg width="9.166992" height="15.835938" viewBox="0 0 9.16699 15.8359" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <desc>
+                Created with Pixso.
+                </desc>
+                <defs/>
+                <path id="Icon" d="M0.36 0.36C0.85 -0.13 1.64 -0.13 2.13 0.36L8.8 7.03C9.28 7.51 9.28 8.31 8.8 8.8L2.13 15.46C1.64 15.95 0.85 15.95 0.36 15.46C-0.13 14.98 -0.13 14.18 0.36 13.69L6.14 7.91L0.36 2.13C-0.13 1.64 -0.13 0.85 0.36 0.36Z" fill="#272727" fill-opacity="1.000000" fill-rule="evenodd"/>
+                </svg>
+              </button>
+            </div>
           </div>
-      </aside>
-
-      <section class="exclusive-deals">
-        <div class="container">
-          <div class="bradcrumbs">
-            <a href="./home.html" class="bradcrumbs__link">Vital-J Empowering</a>
-            <span>&#10095;</span>
-            <a href="./shop.html" class="bradcrumbs__link">Shop</a>
-            <span>&#10095;</span>
-            <a href="#" class="bradcrumbs__link">Category</a>
-          </div>
-          
-        <h1 class="exclusive-deals-title">Category 1</h1>
-
-        <div class="container-filter">
-          <button type="button" class="btn-card-add container-filter btn">Filters</button>
-          <button type="button" class="btn-card-add container-filter btn">Sort by</button>
-        </div>
-
-        <div class="container-filter-price">
-          <label for="price-select">Sort by:</label>
-          <select name="price" id="price-select">
-            <option value="cheap-first">Price (cheap first)</option>
-            <hr>
-            <option value="expensive-first">Price (expensive first)</option>
-            <hr>
-            <option value="popular">Popular</option>
-          </select>
-        </div>
-          
-          <ul class="card-wrapper">
-            <li class="card-container">
-              <div class="card-sale">
-                <span class="card-sale-text">Sale</span>
-              </div>
-
-              <img class="card-img" src="../img/icons/shop/tube-small.png" alt="tube" />
-              <p class="card-text">Lorem ipsum dolor sit amet</p>
-
-              <div class="card-price-container">
-                <div class="price-container">
-                  <span class="card-price">$50</span>
-                  <span class="card-price sale">$70</span>
-                </div>
-
-                <div class="button-container">
-                  <button type="button" class="button-heart">
-                    <svg class="heart" width="24" height="24">
-                      <use href="../img/sprite.svg#icon-Heart"></use>
-                    </svg>
-                  </button>
-                  <button type="button" class="button-solid">
-                    <svg class="icon-Solid" width="24" height="24">
-                      <use href="../img/sprite.svg#icon-Solid"></use>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-
-              <button class="btn-card-add btn" type="button">
-                Add to cart
-              </button>
-            </li>
-
-            <li class="card-container">
-              <div class="card-sale">
-                <span class="card-sale-text">Sale</span>
-              </div>
-
-              <img class="card-img" src="../img/icons/shop/tube-small.png" alt="tube" />
-              <p class="card-text">Lorem ipsum dolor sit amet</p>
-
-              <div class="card-price-container">
-                <div class="price-container">
-                  <span class="card-price">$80</span>
-                  <span class="card-price sale">$70</span>
-                </div>
-                <div class="button-container">
-                  <button class="button-heart" type="button">
-                    <svg class="heart" width="24" height="24">
-                      <use href="../img/sprite.svg#icon-Heart"></use>
-                    </svg>
-                  </button>
-                  <button class="button-solid" type="button">
-                    <svg class="icon-Solid" width="24" height="24">
-                      <use href="../img/sprite.svg#icon-Solid"></use>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-
-              <button class="btn-card-add btn" type="button">
-                Add to cart
-              </button>
-            </li>
-
-            <li class="card-container">
-              <div class="card-sale">
-                <span class="card-sale-text">Sale</span>
-              </div>
-
-              <img class="card-img" src="../img/icons/shop/tube-small.png" alt="tube" />
-              <p class="card-text">Lorem ipsum dolor sit amet</p>
-
-              <div class="card-price-container">
-                <div class="price-container">
-                  <span class="card-price">$50</span>
-                  <span class="card-price sale">$70</span>
-                </div>
-
-                <div class="button-container">
-                  <button type="button" class="button-heart">
-                    <svg class="heart" width="24" height="24">
-                      <use href="../img/sprite.svg#icon-Heart"></use>
-                    </svg>
-                  </button>
-                  <button type="button" class="button-solid">
-                    <svg class="icon-Solid" width="24" height="24">
-                      <use href="../img/sprite.svg#icon-Solid"></use>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-
-              <button class="btn-card-add btn" type="button">
-                Add to cart
-              </button>
-            </li>
-
-            <li class="card-container">
-              <div class="card-sale">
-                <span class="card-sale-text">Sale</span>
-              </div>
-
-              <img class="card-img" src="../img/icons/shop/tube-small.png" alt="tube" />
-              <p class="card-text">Lorem ipsum dolor sit amet</p>
-
-              <div class="card-price-container">
-                <div class="price-container">
-                  <span class="card-price">$50</span>
-                  <span class="card-price sale">$70</span>
-                </div>
-
-                <div class="button-container">
-                  <button type="button" class="button-heart">
-                    <svg class="heart" width="24" height="24">
-                      <use href="../img/sprite.svg#icon-Heart"></use>
-                    </svg>
-                  </button>
-                  <button type="button" class="button-solid">
-                    <svg class="icon-Solid" width="24" height="24">
-                      <use href="../img/sprite.svg#icon-Solid"></use>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-
-              <button class="btn-card-add btn" type="button">
-                Add to cart
-              </button>
-            </li>
-
-            <li class="card-container">
-              <div class="card-sale">
-                <span class="card-sale-text">Sale</span>
-              </div>
-
-              <img class="card-img" src="../img/icons/shop/tube-small.png" alt="tube" />
-              <p class="card-text">Lorem ipsum dolor sit amet</p>
-
-              <div class="card-price-container">
-                <div class="price-container">
-                  <span class="card-price">$50</span>
-                  <span class="card-price sale">$70</span>
-                </div>
-
-                <div class="button-container">
-                  <button type="button" class="button-heart">
-                    <svg class="heart" width="24" height="24">
-                      <use href="../img/sprite.svg#icon-Heart"></use>
-                    </svg>
-                  </button>
-                  <button type="button" class="button-solid">
-                    <svg class="icon-Solid" width="24" height="24">
-                      <use href="../img/sprite.svg#icon-Solid"></use>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-
-              <button class="btn-card-add btn" type="button">
-                Add to cart
-              </button>
-            </li>
-
-            <li class="card-container">
-              <div class="card-sale">
-                <span class="card-sale-text">Sale</span>
-              </div>
-
-              <img class="card-img" src="../img/icons/shop/tube-small.png" alt="tube" />
-              <p class="card-text">Lorem ipsum dolor sit amet</p>
-
-              <div class="card-price-container">
-                <div class="price-container">
-                  <span class="card-price">$50</span>
-                  <span class="card-price sale">$70</span>
-                </div>
-
-                <div class="button-container">
-                  <button type="button" class="button-heart">
-                    <svg class="heart" width="24" height="24">
-                      <use href="../img/sprite.svg#icon-Heart"></use>
-                    </svg>
-                  </button>
-                  <button type="button" class="button-solid">
-                    <svg class="icon-Solid" width="24" height="24">
-                      <use href="../img/sprite.svg#icon-Solid"></use>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-
-              <button class="btn-card-add btn" type="button">
-                Add to cart
-              </button>
-            </li>
-          </ul>
-          <button type="submit" class="btn-card-add submit btn">See more</button>
-          <div class="paginations-buttons">
-            <button class="paginations-buttons__btn">
-              <svg width="9.166992" height="15.835938" viewBox="0 0 9.16699 15.8359" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <desc>
-                  Created with Pixso.
-              </desc>
-              <defs/>
-	            <path id="Icon" d="M8.8 0.36C9.28 0.85 9.28 1.64 8.8 2.13L3.01 7.91L8.8 13.69C9.28 14.18 9.28 14.98 8.8 15.46C8.31 15.95 7.52 15.95 7.03 15.46L0.36 8.8C-0.13 8.31 -0.13 7.51 0.36 7.03L7.03 0.36C7.52 -0.13 8.31 -0.13 8.8 0.36Z" fill="#272727" fill-opacity="1.000000" fill-rule="evenodd"/>
-              </svg>
-            </button>
-            <button class="paginations-buttons__btn">1</button>
-            <button class="paginations-buttons__btn">2</button>
-            <button class="paginations-buttons__btn">3</button>
-            <button class="paginations-buttons__btn">4</button>
-            <button class="paginations-buttons__btn">...</button>
-            <button class="paginations-buttons__btn">7</button>
-            <button class="paginations-buttons__btn">
-              <svg width="9.166992" height="15.835938" viewBox="0 0 9.16699 15.8359" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-	            <desc>
-			        Created with Pixso.
-	            </desc>
-	            <defs/>
-	            <path id="Icon" d="M0.36 0.36C0.85 -0.13 1.64 -0.13 2.13 0.36L8.8 7.03C9.28 7.51 9.28 8.31 8.8 8.8L2.13 15.46C1.64 15.95 0.85 15.95 0.36 15.46C-0.13 14.98 -0.13 14.18 0.36 13.69L6.14 7.91L0.36 2.13C-0.13 1.64 -0.13 0.85 0.36 0.36Z" fill="#272727" fill-opacity="1.000000" fill-rule="evenodd"/>
-              </svg>
-            </button>
-          </div>
-        </div>
-      </section>
-      
+        </section>
     </main>
 
     <footer class="footer">
@@ -890,6 +924,7 @@
         </div>
       </div>
     </footer>
+
     <script src="../js/burger.js"></script>
     <script src="../js/search.js"></script>
   </body>
