@@ -684,6 +684,14 @@ fieldset {
 
 /* SECTION EXCLUSIVE-DEALS */
 
+legend.sign-in__label {
+  font-family: var(--accent-font-family);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5em;
+  color: var(--title-color);
+}
+
 .paginations {
   padding: 36px 0 96px 0;
 }
