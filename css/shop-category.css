@@ -178,9 +178,17 @@ html {
   }
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1924px) {
+@media only screen and (min-width: 1024px) and (max-width: 1924px) {
   .container {
-    min-width: 1025px;
+    min-width: 1024px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media only screen and (min-width: 1925px) {
+  .container {
+    min-width: 1925px;
     padding-left: 80px;
     padding-right: 80px;
   }
@@ -640,6 +648,10 @@ html {
 fieldset {
   border: none;
   border-bottom: 1px solid #5e92b67d;
+}
+
+.input-price {
+  width: 100%;
 }
 
 /* !=============CHECKBOX============== */
