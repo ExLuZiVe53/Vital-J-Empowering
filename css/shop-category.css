@@ -171,9 +171,9 @@ html {
 
 /*!=================================================*/
 
-@media only screen and (min-width: 391px) and (max-width: 1023px) {
+@media only screen and (min-width: 358px) and (max-width: 1023px) {
   .container {
-    min-width: 391px;
+    min-width: 358px;
     margin-left: 0;
   }
 }
@@ -195,6 +195,10 @@ html {
 .container-flex.top {
   padding: 0 26px;
   position: relative;
+}
+
+.container-flex.wrapper {
+  align-items: stretch;
 }
 
 .navigation-logo {
@@ -581,10 +585,6 @@ html {
 }
 
 /*MAIN*/
-.main {
-  display: flex;
-  /* gap: 60px; */
-}
 
 .sidebar {
   display: none;
@@ -761,7 +761,6 @@ legend.sign-in__label {
 @media only screen and (min-width: 1024px) and (max-width: 1925px) {
   .exclusive-deals-title {
     margin: 15px 0 43px 0;
-    text-align: start;
   }
 }
 
