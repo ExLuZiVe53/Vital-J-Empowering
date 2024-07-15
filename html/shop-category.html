@@ -162,101 +162,103 @@
 
 
     <main class="main">
-        <aside class="sidebar">
-            <div class="container">
-              <form class="form-filters">
-                <fieldset>
-                  <legend class="sign-in__label">Filters</legend>
-                  <div class="label-container">
-                    <label class="sign-in__label">
-                      <input type="checkbox" class="checkbox" name="remember" />
-                      <span class="checkbox-icon"></span>
-                      Show products in stock only
-                    </label>
-                  </div>
-                </fieldset>
-  
-                <fieldset>
-                  <legend class="sign-in__label">Price</legend>
-                  <input type="range" min="0" max="80000" id="checkPrice">
-                  <label class="sign-in__label" for="">From</label>
-                  <input type="number" placeholder="0">
-                  <label class="sign-in__label" for="">to</label>
-                  <input type="number" placeholder="80000">
-                </fieldset>
-  
-                <fieldset>
-                  <legend class="sign-in__label">Release form</legend>
-                  <div class="label-container">
-                    <label class="sign-in__label">
-                      <input type="checkbox" class="checkbox" name="remember" />
-                      <span class="checkbox-icon"></span>
-                      Capsules
-                    </label>
-                  </div>
-                  <div class="label-container">
-                    <label class="sign-in__label">
-                      <input type="checkbox" class="checkbox" name="remember" />
-                      <span class="checkbox-icon"></span>
-                      Liquid
-                    </label>
-                  </div>
-                  <div class="label-container">
-                    <label class="sign-in__label">
-                      <input type="checkbox" class="checkbox" name="remember" />
-                      <span class="checkbox-icon"></span>
-                      Powder
-                    </label>
-                  </div>
-                  <div class="label-container">
-                    <label class="sign-in__label">
-                      <input type="checkbox" class="checkbox" name="remember" />
-                      <span class="checkbox-icon"></span>
-                      Pills
-                    </label>
-                  </div>
-                </fieldset>
-  
-                <fieldset>
-                  <legend class="sign-in__label">Gender</legend>
-                  <div class="label-container">
-                    <label class="sign-in__label">
-                      <input type="checkbox" class="checkbox" name="remember" />
-                      <span class="checkbox-icon"></span>
-                      Male
-                    </label>
-                  </div>
-                  <div class="label-container">
-                    <label class="sign-in__label">
-                      <input type="checkbox" class="checkbox" name="remember" />
-                      <span class="checkbox-icon"></span>
-                      Female
-                    </label>
-                  </div>
-                </fieldset>
-               
-                <button type="button">Reset filters</button>
-              </form>
-            </div>
-        </aside>
-  
-        <section class="exclusive-deals">
-          <div class="container">
-            <div class="bradcrumbs">
-              <a href="./home.html" class="bradcrumbs__link">Vital-J Empowering</a>
-              <span>&#10095;</span>
-              <a href="./shop.html" class="bradcrumbs__link">Shop</a>
-              <span>&#10095;</span>
-              <a href="#" class="bradcrumbs__link">Category</a>
-            </div>
+      <section class="main-container">
+        <div class="container">
+          <div class="bradcrumbs">
+            <a href="./home.html" class="bradcrumbs__link">Vital-J Empowering</a>
+            <span>&#10095;</span>
+            <a href="./shop.html" class="bradcrumbs__link">Shop</a>
+            <span>&#10095;</span>
+            <a href="#" class="bradcrumbs__link">Category</a>
+          </div>
+          
+          <h1 class="exclusive-deals-title">Category 1</h1>
+        </div>
+        <div class="container container-flex wrapper">
+
+          <aside class="sidebar">     
+            <form class="form-filters">
+              <fieldset>
+                <legend class="sign-in__label">Filters</legend>
+                <div class="label-container">
+                  <label class="sign-in__label">
+                    <input type="checkbox" class="checkbox" name="remember" />
+                    <span class="checkbox-icon"></span>
+                    Show products in stock only
+                  </label>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend class="sign-in__label">Price</legend>
+                <input type="range" min="0" max="80000" id="checkPrice">
+                <label class="sign-in__label" for="">From</label>
+                <input type="number" placeholder="0">
+                <label class="sign-in__label" for="">to</label>
+                <input type="number" placeholder="80000">
+              </fieldset>
+
+              <fieldset>
+                <legend class="sign-in__label">Release form</legend>
+                <div class="label-container">
+                  <label class="sign-in__label">
+                    <input type="checkbox" class="checkbox" name="remember" />
+                    <span class="checkbox-icon"></span>
+                    Capsules
+                  </label>
+                </div>
+                <div class="label-container">
+                  <label class="sign-in__label">
+                    <input type="checkbox" class="checkbox" name="remember" />
+                    <span class="checkbox-icon"></span>
+                    Liquid
+                  </label>
+                </div>
+                <div class="label-container">
+                  <label class="sign-in__label">
+                    <input type="checkbox" class="checkbox" name="remember" />
+                    <span class="checkbox-icon"></span>
+                    Powder
+                  </label>
+                </div>
+                <div class="label-container">
+                  <label class="sign-in__label">
+                    <input type="checkbox" class="checkbox" name="remember" />
+                    <span class="checkbox-icon"></span>
+                    Pills
+                  </label>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend class="sign-in__label">Gender</legend>
+                <div class="label-container">
+                  <label class="sign-in__label">
+                    <input type="checkbox" class="checkbox" name="remember" />
+                    <span class="checkbox-icon"></span>
+                    Male
+                  </label>
+                </div>
+                <div class="label-container">
+                  <label class="sign-in__label">
+                    <input type="checkbox" class="checkbox" name="remember" />
+                    <span class="checkbox-icon"></span>
+                    Female
+                  </label>
+                </div>
+              </fieldset>
             
-            <h1 class="exclusive-deals-title">Category 1</h1>
-  
+              <button type="button">Reset filters</button>
+            </form>     
+          </aside>
+
+          <section class="exclusive-deals">
+
             <div class="container-filter">
               <button type="button" class="btn-card-add container-filter btn">Filters</button>
               <button type="button" class="btn-card-add container-filter btn">Sort by</button>
             </div>
-  
+
             <div class="container-filter-price">
               <label for="price-select">Sort by:</label>
               <select name="price" id="price-select">
@@ -273,16 +275,16 @@
                 <div class="card-sale">
                   <span class="card-sale-text">Sale</span>
                 </div>
-  
+
                 <img class="card-img" src="../img/icons/shop/tube-small.png" alt="tube" />
                 <p class="card-text">Lorem ipsum dolor sit amet</p>
-  
+
                 <div class="card-price-container">
                   <div class="price-container">
                     <span class="card-price">$50</span>
                     <span class="card-price sale">$70</span>
                   </div>
-  
+
                   <div class="button-container">
                     <button type="button" class="button-heart">
                       <svg class="heart" width="24" height="24">
@@ -296,20 +298,20 @@
                     </button>
                   </div>
                 </div>
-  
+
                 <button class="btn-card-add btn" type="button">
                   Add to cart
                 </button>
               </li>
-  
+
               <li class="card-container">
                 <div class="card-sale">
                   <span class="card-sale-text">Sale</span>
                 </div>
-  
+
                 <img class="card-img" src="../img/icons/shop/tube-small.png" alt="tube" />
                 <p class="card-text">Lorem ipsum dolor sit amet</p>
-  
+
                 <div class="card-price-container">
                   <div class="price-container">
                     <span class="card-price">$80</span>
@@ -328,26 +330,26 @@
                     </button>
                   </div>
                 </div>
-  
+
                 <button class="btn-card-add btn" type="button">
                   Add to cart
                 </button>
               </li>
-  
+
               <li class="card-container">
                 <div class="card-sale">
                   <span class="card-sale-text">Sale</span>
                 </div>
-  
+
                 <img class="card-img" src="../img/icons/shop/tube-small.png" alt="tube" />
                 <p class="card-text">Lorem ipsum dolor sit amet</p>
-  
+
                 <div class="card-price-container">
                   <div class="price-container">
                     <span class="card-price">$50</span>
                     <span class="card-price sale">$70</span>
                   </div>
-  
+
                   <div class="button-container">
                     <button type="button" class="button-heart">
                       <svg class="heart" width="24" height="24">
@@ -361,26 +363,26 @@
                     </button>
                   </div>
                 </div>
-  
+
                 <button class="btn-card-add btn" type="button">
                   Add to cart
                 </button>
               </li>
-  
+
               <li class="card-container">
                 <div class="card-sale">
                   <span class="card-sale-text">Sale</span>
                 </div>
-  
+
                 <img class="card-img" src="../img/icons/shop/tube-small.png" alt="tube" />
                 <p class="card-text">Lorem ipsum dolor sit amet</p>
-  
+
                 <div class="card-price-container">
                   <div class="price-container">
                     <span class="card-price">$50</span>
                     <span class="card-price sale">$70</span>
                   </div>
-  
+
                   <div class="button-container">
                     <button type="button" class="button-heart">
                       <svg class="heart" width="24" height="24">
@@ -394,26 +396,26 @@
                     </button>
                   </div>
                 </div>
-  
+
                 <button class="btn-card-add btn" type="button">
                   Add to cart
                 </button>
               </li>
-  
+
               <li class="card-container">
                 <div class="card-sale">
                   <span class="card-sale-text">Sale</span>
                 </div>
-  
+
                 <img class="card-img" src="../img/icons/shop/tube-small.png" alt="tube" />
                 <p class="card-text">Lorem ipsum dolor sit amet</p>
-  
+
                 <div class="card-price-container">
                   <div class="price-container">
                     <span class="card-price">$50</span>
                     <span class="card-price sale">$70</span>
                   </div>
-  
+
                   <div class="button-container">
                     <button type="button" class="button-heart">
                       <svg class="heart" width="24" height="24">
@@ -427,26 +429,26 @@
                     </button>
                   </div>
                 </div>
-  
+
                 <button class="btn-card-add btn" type="button">
                   Add to cart
                 </button>
               </li>
-  
+
               <li class="card-container">
                 <div class="card-sale">
                   <span class="card-sale-text">Sale</span>
                 </div>
-  
+
                 <img class="card-img" src="../img/icons/shop/tube-small.png" alt="tube" />
                 <p class="card-text">Lorem ipsum dolor sit amet</p>
-  
+
                 <div class="card-price-container">
                   <div class="price-container">
                     <span class="card-price">$50</span>
                     <span class="card-price sale">$70</span>
                   </div>
-  
+
                   <div class="button-container">
                     <button type="button" class="button-heart">
                       <svg class="heart" width="24" height="24">
@@ -460,7 +462,7 @@
                     </button>
                   </div>
                 </div>
-  
+
                 <button class="btn-card-add btn" type="button">
                   Add to cart
                 </button>
@@ -492,9 +494,10 @@
                 <path id="Icon" d="M0.36 0.36C0.85 -0.13 1.64 -0.13 2.13 0.36L8.8 7.03C9.28 7.51 9.28 8.31 8.8 8.8L2.13 15.46C1.64 15.95 0.85 15.95 0.36 15.46C-0.13 14.98 -0.13 14.18 0.36 13.69L6.14 7.91L0.36 2.13C-0.13 1.64 -0.13 0.85 0.36 0.36Z" fill="#272727" fill-opacity="1.000000" fill-rule="evenodd"/>
                 </svg>
               </button>
-            </div>
-          </div>
-        </section>
+            </div> 
+          </section>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
