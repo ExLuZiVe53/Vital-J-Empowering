@@ -308,6 +308,7 @@ p {
   .navigation-main-list__item-link:hover,
   .navigation-main-list__item-link:focus {
     color: var(--hover-color);
+    text-decoration: underline;
   }
 }
 
@@ -472,6 +473,11 @@ p {
     font-weight: 700;
     line-height: 1.5em;
     color: #272727;
+  }
+
+  .click-category__link:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
   }
 }
 
