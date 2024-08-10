@@ -3,13 +3,13 @@ const arrowRightBtn = document.querySelector(
   '.card-wrapper__button-arrow.right'
 );
 const cardContainer = document.querySelector('.card-container');
-console.log(cardContainer);
+// console.log(cardContainer);
 
 const onArrowLeftBtn = event => {
-  console.log('click left');
+  // console.log('click left');
 };
 const onArrowRightBtn = event => {
-  console.log('click right');
+  // console.log('click right');
 };
 
 arrowLeftBtn.addEventListener('click', onArrowLeftBtn);
