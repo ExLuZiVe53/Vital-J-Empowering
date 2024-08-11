@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../css/contact.css" />
   </head>
   <body>
+    <!----------------- HEADER ------------------------>
     <header class="navigation">
       <div class="navigation-top">
         <div class="container container-flex top">
@@ -38,7 +39,7 @@
 
       <div class="container container-flex">
         <a class="navigation-logo" href="./home.html">
-          <svg class="logo" width="66" height="41">
+          <svg class="logo" width="55" height="33">
             <use href="../img/sprite.svg#icon-logo"></use>
           </svg>
         </a>
@@ -67,11 +68,58 @@
               <a href="#" class="navigation-main-list__item-link">About us</a>
             </li>
             <li class="navigation-main-list__item">
-              <a href="#" class="navigation-main-list__item-link">
-                <details>
-                  <summary>Shop</summary>
-                </details>
+              <a href="./shop.html" class="navigation-main-list__item-link">
+                Shop
               </a>
+              <button class="btnArrow">
+                <svg class="btnArrow no-rotate" width="16" height="16">
+                  <use href="../img/sprite.svg#icon-arrow-down"></use>
+                </svg>
+              </button>
+              <article class="click-category">
+                <ul class="click-category__list">
+                  <li class="click-category__item">
+                    <a
+                      class="click-category__link"
+                      href="./shop-category.html"
+                      rel="noopener noreferrer"
+                      >Category 1</a
+                    >
+                  </li>
+                  <li class="click-category__item">
+                    <a
+                      class="click-category__link"
+                      href="./shop-category.html"
+                      rel="noopener noreferrer"
+                      >Category 2</a
+                    >
+                  </li>
+                  <li class="click-category__item">
+                    <a
+                      class="click-category__link"
+                      href="./shop-category.html"
+                      rel="noopener noreferrer"
+                      >Category 3</a
+                    >
+                  </li>
+                  <li class="click-category__item">
+                    <a
+                      class="click-category__link"
+                      href="./shop-category.html"
+                      rel="noopener noreferrer"
+                      >Category 4</a
+                    >
+                  </li>
+                  <li class="click-category__item">
+                    <a
+                      class="click-category__link"
+                      href="./shop-category.html"
+                      rel="noopener noreferrer"
+                      >Category 5</a
+                    >
+                  </li>
+                </ul>
+              </article>
             </li>
             <li class="navigation-main-list__item">
               <a href="./contact.html" class="navigation-main-list__item-link"
@@ -90,7 +138,7 @@
               <use href="../img/sprite.svg#icon-Account"></use>
             </svg>
           </li>
-          <li class="list-item heart">
+          <li class="list-item">
             <a class="list-item__link" href="#">
               <svg class="Heart social-icon" width="24" height="24">
                 <use href="../img/sprite.svg#icon-Heart"></use>
@@ -126,14 +174,14 @@
               </svg>
             </button>
             <a class="navigation-logo" href="./home.html">
-              <svg class="logo" width="66" height="41">
+              <svg class="logo" width="55" height="33">
                 <use href="../img/sprite.svg#icon-logo"></use>
               </svg>
             </a>
             <ul>
               <li><a href="./home.html">Home</a></li>
-              <li><a href="">About us</a></li>
-              <li><a href="">Shop</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="./shop.html">Shop</a></li>
               <li><a href="./contact.html">Contact us</a></li>
               <li><a href="">FAQ</a></li>
             </ul>
@@ -162,7 +210,9 @@
         </div>
       </div>
     </header>
+    <!---------------- end/HEADER --------------------->
 
+    <!----------------- MAIN -------------------------->
     <main>
       <div class="container">
         <div class="bradcrumbs">
@@ -182,97 +232,122 @@
           </a>
           <p class="sign-in__subtitle">Information</p>
           <address>
-            <p class="bradcrumbs__link bold">Address:<span class="bradcrumbs__link">Hallandale Beach Florida, 33009</span></p>
-            <p class="bradcrumbs__link bold">E-mail:<span class="bradcrumbs__link">info@funisoxshop.com</span></p>
+            <p class="bradcrumbs__link bold">
+              Address:<span class="bradcrumbs__link"
+                >Hallandale Beach Florida, 33009</span
+              >
+            </p>
+            <p class="bradcrumbs__link bold">
+              E-mail:<span class="bradcrumbs__link">info@funisoxshop.com</span>
+            </p>
           </address>
           <form class="js-myFormData" action="#">
             <fieldset class="form-data two">
-              <legend class="sign-in__subtitle">Do you have any questions? Write to us!</legend>
+              <legend class="sign-in__subtitle">
+                Do you have any questions? Write to us!
+              </legend>
 
-                  <label for="yourName" class="sign-in__subtext">Your name</label>
-                  <input
-                    class="input-form"
-                    type="text"
-                    id="yourName"
-                    placeholder="Put your name"
-                  />
+              <label for="yourName" class="sign-in__subtext">Your name</label>
+              <input
+                class="input-form"
+                type="text"
+                id="yourName"
+                placeholder="Put your name"
+              />
 
-                  <label for="email" class="sign-in__subtext">Your e-mail</label>
-                  <input
-                    class="input-form"
-                    type="text"
-                    id="email"
-                    placeholder="Put your e-mail"
-                  />
+              <label for="email" class="sign-in__subtext">Your e-mail</label>
+              <input
+                class="input-form"
+                type="text"
+                id="email"
+                placeholder="Put your e-mail"
+              />
 
-                  <label for="yourMessage" class="sign-in__subtext area"
-                    >Your message</label
-                  >
-                  <textarea
-                    class="input-form"
-                    type="text"
-                    id="yourMessage"
-                    rows="5" cols="33"
-                    placeholder="Write your message"
-                  >
-                  </textarea>
-                
-                  </fieldset>
-                  </form>
-                    <div class="label-container">
-                      <label class="sign-in__label">
-                        <input type="checkbox" class="checkbox" name="remember" />
-                        <span class="checkbox-icon"></span>
-                        Sign me up for the newsletter!
-                      </label>
-                       
-                    </div>
-                        <button class="sign-in btn" type="submit">Send message</button>
-          
+              <label for="yourMessage" class="sign-in__subtext area"
+                >Your message</label
+              >
+              <textarea
+                class="input-form"
+                type="text"
+                id="yourMessage"
+                rows="5"
+                cols="33"
+                placeholder="Write your message"
+              >
+              </textarea>
+            </fieldset>
+          </form>
+          <div class="label-container">
+            <label class="sign-in__label">
+              <input type="checkbox" class="checkbox" name="remember" />
+              <span class="checkbox-icon"></span>
+              Sign me up for the newsletter!
+            </label>
+          </div>
+          <button class="sign-in btn" type="submit">Send message</button>
         </section>
       </div>
     </main>
+    <!----------------- end/MAIN ---------------------->
+
+    <!----------------- FOOTER ------------------------>
     <footer class="footer">
-      <div class="container">
+      <div class="container container-footer">
         <a class="footer-logo-link" href="./home.html">
-          <svg class="logo footer" width="77px" height="47px">
+          <svg class="logo footer">
             <use href="../img/sprite.svg#icon-footer-logo"></use>
           </svg>
         </a>
 
         <div class="footer-wrapper">
           <ul class="list footer-list">
-            <li class="list-item"><a class="footer-link" href="#">Home</a></li>
+            <li class="list-item">
+              <a class="footer-link" href="./home.html">Home</a>
+            </li>
             <li class="list-item">
               <a class="footer-link" href="#">About us</a>
             </li>
             <li class="list-item">
-              <a class="footer-link" href="#">Contact us</a>
+              <a class="footer-link" href="./contact.html">Contact us</a>
             </li>
             <li class="list-item"><a class="footer-link" href="#">FAQ</a></li>
             <li class="list-item">
-              <a class="footer-link" href="./privacy-policy.html">Privacy policy</a>
+              <a class="footer-link" href="./privacy-policy.html"
+                >Privacy policy</a
+              >
             </li>
           </ul>
           <div class="social-networks">
             <h4 class="footer-link">Get in touch</h4>
             <ul class="list footer-list-networks">
               <li class="footer-list-item">
-                <a href="./home.html">
+                <a
+                  href="https://www.facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <svg class="facebook social-icon" width="24px" height="24px">
                     <use href="../img/sprite.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer-list-item">
-                <a href="./home.html">
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <svg class="twiter social-icon" width="24px" height="24px">
                     <use href="../img/sprite.svg#icon-tweeter"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer-list-item">
-                <a href="./home.html">
+                <a
+                  href="https://www.instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <svg class="instagram social-icon" width="24px" height="24px">
                     <use href="../img/sprite.svg#icon-instagram"></use>
                   </svg>
@@ -284,7 +359,7 @@
         <div class="list-social-wrapper">
           <ul class="list list-social">
             <li class="list-social-item">
-              <a href="#"></a>
+              <a href="#">
                 <svg
                   width="39"
                   height="30"
@@ -586,8 +661,8 @@
               </a>
             </li>
             <li class="list-social-item">
-              <a href="#"
-                ><svg
+              <a href="#">
+                <svg
                   width="39"
                   height="30"
                   viewBox="0 0 39 30"
@@ -659,6 +734,7 @@
         </div>
       </div>
     </footer>
+    <!----------------- end/FOOTER -------------------->
     <script src="../js/burger.js"></script>
     <script src="../js/search.js"></script>
   </body>
