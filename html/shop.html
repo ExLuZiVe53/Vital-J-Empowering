@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../css/shop.css" />
   </head>
   <body>
+   <!----------------- HEADER ------------------------>
     <header class="navigation">
       <div class="navigation-top">
         <div class="container container-flex top">
@@ -39,7 +40,7 @@
 
       <div class="container container-flex">
         <a class="navigation-logo" href="./home.html">
-          <svg class="logo" width="66" height="41">
+          <svg class="logo" width="55" height="33">
             <use href="../img/sprite.svg#icon-logo"></use>
           </svg>
         </a>
@@ -60,20 +61,71 @@
         <nav>
           <ul class="navigation-main-list">
             <li class="navigation-main-list__item">
-              <a href="#" class="navigation-main-list__item-link">Home</a>
+              <a href="./home.html" class="navigation-main-list__item-link"
+                >Home</a
+              >
             </li>
             <li class="navigation-main-list__item">
               <a href="#" class="navigation-main-list__item-link">About us</a>
             </li>
             <li class="navigation-main-list__item">
-              <a href="#" class="navigation-main-list__item-link">
-                <details>
-                  <summary>Shop</summary>
-                </details>
+              <a href="./shop.html" class="navigation-main-list__item-link">
+                Shop
               </a>
+              <button class="btnArrow">
+                <svg class="btnArrow no-rotate" width="16" height="16">
+                  <use href="../img/sprite.svg#icon-arrow-down"></use>
+                </svg>
+              </button>
+              <article class="click-category">
+                <ul class="click-category__list">
+                  <li class="click-category__item">
+                    <a
+                      class="click-category__link"
+                      href="./shop-category.html"
+                      rel="noopener noreferrer"
+                      >Category 1</a
+                    >
+                  </li>
+                  <li class="click-category__item">
+                    <a
+                      class="click-category__link"
+                      href="./shop-category.html"
+                      rel="noopener noreferrer"
+                      >Category 2</a
+                    >
+                  </li>
+                  <li class="click-category__item">
+                    <a
+                      class="click-category__link"
+                      href="./shop-category.html"
+                      rel="noopener noreferrer"
+                      >Category 3</a
+                    >
+                  </li>
+                  <li class="click-category__item">
+                    <a
+                      class="click-category__link"
+                      href="./shop-category.html"
+                      rel="noopener noreferrer"
+                      >Category 4</a
+                    >
+                  </li>
+                  <li class="click-category__item">
+                    <a
+                      class="click-category__link"
+                      href="./shop-category.html"
+                      rel="noopener noreferrer"
+                      >Category 5</a
+                    >
+                  </li>
+                </ul>
+              </article>
             </li>
             <li class="navigation-main-list__item">
-              <a href="#" class="navigation-main-list__item-link">Contact us</a>
+              <a href="./contact.html" class="navigation-main-list__item-link"
+                >Contact us</a
+              >
             </li>
             <li class="navigation-main-list__item">
               <a href="#" class="navigation-main-list__item-link">FAQ</a>
@@ -87,7 +139,7 @@
               <use href="../img/sprite.svg#icon-Account"></use>
             </svg>
           </li>
-          <li class="list-item heart">
+          <li class="list-item">
             <a class="list-item__link" href="#">
               <svg class="Heart social-icon" width="24" height="24">
                 <use href="../img/sprite.svg#icon-Heart"></use>
@@ -123,15 +175,15 @@
               </svg>
             </button>
             <a class="navigation-logo" href="./home.html">
-              <svg class="logo" width="66" height="41">
+              <svg class="logo" width="55" height="33">
                 <use href="../img/sprite.svg#icon-logo"></use>
               </svg>
             </a>
             <ul>
-              <li><a href="">Home</a></li>
-              <li><a href="">About us</a></li>
-              <li><a href="">Shop</a></li>
-              <li><a href="">Contact us</a></li>
+              <li><a href="./home.html">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="./shop.html">Shop</a></li>
+              <li><a href="./contact.html">Contact us</a></li>
               <li><a href="">FAQ</a></li>
             </ul>
           </div>
@@ -159,6 +211,7 @@
         </div>
       </div>
     </header>
+    <!---------------- end/HEADER --------------------->
 
      <main>
         <section class="exclusive-deals">

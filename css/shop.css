@@ -416,6 +416,75 @@ html {
     display: none;
   }
 }
+
+@media only screen and (min-width: 1025px) and (max-width: 1924px) {
+  .burger-btn {
+    display: none;
+  }
+
+  .click-category {
+    position: relative;
+    display: none;
+  }
+
+  .click-category.openCategory {
+    display: block;
+  }
+
+  .click-category__list {
+    position: absolute;
+    top: 1.7em;
+    left: -3em;
+
+    padding: 24px;
+    background-color: var(--main-color);
+    border-radius: 10px;
+  }
+
+  .click-category__item {
+    margin-bottom: 16px;
+  }
+
+  .click-category__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .click-category__item:hover,
+  .click-category__item:focus {
+    color: var(--accent-color);
+  }
+
+  .click-category__link {
+    font-family: var(--accent-font-family);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.5em;
+    color: #272727;
+  }
+
+  .click-category__link:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+  }
+}
+
+.btnArrow {
+  background: transparent;
+  color: #fcfcfc;
+  border: none;
+}
+
+.btnArrow.no-rotate {
+  stroke: currentColor;
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1924px) {
+  .navigation-main-list__item-link:hover,
+  .navigation-main-list__item-link:focus {
+    color: var(--hover-color);
+    text-decoration: underline;
+  }
+}
 /*!==================================================*/
 /* BURGER MENU */
 
