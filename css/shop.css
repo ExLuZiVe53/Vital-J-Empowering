@@ -769,7 +769,7 @@ html {
 
 @media only screen and (min-width: 1025px) and (max-width: 1925px) {
   .card-container {
-    width: 418px;
+    /* width: 418px; */
     height: 687px;
   }
 }
