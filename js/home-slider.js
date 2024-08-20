@@ -6,10 +6,10 @@ const cardContainer = document.querySelector('.card-container');
 console.log(cardContainer);
 
 const onArrowLeftBtn = event => {
-  console.log('click slider button left');
+  // console.log('click slider button left');
 };
 const onArrowRightBtn = event => {
-  console.log('click slider button right');
+  // console.log('click slider button right');
 };
 
 arrowLeftBtn.addEventListener('click', onArrowLeftBtn);
