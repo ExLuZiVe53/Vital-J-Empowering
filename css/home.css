@@ -883,7 +883,7 @@ p {
   width: 261px;
   height: 428px;
 
-  flex-shrink: 2;
+  /* flex-shrink: 2; */
   object-fit: cover;
   object-position: 0 0;
   overflow: hidden;
@@ -907,12 +907,12 @@ p {
   }
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1925px) {
+/* @media only screen and (min-width: 1025px) and (max-width: 1925px) {
   .card-container {
     width: 418px;
     height: 687px;
   }
-}
+} */
 
 .card-container.last {
   display: none;
@@ -1139,12 +1139,12 @@ p {
   margin: 0 auto;
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1925px) {
+/* @media only screen and (min-width: 1025px) and (max-width: 1925px) {
   .card-img {
     width: 351px;
     height: 408px;
   }
-}
+} */
 
 .button-container {
   margin-left: auto;
@@ -1170,7 +1170,7 @@ p {
 @media only screen and (min-width: 1025px) and (max-width: 1925px) {
   .btn-card-add.btn {
     height: 54px;
-    margin: 100px auto 0;
+    margin: 0 auto;
   }
 }
 
