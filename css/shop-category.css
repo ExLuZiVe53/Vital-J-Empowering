@@ -873,7 +873,7 @@ legend.sign-in__label {
 @media only screen and (min-width: 1025px) and (max-width: 1925px) {
   .card-container {
     width: 418px;
-    height: 687px;
+    /* height: 687px; */
   }
 }
 
@@ -881,7 +881,7 @@ legend.sign-in__label {
   .card-container {
     max-width: 261px;
     width: 260px;
-    height: 428px;
+    /* height: 428px; */
 
     padding-left: 16px;
     padding-right: 16px;
@@ -1045,12 +1045,12 @@ legend.sign-in__label {
   margin: 0 auto;
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1925px) {
+/* @media only screen and (min-width: 1025px) and (max-width: 1925px) {
   .card-img {
     width: 351px;
     height: 408px;
   }
-}
+} */
 
 @media only screen and (min-width: 1024px) and (max-width: 1925px) {
   .card-img {
@@ -1105,7 +1105,7 @@ legend.sign-in__label {
 @media only screen and (min-width: 1025px) and (max-width: 1925px) {
   .btn-card-add.btn {
     height: 54px;
-    margin: 100px auto 0;
+    margin: auto 0;
   }
 }
 
