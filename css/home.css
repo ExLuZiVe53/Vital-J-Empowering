@@ -1349,7 +1349,7 @@ p {
 
 @media only screen and (min-width: 1024px) and (max-width: 1925px) {
   .social-networks {
-    margin-left: 10em;
+    margin-left: 23em;
     margin-top: 0;
   }
 }
@@ -1357,6 +1357,8 @@ p {
 @media only screen and (min-width: 1024px) and (max-width: 1925px) {
   .logo.footer {
     margin-top: 32px;
+    width: 156.86px;
+    height: 96px;
   }
 }
 
@@ -1372,7 +1374,7 @@ p {
 @media only screen and (min-width: 1024px) and (max-width: 1925px) {
   .footer-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: end;
     margin-left: 124px;
   }
 }
@@ -1391,7 +1393,7 @@ p {
 
 @media only screen and (min-width: 1024px) and (max-width: 1925px) {
   .footer-text {
-    margin-right: 100px;
+    margin-right: 19em;
   }
 }
 
@@ -1408,8 +1410,8 @@ p {
   .list-social-wrapper {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: center;
-  }
+    justify-content: stretch;
+  
 
   .list-social::before {
     display: none;
