@@ -301,7 +301,7 @@ html {
   .search-icon {
     display: block;
     position: absolute;
-    top: 18px;
+    top: 12px;
     left: 20px;
     transform: translate(-50%);
   }
