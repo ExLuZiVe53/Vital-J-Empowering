@@ -428,6 +428,14 @@ html {
     display: none;
   }
 }
+
+@media only screen and (min-width: 1025px) and (max-width: 1924px) {
+  .navigation-main-list__item-link:hover,
+  .navigation-main-list__item-link:focus {
+    color: var(--hover-color);
+    text-decoration: underline;
+  }
+}
 /*!==================================================*/
 /* BURGER MENU */
 
