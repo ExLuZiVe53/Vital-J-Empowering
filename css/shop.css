@@ -1026,6 +1026,11 @@ html {
   background-color: var(--bg-color);
 }
 
+.container-footer {
+  padding-top: 24px;
+  padding-bottom: 32px;
+}
+
 .footer-list {
   display: flex;
   flex-direction: column;
@@ -1058,13 +1063,22 @@ html {
 }
 
 .social-networks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-left: auto;
   margin-top: -30px;
+  gap: 16px;
+}
+
+.logo.footer {
+  width: 77px;
+  height: 47px;
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1925px) {
   .social-networks {
-    margin-left: 10em;
+    margin-left: 23em;
     margin-top: 0;
   }
 }
@@ -1072,6 +1086,8 @@ html {
 @media only screen and (min-width: 1024px) and (max-width: 1925px) {
   .logo.footer {
     margin-top: 32px;
+    width: 156.86px;
+    height: 96px;
   }
 }
 
@@ -1086,8 +1102,8 @@ html {
 
 @media only screen and (min-width: 1024px) and (max-width: 1925px) {
   .footer-wrapper {
-    display: inline-flex;
-    justify-content: center;
+    display: flex;
+    justify-content: end;
     margin-left: 124px;
   }
 }
@@ -1102,12 +1118,11 @@ html {
 
   text-align: center;
   margin-top: 40px;
-  padding-bottom: 32px;
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1925px) {
   .footer-text {
-    margin-right: 100px;
+    margin-right: 19em;
   }
 }
 
@@ -1124,8 +1139,8 @@ html {
   .list-social-wrapper {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: stretch;
   }
-
   .list-social::before {
     display: none;
   }
