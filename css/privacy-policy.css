@@ -823,6 +823,10 @@ input::placeholder {
   margin: 32px 0;
 }
 
+.privacy {
+  padding-bottom: 120px;
+}
+
 /* FOOTER */
 
 .footer {
