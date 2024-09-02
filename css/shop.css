@@ -429,6 +429,7 @@ html {
 
   .click-category.openCategory {
     display: block;
+    z-index: 1;
   }
 
   .click-category__list {
