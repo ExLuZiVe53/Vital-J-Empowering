@@ -1,0 +1,177 @@
+:root {
+  --main-color: #fcfcfc;
+  --title-color: #3b619a;
+  --subtitle-color: #787695;
+  --accent-color: #5e92b6;
+  --red-color: #de4b53;
+  --bg-color: #16344c;
+  --grey-color: #a0a0a0;
+  --hover-color: #b5e5f3;
+  --black-color: #000000;
+
+  --main-font-family: 'Candal';
+  --accent-font-family: 'Liberation Sans';
+  --inter-font-family: 'Inter';
+}
+
+/*!==================================================/
+/* -----DEFAULT STYLE------ */
+
+body {
+  font-family: var(--accent-font-family), sans-serif;
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 391px) and (max-width: 1024px) {
+  body {
+    max-width: 1024px;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1925px) {
+  body {
+    max-width: 1770px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+  /* outline: 1px solid lightseagreen; */
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+h1,
+h2 {
+  font-family: var(--main-font-family);
+  font-weight: 400;
+}
+
+p {
+  font-family: var(--accent-font-family);
+  font-weight: 400;
+}
+
+.btn {
+  display: block;
+  margin: 0 auto;
+
+  width: 224px;
+  height: 40px;
+
+  font-family: var(--accent-font-family);
+  font-size: 16px;
+  font-weight: 700;
+
+  padding: 8px 65px;
+
+  border: 1px solid var(--main-color);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--main-color);
+
+  cursor: pointer;
+}
+
+/*!==================================================/
+/* -----FONT-FACE------ */
+
+/* Inter-regular */
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Inter-Regular.ttf) format('truetype'),
+    url(../fonts/Inter-Regular.woff) format('woff'),
+    url(../fonts/Inter-Regular.woff2) format('woff2');
+}
+
+/* Candal-regular */
+@font-face {
+  font-display: swap;
+  font-family: Candal;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/candal-v15-latin-regular.ttf) format('truetype'),
+    url(../fonts/candal-v15-latin-regular.woff) format('woff'),
+    url(../fonts/candal-v15-latin-regular.woff2) format('woff2');
+}
+
+/* LiberationSans-regular */
+@font-face {
+  font-display: swap;
+  font-family: LiberationSans;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/LiberationSans-Regular.ttf) format('truetype'),
+    url(../fonts/LiberationSans-Regular.woff) format('woff'),
+    url(../fonts/LiberationSans-Regular.woff2) format('woff2');
+}
+
+/* LiberationSans-normal */
+@font-face {
+  font-display: swap;
+  font-family: LiberationSans;
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/LiberationSans-Regular.ttf) format('truetype'),
+    url(../fonts/LiberationSans-Regular.woff) format('woff'),
+    url(../fonts/LiberationSans-Regular.woff2) format('woff2');
+}
+
+/* SF Pro Text-normal */
+@font-face {
+  font-display: swap;
+  font-family: SF Pro Text;
+  font-style: normal;
+  font-weight: 600;
+  src: url(../fonts/SF-Pro-Text-Bold.ttf) format('truetype'),
+    url(../fonts/SF-Pro-Text-Bold.woff) format('woff'),
+    url(../fonts/SF-Pro-Text-Bold.woff2) format('woff2');
+}
