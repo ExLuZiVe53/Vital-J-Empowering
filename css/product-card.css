@@ -69,19 +69,6 @@ img {
   margin: 0;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 html {
   scroll-behavior: auto;
 }
@@ -116,6 +103,19 @@ p {
   color: var(--main-color);
 
   cursor: pointer;
+}
+
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /*!==================================================/
@@ -723,6 +723,58 @@ p {
 .bradcrumbs span {
   margin-left: 24px;
   margin-right: 24px;
+}
+
+/* !=============CHECKBOX============== */
+fieldset {
+  border: none;
+  border-bottom: 1px solid #5e92b67d;
+}
+.sign-in__label {
+  display: flex;
+  align-items: center;
+
+  font-family: var(--accent-font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.checkbox-icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  border: 1px solid var(--bg-color);
+  border-radius: 5px;
+}
+
+.checkbox:checked ~ .checkbox-icon {
+  background-image: url(../img/icons/Icon-checked.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 5px;
+}
+
+.checkbox:focus ~ .checkbox-icon {
+  outline: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 5px;
+}
+
+.label-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 16px;
+}
+
+legend.sign-in__label {
+  font-family: var(--accent-font-family);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5em;
+  color: var(--title-color);
 }
 
 /*!==================================================*/
