@@ -653,16 +653,15 @@ html {
   margin-right: 24px;
 }
 
-fieldset {
-  border: none;
-  border-bottom: 1px solid #5e92b67d;
-}
-
 .input-price {
   width: 100%;
 }
 
 /* !=============CHECKBOX============== */
+fieldset {
+  border: none;
+  border-bottom: 1px solid #5e92b67d;
+}
 .sign-in__label {
   display: flex;
   align-items: center;
