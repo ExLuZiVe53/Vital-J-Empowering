@@ -736,8 +736,8 @@ fieldset {
 
   font-family: var(--accent-font-family);
   font-weight: 400;
-  font-size: 18px;
-  line-height: 1.5;
+  font-size: 16px;
+  line-height: 1.5em;
 }
 
 .checkbox-icon {
@@ -775,6 +775,22 @@ legend.sign-in__label {
   font-size: 20px;
   line-height: 1.5em;
   color: var(--title-color);
+}
+
+.sign-in__label.not {
+  color: #a0a0a0;
+}
+
+.availability {
+  color: #43b94f;
+}
+
+.availability.not {
+  color: #a0a0a0;
+}
+
+.second {
+  color: #a0a0a0;
 }
 
 /*!==================================================*/
