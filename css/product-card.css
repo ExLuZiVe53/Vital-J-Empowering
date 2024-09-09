@@ -728,7 +728,8 @@ p {
 /* !=============CHECKBOX============== */
 fieldset {
   border: none;
-  border-bottom: 1px solid #5e92b67d;
+  padding: 0;
+  margin: 0;
 }
 .sign-in__label {
   display: flex;
@@ -769,12 +770,17 @@ fieldset {
   margin-top: 16px;
 }
 
-legend.sign-in__label {
+.main-legend__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sign-in__legend {
   font-family: var(--accent-font-family);
   font-weight: 700;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.5em;
-  color: var(--title-color);
+  color: #272727;
 }
 
 .sign-in__label.not {
@@ -791,6 +797,16 @@ legend.sign-in__label {
 
 .second {
   color: #a0a0a0;
+  margin: 24px 0;
+}
+
+.main-form__title {
+  font-family: var(--accent-font-family);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.5em;
+
+  color: var(--title-color);
 }
 
 /*!==================================================*/
