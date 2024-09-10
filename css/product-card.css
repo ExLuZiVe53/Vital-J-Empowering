@@ -792,11 +792,11 @@ fieldset {
 }
 
 .availability.not {
-  color: #a0a0a0;
+  color: var(--grey-color);
 }
 
 .second {
-  color: #a0a0a0;
+  color: var(--grey-color);
   margin: 24px 0;
 }
 
@@ -807,6 +807,65 @@ fieldset {
   line-height: 1.5em;
 
   color: var(--title-color);
+}
+/*!==================================================*/
+/* -------SECTION BUTTONS-PRICE-------- */
+.main-price__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons-price__text {
+  color: #272727;
+  font-family: var(--accent-font-family);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.6em;
+}
+
+.card-price {
+  display: inline-block;
+
+  color: var(--red-color);
+  font-family: var(--accent-font-family);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.15em;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1925px) {
+  .card-price {
+    font-size: 24px;
+  }
+}
+
+.card-price.sale {
+  color: var(--grey-color);
+
+  font-size: 15px;
+  font-weight: 700;
+
+  text-decoration-line: line-through;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1925px) {
+  .card-price.sale {
+    font-size: 18px;
+  }
+}
+
+.total-price__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sign-in__subtitle {
+  color: var(--accent-color);
+
+  font-family: var(--accent-font-family);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.15em;
 }
 
 /*!==================================================*/
