@@ -821,6 +821,8 @@ fieldset {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.6em;
+
+  margin-bottom: 16px;
 }
 
 .card-price {
@@ -857,6 +859,8 @@ fieldset {
 .total-price__container {
   display: flex;
   justify-content: space-between;
+
+  margin-bottom: 24px;
 }
 
 .sign-in__subtitle {
@@ -866,6 +870,44 @@ fieldset {
   font-size: 20px;
   font-weight: 700;
   line-height: 1.15em;
+}
+
+.main-button__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons-container__click {
+  border: 1px solid var(--accent-color);
+  display: inline-flex;
+  border-radius: 2px;
+}
+
+.button {
+  padding: 4px 11px;
+  border: 1px solid var(--accent-color);
+  border-radius: 2px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button__number {
+  padding: 5px 16px;
+
+  color: var(--black-color);
+  font-family: var(--accent-font-family);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.17em;
+}
+
+.btn-card-add {
+  background-color: var(--accent-color);
+  color: var(--main-color);
+  width: 100%;
+
+  margin-top: 56px;
 }
 
 /*!==================================================*/
