@@ -921,6 +921,24 @@ fieldset {
   margin-top: 56px;
 }
 
+.container-info {
+  margin-top: 56px;
+}
+
+.container-info__text {
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5em;
+  margin-bottom: 16px;
+}
+
+.container-info__subtext {
+  font-weight: 400;
+}
+
 /*!==================================================*/
 /* ------FOOTER------- */
 
