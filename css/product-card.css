@@ -939,6 +939,9 @@ fieldset {
   font-weight: 400;
 }
 
+.buttons-select {
+  display: flex;
+}
 /*!==================================================*/
 /* ------FOOTER------- */
 
