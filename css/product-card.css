@@ -942,6 +942,13 @@ fieldset {
 .buttons-select {
   display: flex;
 }
+
+/* Table */
+
+thead {
+  vertical-align: middle;
+}
+
 /*!==================================================*/
 /* ------FOOTER------- */
 
