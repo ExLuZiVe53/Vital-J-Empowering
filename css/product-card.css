@@ -950,14 +950,24 @@ table {
   width: 100%;
 }
 
-th,
-td {
-  text-align: left;
+thead {
+  border-bottom: 1px solid black;
+}
+
+tbody {
   border-bottom: 1px solid black;
 }
 
 td {
   padding: 8px 0;
+}
+
+.descriptions-text {
+  display: none;
+}
+
+.use-text {
+  display: none;
 }
 
 /*!==================================================*/
