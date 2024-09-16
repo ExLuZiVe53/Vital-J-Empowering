@@ -942,6 +942,8 @@ fieldset {
 .buttons-select {
   display: flex;
   justify-content: space-between;
+
+  margin: 50px 0;
 }
 
 .buttons-select__tab {
