@@ -947,6 +947,9 @@ fieldset {
 .buttons-select__tab {
   border: none;
   background-color: inherit;
+
+  padding: 0;
+  text-transform: uppercase;
 }
 
 .buttons-select__tab:hover {
