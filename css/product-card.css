@@ -941,6 +941,16 @@ fieldset {
 
 .buttons-select {
   display: flex;
+  justify-content: space-between;
+}
+
+.buttons-select__tab {
+  border: none;
+  background-color: inherit;
+}
+
+.buttons-select__tab:hover {
+  color: var(--accent-color);
 }
 
 /* Table */
