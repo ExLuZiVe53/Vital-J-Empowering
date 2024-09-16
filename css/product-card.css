@@ -951,11 +951,11 @@ table {
 }
 
 thead {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--grey-color);
 }
 
 tbody {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--grey-color);
 }
 
 td {
