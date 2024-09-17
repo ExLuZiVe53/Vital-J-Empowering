@@ -361,11 +361,27 @@
           </div>
 
           <div class="buttons-select">
-            <button class="buttons-select__tab" type="radio">
+            <button
+              class="buttons-select__tab"
+              type="radio"
+              data-action="active"
+            >
               Description
             </button>
-            <button class="buttons-select__tab" type="radio">Compound</button>
-            <button class="buttons-select__tab" type="radio">Use</button>
+            <button
+              class="buttons-select__tab"
+              type="radio"
+              data-action="noActive"
+            >
+              Compound
+            </button>
+            <button
+              class="buttons-select__tab"
+              type="radio"
+              data-action="visually"
+            >
+              Use
+            </button>
           </div>
           <p class="descriptions-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
@@ -893,9 +909,10 @@
       </div>
     </footer>
     <!----------------- end/FOOTER -------------------->
-    <script src="../js/burger.js"></script>
-    <script src="../js/search.js"></script>
-    <script src="../js/click-category.js"></script>
-    <script src="../js/home-slider.js"></script>
+    <script type="module" src="../js/burger.js"></script>
+    <script type="module" src="../js/search.js"></script>
+    <script type="module" src="../js/click-category.js"></script>
+    <!-- <script type="module" src="../js/home-slider.js"></script> -->
+    <script type="module" src="../js/product-card.js"></script>
   </body>
 </html>
