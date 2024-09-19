@@ -1,50 +1,43 @@
-const activeTab = document.querySelector('.buttons-select');
-
-const dataActions = ['Description', 'Compound', 'Use'];
-const markup = dataActions
-  .map(
-    (actionName, index) => `
-  <button
-  class="buttons-select__tab"
-  type="radio"
-  data-action=${index}
-              >${actionName}
-              </button>`
-    //   <button
-    //   class="buttons-select__tab"
-    //   type="radio"
-    //   data-action="active"
-    // >
-    //   Description
-    // </button>
-    // <button
-    //   class="buttons-select__tab"
-    //   type="radio"
-    //   data-action="noActive"
-    // >
-    //   Compound
-    // </button>
-    // <button
-    //   class="buttons-select__tab"
-    //   type="radio"
-    //   data-action="visually"
-    // >
-    //   Use
-    // </button>
-  )
-  .join('');
-const buttonSelect = document.querySelector('.buttons-select__tab');
-console.log(buttonSelect);
-
-activeTab.insertAdjacentHTML('beforeend', markup);
-
-const onActiveTab = () => {
-  activeTab.classList.toggle('addClass');
-};
+const buttonsSelect = document.querySelector('.buttons-select');
 
 const onButtonSelect = () => {
-  buttonSelect.classList.add('active');
+  console.log('Click on handler');
 };
 
-activeTab.addEventListener('click', onActiveTab);
-buttonSelect.addEventListener('click', onButtonSelect);
+buttonsSelect.addEventListener('click', onButtonSelect);
+
+createMarkupButtons();
+function createMarkupButtons() {
+  const buttons = [];
+  for (let i = 0; i < 3; i += 1) {
+    const buttonItem = document.createElement('button');
+    buttonItem.type = 'radio';
+    buttonItem.classList.add('buttons-select__tab');
+    buttonItem.dataset.action;
+    buttons.push(buttonItem);
+    console.log(buttonItem);
+  }
+  buttonsSelect.append(...buttonItem);
+}
+
+//   <button
+//   class="buttons-select__tab"
+//   type="radio"
+//   data-action="active"
+// >
+//   Description
+// </button>
+// <button
+//   class="buttons-select__tab"
+//   type="radio"
+//   data-action="noActive"
+// >
+//   Compound
+// </button>
+// <button
+//   class="buttons-select__tab"
+//   type="radio"
+//   data-action="visually"
+// >
+//   Use
+// </button>
