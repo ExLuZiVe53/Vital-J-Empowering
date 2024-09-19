@@ -13,7 +13,7 @@ function createMarkupButtons() {
     const buttonItem = document.createElement('button');
     buttonItem.type = 'radio';
     buttonItem.classList.add('buttons-select__tab');
-    buttonItem.dataset.action;
+    buttonItem.dataset.action = 0;
     buttons.push(buttonItem);
     console.log(buttonItem);
   }
