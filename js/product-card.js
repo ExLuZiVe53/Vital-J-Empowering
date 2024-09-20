@@ -6,19 +6,19 @@ const onButtonSelect = () => {
 
 buttonsSelect.addEventListener('click', onButtonSelect);
 
-createMarkupButtons();
 function createMarkupButtons() {
   const buttons = [];
   for (let i = 0; i < 3; i += 1) {
     const buttonItem = document.createElement('button');
     buttonItem.type = 'radio';
     buttonItem.classList.add('buttons-select__tab');
-    buttonItem.dataset.action = 0;
+    buttonItem.dataset.action = '${i}';
     buttons.push(buttonItem);
     console.log(buttonItem);
   }
   buttonsSelect.append(...buttonItem);
 }
+console.log(createMarkupButtons());
 
 //   <button
 //   class="buttons-select__tab"
