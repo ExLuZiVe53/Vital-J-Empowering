@@ -7,14 +7,14 @@ const onButtonSelect = () => {
 buttonsSelect.addEventListener('click', onButtonSelect);
 
 function createMarkupButtons() {
-  const buttons = [];
+  let buttons = [];
+
   for (let i = 0; i < 3; i += 1) {
     const buttonItem = document.createElement('button');
     buttonItem.type = 'radio';
     buttonItem.classList.add('buttons-select__tab');
-    buttonItem.dataset.action = '${i}';
+    buttonItem.dataset.action = 0;
     buttons.push(buttonItem);
-    console.log(buttonItem);
   }
   buttonsSelect.append(...buttonItem);
 }
