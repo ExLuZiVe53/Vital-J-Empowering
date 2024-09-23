@@ -1,24 +1,25 @@
-const buttonsSelect = document.querySelector('.buttons-select');
+const activeTab = document.querySelector('.buttons-select');
+const dataActions = ['Description', 'Compound', 'Use'];
+const markup = dataActions
+  .map((actionName, index) => markupButtons(actionName, index))
+  .join('');
+activeTab.insertAdjacentHTML('beforeend', markup);
 
-const onButtonSelect = () => {
-  console.log('Click on handler');
+function markupButtons(actionName, index) {
+  return `<button
+  class="buttons-select__tab"
+  type="radio"
+  data-action=${index}>${actionName}</button>`;
+}
+
+const jsButtons = document.querySelector('.js-buttons');
+console.log(jsButtons);
+
+const onActiveTab = () => {
+  console.log('click button');
 };
 
-buttonsSelect.addEventListener('click', onButtonSelect);
-
-function createMarkupButtons() {
-  let buttons = [];
-
-  for (let i = 0; i < 3; i += 1) {
-    const buttonItem = document.createElement('button');
-    buttonItem.type = 'radio';
-    buttonItem.classList.add('buttons-select__tab');
-    buttonItem.dataset.action = 0;
-    buttons.push(buttonItem);
-  }
-  buttonsSelect.append(...buttonItem);
-}
-console.log(createMarkupButtons());
+jsButtons.addEventListener('click', onActiveTab);
 
 //   <button
 //   class="buttons-select__tab"
