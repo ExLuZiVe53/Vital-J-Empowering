@@ -12,14 +12,9 @@ function markupButtons(actionName, index) {
   data-action=${index}>${actionName}</button>`;
 }
 
-const jsButtons = document.querySelector('.js-buttons');
-console.log(jsButtons);
-
-const onActiveTab = () => {
-  console.log('click button');
+const buttonHandler = () => {
+  markupButtons();
 };
-
-jsButtons.addEventListener('click', onActiveTab);
 
 //   <button
 //   class="buttons-select__tab"
