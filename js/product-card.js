@@ -1,4 +1,5 @@
 const activeTab = document.querySelector('.buttons-select');
+console.log(activeTab);
 const dataActions = ['Description', 'Compound', 'Use'];
 const markup = dataActions
   .map((actionName, index) => markupButtons(actionName, index))
@@ -13,8 +14,9 @@ function markupButtons(actionName, index) {
 }
 
 const buttonHandler = () => {
-  markupButtons();
+  console.log('click');
 };
+activeTab.addEventListener('click', buttonHandler);
 
 //   <button
 //   class="buttons-select__tab"
