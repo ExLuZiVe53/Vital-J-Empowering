@@ -7,14 +7,15 @@ const markup = dataActions
 activeTab.insertAdjacentHTML('beforeend', markup);
 
 function markupButtons(actionName, index) {
+  console.log(actionName);
   return `<button
   class="buttons-select__tab"
   type="radio"
   data-action=${index}>${actionName}</button>`;
 }
 
-const buttonHandler = () => {
-  console.log('click');
+const buttonHandler = event => {
+  console.log(event.currentTarget);
 };
 activeTab.addEventListener('click', buttonHandler);
 
