@@ -1,5 +1,5 @@
 const activeTab = document.querySelector('.buttons-select');
-console.log(activeTab);
+
 const dataActions = ['Description', 'Compound', 'Use'];
 const markup = dataActions
   .map((actionName, index) => markupButtons(actionName, index))
@@ -7,16 +7,13 @@ const markup = dataActions
 activeTab.insertAdjacentHTML('beforeend', markup);
 
 function markupButtons(actionName, index) {
-  console.log(actionName);
   return `<button
   class="buttons-select__tab"
   type="radio"
   data-action=${index}>${actionName}</button>`;
 }
 
-const buttonHandler = event => {
-  console.log(event.currentTarget);
-};
+const buttonHandler = event => {};
 activeTab.addEventListener('click', buttonHandler);
 
 //   <button
