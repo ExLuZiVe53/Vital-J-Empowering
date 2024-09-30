@@ -13,7 +13,9 @@ function markupButtons(actionName, index) {
   data-action=${index}>${actionName}</button>`;
 }
 
-const buttonHandler = event => {};
+const buttonHandler = event => {
+  console.log(event.currentTarget);
+};
 activeTab.addEventListener('click', buttonHandler);
 
 //   <button
