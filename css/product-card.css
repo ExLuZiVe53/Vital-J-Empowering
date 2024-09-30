@@ -943,7 +943,8 @@ fieldset {
   display: flex;
   justify-content: space-between;
 
-  margin: 50px 0;
+  padding: 50px 0;
+  outline: 1px solid red;
 }
 
 .buttons-select__tab {
