@@ -14,7 +14,7 @@ function markupButtons(actionName, index) {
 }
 
 const buttonHandler = event => {
-  console.log(event.currentTarget);
+  // console.log(event.currentTarget);
 };
 activeTab.addEventListener('click', buttonHandler);
 
