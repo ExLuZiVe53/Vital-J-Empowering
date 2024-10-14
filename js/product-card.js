@@ -1,4 +1,5 @@
 const activeTab = document.querySelector('.buttons-select');
+const activeButton = document.querySelectorAll('.buttons-select__tab');
 
 const dataActions = ['Description', 'Compound', 'Use'];
 const markup = dataActions
@@ -14,7 +15,20 @@ function markupButtons(actionName, index) {
 }
 
 const buttonHandler = event => {
-  console.log(event.currentTarget);
+  switch (event.target.dataset.action) {
+    case '0':
+      console.log('Zero');
+      break;
+    case '1':
+      console.log('First');
+      break;
+    case '2':
+      console.log('Two');
+      break;
+
+    default:
+      return null;
+  }
 };
 activeTab.addEventListener('click', buttonHandler);
 
