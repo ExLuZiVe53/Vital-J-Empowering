@@ -15,41 +15,47 @@ function markupButtons(actionName, index) {
 }
 
 const buttonHandler = event => {
-  switch (event.target.dataset.action) {
-    case '0':
-      console.log('Zero');
-      break;
-    case '1':
-      console.log('First');
-      break;
-    case '2':
-      console.log('Two');
-      break;
+  console.log(event.target);
+  console.log(event.currentTarget);
+  if (event.currentTarget !== event.target) {
+    switch (event.target.dataset.action) {
+      case '0':
+        console.log('Zero');
+        break;
+      case '1':
+        console.log('First');
+        break;
+      case '2':
+        console.log('Two');
+        break;
 
-    default:
-      return null;
+      default:
+        return null;
+    }
   }
 };
 activeTab.addEventListener('click', buttonHandler);
 
-//   <button
-//   class="buttons-select__tab"
-//   type="radio"
-//   data-action="active"
-// >
-//   Description
-// </button>
-// <button
-//   class="buttons-select__tab"
-//   type="radio"
-//   data-action="noActive"
-// >
-//   Compound
-// </button>
-// <button
-//   class="buttons-select__tab"
-//   type="radio"
-//   data-action="visually"
-// >
-//   Use
-// </button>
+{
+  /* <button
+    class="buttons-select__tab"
+    type="radio"
+    data-action="active"
+  >
+  Description
+  </button>
+  <button
+    class="buttons-select__tab"
+    type="radio"
+    data-action="noActive"
+  >
+    Compound
+  </button>
+  <button
+    class="buttons-select__tab"
+    type="radio"
+    data-action="visually"
+  >
+    Use
+  </button> */
+}
