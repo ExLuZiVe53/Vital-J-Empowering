@@ -1424,7 +1424,7 @@ p {
   .list-social-wrapper {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: stretch;
+    /* justify-content: stretch; */
   }
   .list-social::before {
     display: none;
