@@ -1297,6 +1297,20 @@ p {
   color: rgba(39, 39, 39, 1);
 }
 
+.item {
+  position: relative;
+}
+
+.item:hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translate(-50%, 50%);
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
 @media only screen and (min-width: 1024px) and (max-width: 1925px) {
   .item {
     width: 428px;
