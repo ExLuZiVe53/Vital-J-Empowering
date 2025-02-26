@@ -1141,7 +1141,6 @@ html {
   .list-social-wrapper {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: stretch;
   }
   .list-social::before {
     display: none;
