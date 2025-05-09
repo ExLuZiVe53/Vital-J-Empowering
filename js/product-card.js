@@ -17,7 +17,7 @@ function createButton() {
   const items = [];
   for (let i = 0; i < dataActions.length; i += 1) {
     const item = document.createElement('button');
-    item.type = radio;
+    item.type = 'radio';
     item.classList.add('button-select__tab');
     items.push(item);
   }
