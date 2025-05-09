@@ -19,6 +19,8 @@ function createButton() {
     const item = document.createElement('button');
     item.type = 'radio';
     item.classList.add('button-select__tab');
+    item.style.width = '100px';
+    item.style.height = '50px';
     items.push(item);
   }
   activeTab.append(...items);
@@ -29,17 +31,22 @@ const buttonHandler = event => {
   console.log(event.target);
   console.log(event.currentTarget);
   if (event.currentTarget === event.target) {
-    switch (event.target.dataset.action) {
+    switch (event.target) {
       case '0':
         activeButton.classlist.add('active');
+        activeButton.classlist.remove('active');
         console.log('Zero');
         break;
+
       case '1':
         activeButton.classlist.add('active');
+        activeButton.classlist.remove('active');
         console.log('First');
         break;
+
       case '2':
         activeButton.classlist.add('active');
+        activeButton.classlist.remove('active');
         console.log('Two');
         break;
 
