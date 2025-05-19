@@ -1,81 +1,88 @@
-const activeTab = document.querySelector('.buttons-select');
-const activeButton = document.querySelector('.button-select__tab');
-console.log(activeButton);
+const containerTable = document.querySelector('.compound-container');
+const containerDescription = document.querySelector('.descriptions-text');
+const containerUse = document.querySelector('.use-text');
 
-const dataActions = ['Description', 'Compound', 'Use'];
+const containerMarkup = `
+    <table>
+      <thead>
+        <th>Average values</th>
+        <th>Per 50g</th>
+        <th>Per 100g</th>
+      </thead>
 
-// const markup = dataActions
-//   .map((actionName, index) => {
-//     return `<button
-//             class="button-select__tab" type="radio" data-action=${index}>
-//             ${actionName}
-//             </button>`;
-//   })
-//   .join('');
+      <tbody>
+        <tr>
+          <td>Lorem ipsum</td>
+          <td>24</td>
+          <td>48</td>
+        </tr>
+        <tr>
+          <td>Lorem ipsum</td>
+          <td>24</td>
+          <td>48</td>
+        </tr>
+        <tr>
+          <td>Lorem ipsum</td>
+          <td>24</td>
+          <td>48</td>
+        </tr>
+      </tbody>
 
-// activeTab.innerHTML = markup;
+      <tfoot>
+        <tr>
+          <td>Lorem ipsum</td>
+          <td>24</td>
+          <td>48</td>
+        </tr>
+        <tr>
+          <td>Lorem ipsum</td>
+          <td>24</td>
+          <td>48</td>
+        </tr>
+        <tr>
+          <td>Lorem ipsum</td>
+          <td>24</td>
+          <td>48</td>
+        </tr>
+        <tr>
+          <td>Lorem ipsum</td>
+          <td>24</td>
+          <td>48</td>
+        </tr>
+      </tfoot>
+    </table>
+  `;
+containerTable.insertAdjacentHTML('beforeend', containerMarkup);
 
-createButton();
+const descriptionsMarkup = `
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+      vulputate convallis turpis, sit amet ultricies ex ullamcorper quis.
+      Ut quis pulvinar dolor. Donec semper eu nulla porta euismod. Ut
+      mattis enim dolor, vel tincidunt justo dapibus et. Proin ut nisl
+      vitae ex efficitur rutrum. Mauris lacinia fermentum est, nec tempor
+      justo pharetra eu.
+  </p>
+      <br />
+  <p>
+    Cras gravida justo eu sapien laoreet, id malesuada massa fringilla.
+    Nam eget sapien ut nisl elementum malesuada sit amet sed neque.
+    Suspendisse molestie ultrices justo. Suspendisse vitae nibh
+    fermentum velit vestibulum fringilla. in ut nisl vitae ex efficitur
+    rutrum. Mauris lacinia fermentum est, nec tempor justo pharetra eu.
+  </p> 
+`;
+containerDescription.insertAdjacentHTML('beforeend', descriptionsMarkup);
 
-function createButton() {
-  const items = [];
-  for (let i = 0; i < dataActions.length; i += 1) {
-    const item = document.createElement('a');
-    item.role = 'button';
-    item.classList.add('button-select__tab');
-    item.style.width = '100px';
-    item.style.height = '50px';
-    item.style.margin = '10px';
-    item.style.border = '3px';
-    item.style.borderStyle = 'solid';
-    item.style.borderColor = 'lightblue';
-    item.textContent = dataActions[i];
-    item.dataset.action = i;
-    items.push(item);
-  }
-  activeTab.append(...items);
-}
-
-const buttonHandler = event => {
-  switch (event.target.dataset.action) {
-    case '0':
-      console.log('Zero');
-      break;
-
-    case '1':
-      console.log('One');
-      break;
-
-    case '2':
-      console.log('Two');
-      break;
-
-    default:
-      return null;
-  }
-};
-activeTab.addEventListener('click', buttonHandler);
-
-{
-  /* <button
-    class="buttons-select__tab"
-    type="radio"
-    data-action="active"
-  >
-  Description
-  </button>
-  <button
-    class="buttons-select__tab"
-    type="radio"
-    data-action="noActive"
-  >
-    Compound
-  </button>
-  <button
-    class="buttons-select__tab"
-    type="radio"
-    data-action="visually"
-  >
-    Use
-  </button> */
-}
+const useMarkup = `
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+      vulputate convallis turpis, sit amet ultricies ex ullamcorper quis.
+      Ut quis pulvinar dolor. Donec semper eu nulla porta euismod. Ut
+      mattis enim dolor, vel tincidunt justo dapibus et. Proin ut nisl
+      vitae ex efficitur rutrum. Mauris lacinia fermentum est, nec tempor
+      justo pharetra eu. Cras gravida justo eu sapien laoreet, id
+      malesuada massa fringilla. Nam eget sapien ut nisl elementum
+      malesuada sit amet sed neque. Suspendisse molestie ultrices justo.
+      Suspendisse vitae nibh fermentum velit vestibulum fringilla.
+    </p>
+`;
+containerUse.insertAdjacentHTML('beforeend', useMarkup);
