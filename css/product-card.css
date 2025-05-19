@@ -943,20 +943,25 @@ fieldset {
   display: flex;
   justify-content: space-between;
 
-  padding: 50px 0;
   outline: 1px solid red;
 }
 
-.buttons-select__tab {
-  border: none;
-  background-color: inherit;
-
-  padding: 0;
+.descriptions-text,
+.compound-container,
+.use-text {
+  display: block;
   text-transform: uppercase;
+  width: 100%;
+  border-radius: 8px;
+  padding: 16px 32px;
+  border: 2px solid goldenrod;
+  background-color: var(--accent-color);
 }
 
-.buttons-select__tab:hover {
-  color: var(--accent-color);
+.descriptions-text p,
+.use-text p,
+.compound-container table {
+  display: none;
 }
 
 /* Table */
@@ -977,14 +982,6 @@ tbody {
 
 td {
   padding: 8px 0;
-}
-
-.descriptions-text {
-  display: none;
-}
-
-.use-text {
-  display: none;
 }
 
 /*!==================================================*/
