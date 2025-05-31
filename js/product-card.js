@@ -1,3 +1,4 @@
+const formButtonsContainer = document.querySelector('.buttons-select');
 const containerTable = document.querySelector('.compound-container');
 const containerDescription = document.querySelector('.descriptions-text');
 const containerUse = document.querySelector('.use-text');
@@ -86,3 +87,16 @@ const useMarkup = `
     </p>
 `;
 containerUse.insertAdjacentHTML('beforeend', useMarkup);
+
+function onButtonClick(event) {
+  event.preventDefault();
+  if (event.currentTarget === event.target) {
+    return;
+  }
+  console.log(event.target);
+  // console.log(event.target);
+  // console.log(event.currentTarget);
+  return;
+}
+
+formButtonsContainer.addEventListener('click', onButtonClick);
