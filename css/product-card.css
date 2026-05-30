@@ -127,7 +127,8 @@ p {
   font-family: Inter;
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/Inter-Regular.ttf) format('truetype'),
+  src:
+    url(../fonts/Inter-Regular.ttf) format('truetype'),
     url(../fonts/Inter-Regular.woff) format('woff'),
     url(../fonts/Inter-Regular.woff2) format('woff2');
 }
@@ -138,7 +139,8 @@ p {
   font-family: Candal;
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/candal-v15-latin-regular.ttf) format('truetype'),
+  src:
+    url(../fonts/candal-v15-latin-regular.ttf) format('truetype'),
     url(../fonts/candal-v15-latin-regular.woff) format('woff'),
     url(../fonts/candal-v15-latin-regular.woff2) format('woff2');
 }
@@ -149,7 +151,8 @@ p {
   font-family: LiberationSans;
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/LiberationSans-Regular.ttf) format('truetype'),
+  src:
+    url(../fonts/LiberationSans-Regular.ttf) format('truetype'),
     url(../fonts/LiberationSans-Regular.woff) format('woff'),
     url(../fonts/LiberationSans-Regular.woff2) format('woff2');
 }
@@ -160,7 +163,8 @@ p {
   font-family: LiberationSans;
   font-style: normal;
   font-weight: 700;
-  src: url(../fonts/LiberationSans-Regular.ttf) format('truetype'),
+  src:
+    url(../fonts/LiberationSans-Regular.ttf) format('truetype'),
     url(../fonts/LiberationSans-Regular.woff) format('woff'),
     url(../fonts/LiberationSans-Regular.woff2) format('woff2');
 }
@@ -171,7 +175,8 @@ p {
   font-family: SF Pro Text;
   font-style: normal;
   font-weight: 600;
-  src: url(../fonts/SF-Pro-Text-Bold.ttf) format('truetype'),
+  src:
+    url(../fonts/SF-Pro-Text-Bold.ttf) format('truetype'),
     url(../fonts/SF-Pro-Text-Bold.woff) format('woff'),
     url(../fonts/SF-Pro-Text-Bold.woff2) format('woff2');
 }
@@ -1025,6 +1030,7 @@ td {
 .footer-link:hover,
 .footer-link:focus {
   color: #b5e5f3;
+  text-decoration: underline;
 }
 
 .social-networks {
