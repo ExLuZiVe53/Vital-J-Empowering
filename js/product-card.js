@@ -90,13 +90,7 @@ containerUse.insertAdjacentHTML('beforeend', useMarkup);
 
 function onButtonClick(event) {
   event.preventDefault();
-  if (event.currentTarget === event.target) {
-    return;
-  }
-  console.log(event.target);
-  // console.log(event.target);
-  // console.log(event.currentTarget);
-  return;
+  formButtonsContainer.classList.add = 'active';
 }
 
 formButtonsContainer.addEventListener('click', onButtonClick);
