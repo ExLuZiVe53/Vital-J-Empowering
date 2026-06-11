@@ -250,7 +250,7 @@ p {
 @media only screen and (min-width: 1024px) and (max-width: 1925px) {
   .navigation-search-container {
     position: relative;
-    top: -8px;
+    top: 0px;
     right: -77px;
   }
   .navigation-search {
